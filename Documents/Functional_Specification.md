@@ -1,1 +1,0 @@
-<h1 style="text-align: center">2022-2023-project-2-factory-display-Project-1-group - Functional Specifications</h1>
