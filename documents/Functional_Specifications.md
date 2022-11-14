@@ -3,35 +3,44 @@
 <details> 
 <summary style="text-decoration: underline; font-size:150%">Table of contents:</summary>
 
-- [1. Project Overview](#1-Project-Overview)
-- [2. Glossary:](#2-glossary)
+- [1. Glossary:](#1-glossary)
+- [2. Project Overview](#2-project-Overview)
+  - [2.1. Context:](#21-Context)
+  - [2.2. Planning:](#22-Planning)
 - [3. Stakeholders:](#3-stakeholders)
   - [3.1. The client:](#31-the-client)
   - [3.2. The engineering team:](#32-the-engineering-team)
-- [4. Product Description:](#5-Product-Description)
-  - [4.1. Goal of the project:](#31-Goal-of-the-project)
-  - [4.2. Current Solution:](#31-Current-Solution)
-  - [4.3. Proposed Solution:](#31-Proposed-Solution)
-  - [4.4. Content:](#31-Content)
-- [5. Requirements:](#4-Requirements)
-  - [5.1 Priority:](#71-Priority)
-  - [5.2 User Interface:](#72-User-Interface)
-  - [5.3 Maintainability :](#73-Maintainability)
-  - [5.4 Security:](#74-Security)
-  - [5.5 Data Management:](#74-Data-Management)
-- [6. Personas:](#7-personas)
-  - [6.1 Project owner:](#71-Project-Owner)
-  - [6.2 Content creator:](#72-Content-Creator)
-  - [6.3 Power User:](#73-Power-User)
-  - [6.4 On-site Installation Manager:](#74-On-site-Installation-Manager)
-- [7. The technology:](#8-the-technology)
-- [8. Improvements for V2](#9-improvements-for-v2)
-- [9. Conclusion:](#10-conclusion)
+- [4. Product Description:](#4-Product-Description)
+  - [4.1. Goal of the project:](#41-Goal-of-the-project)
+  - [4.2. Current Solution:](#42-Current-Solution)
+  - [4.3. Proposed Solution:](#43-Proposed-Solution)
+  - [4.4. Content:](#44-Content)
+- [5. Requirements:](#5-Requirements)
+  - [5.1 Priority:](#51-Priority)
+  - [5.2 User Interface:](#52-User-Interface)
+  - [5.3 Maintainability :](#53-Maintainability)
+  - [5.4 Security:](#54-Security)
+  - [5.5 Data Management:](#55-Data-Management)
+- [6. Personas:](#6-personas)
+  - [6.1 Project owner:](#61-Project-Owner)
+  - [6.2 Content creator:](#62-Content-Creator)
+  - [6.3 Power User:](#63-Power-User)
+  - [6.4 On-site Installation Manager:](#64-On-site-Installation-Manager)
+- [7. Improvements for V2](#7-improvements-for-v2)
+- [8. Conclusion:](#8-conclusion)
 </details>
 
---- (organization/planning) 
+## 1. Glossary 
 
-## 1. Project Overview
+Trello : Trello is a visual web-based application that allow you to easely communicate with your co-worker in order to set up task and follow the progression of a project.
+
+Database : A database is an organized collection of data stored and accessed electronically
+
+Stakeholders : an employee, investor, customer, etc. who is involved in or buys from a business and has an interest in its success
+
+## 2. Project Overview
+
+### 2.1. Context:
 
 Jacobi Group is world leader in purification solution of air and water, using Activated Carbon, Ion Exchange Resins and Mobile Filtration Units. With its factory in Forges industrial zone since 1956, it has a heritage of being the only French industry manufacturing this unique product and supplying customers like Veolia, Valeo, Honeywell and French Ministry of Defence to name a few. There are over 1000 applications in which activated carbon is used which you can get more information on @ www.jacobi.net
 The factory in Vierzon is the oldest in the Group however one of the most successful thanks to a flexible and can-do approach.
@@ -39,7 +48,10 @@ The Managing Director of Jacobi in France, Mr Saeed is constantly seeking ways t
 Communication – updated, accurate and transparent. The short and sweet wishlist!
 One of the many ways to achieve this is to digitalise the communication of the Company and make it easy to publish the content. Currently, factory news and important announcements are done by email to groups, on MS Teams Groups, Yammer, etc. However, of the 64 factory staff, only around half of the aforementioned have Company email addresses. Displaying paper format information is outdated and in a huge factory of 8 hectares, it is not efficient.
 
-## 2. Glossary  
+### 2.2. Planning:
+
+In order to organize ourselves, we are using Trello to seperate task for the differents members of the group.
+You can find the link for the Trello here : https://trello.com/b/h4SIY75N/2022-2023-project-2-factory-display-project-1-group 
 
 ## 3. Stakeholders
 
@@ -89,6 +101,8 @@ We'll be displaying different type of content on the screen :
 
 The screen will be switching automatically between the different information. We can also set priority to show some content during a long time or just make them appear more often on the screen. 
 
+All the information that can be displayed will be in french.
+
 ## 5. Requirements
 
 ### 5.1. Priority:
@@ -98,7 +112,7 @@ The screen will be switching automatically between the different information. We
 |                  The device can display  information for the users                  |                             |       1      |                  |
 |             The information can be control  remotely on the Vierzon site            |                             |       2      |                  |
 | The Device must be secure  (no risk of it being misused or intrusion in the device) |                             |       1      |                  |
-|          The device have different widget  and display various information          |                             |       3      |                  |
+|          The device can display different information on each screen          |                             |       3      |                  |
 |                  The device is user friendly  and easy to maintain                  |                             |       2      |                  |
 
 ### 5.2. User Interface:
@@ -127,8 +141,12 @@ We'll be storing data in a database that can be access by Vierzon Site in order 
 
 ### 6.4. On-site Installation Manager:
 
-## 7. The technology (hardware we use...)
+## 7. Improvements for V2
 
-## 8. Improvements for V2
+There are multiple things that we can improve in our product :
 
-## 9. Conclusion
+- First, we can make the app support multiple languages like English.
+
+- We can put a screen in a different town like Paris that will display the same information than the one in Vierzon.
+
+## 8. Conclusion
