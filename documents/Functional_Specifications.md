@@ -29,7 +29,7 @@
 - [9. Conclusion:](#10-conclusion)
 </details>
 
----  
+--- (organization/planning) 
 
 ## 1. Project Overview
 
@@ -110,8 +110,12 @@ The users will have access to an app where he can change the content that is dis
 Our product will be easily maintainable and upgradable. If there is any problem with the device, we can send ??? from ALGOSUP to check and fix the problem.
 
 ### 5.4. Security:
+The security of the product is one of the major part of the project. We need to make sure that the device cannot be access and use by a tier users. In addition, we need to ensure that data can't be reach without autorization.
+
 
 ### 5.5. Data Management:
+
+We'll be storing data in a database that can be access by Vierzon Site in order to change what will be displayed or to see old content. 
 
 ## 6. Personas
 
