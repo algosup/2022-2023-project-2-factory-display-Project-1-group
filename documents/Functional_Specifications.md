@@ -8,8 +8,8 @@
   - [2.1. Context:](#21-Context)
   - [2.2. Planning:](#22-Planning)
 - [3. Stakeholders:](#3-stakeholders)
-  - [3.1. The client:](#31-the-client)
-  - [3.2. The engineering team:](#32-the-engineering-team)
+  - [3.1. The client:](#31-The-client)
+  - [3.2. The engineering team:](#32-The-engineering-team)
 - [4. Product Description:](#4-Product-Description)
   - [4.1. Goal of the project:](#41-Goal-of-the-project)
   - [4.2. Current Solution:](#42-Current-Solution)
@@ -114,6 +114,7 @@ All the information that can be displayed will be in french.
 | The Device must be secure  (no risk of it being misused or intrusion in the device) |                             |       1      |                  |
 |          The device can display different information on each screen          |                             |       3      |                  |
 |                  The device is user friendly  and easy to maintain                  |                             |       2      |                  |
+|                  The app must be able to show if a screen is down or perfectly working                  |                             |       2      |                  |
 
 ### 5.2. User Interface:
 
