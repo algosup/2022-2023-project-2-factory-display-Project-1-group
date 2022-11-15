@@ -37,9 +37,9 @@ One of the many ways to achieve this is to digitalise the communication of the C
 
 <!-- Reasons why the problem is worth solving
 Origin of the problem-->
-The problem of the group jacobi is the communication with their employees. They want to improve the communication between the employees and the management. They want to make the communication more efficient and more transparent.
+The problem of the Jacobi Group is the communication with their employees. They want to improve the communication between the employees and the management. They want to make the communication more efficient and more transparent.
 <!-- How the problem affects users and company goals -->
-This problem can affects the employees and the management. The employees can be more informed about the company and the management can be more efficient. it's can also affect the company goals because the employees can be more motivated and the management can be more efficient.
+This problem can affects the employees and the management. The employees can be more informed about the company and the management can be more efficient. It's can also affect the company goals because the employees can be more motivated and the management can be more efficient.
 <!-- How the product relates to team goals, OKRs -->
 The product can help the team to achieve their goals. The team can be more efficient and the communication can be more transparent.
 <!-- How the solution fits into the overall product roadmap and strategy -->
@@ -51,12 +51,12 @@ The solution can fit into the technical strategy because the product can help th
 
 <!-- Product requirements in the form of user stories 
 Technical requirements -->
-The product requirements are : 
+The product requirements are:
 - The employees can be more informed about the company.
 - The management can be more efficient.
 - The employees can be more motivated.
 
-The technical requirements are :
+The technical requirements are:
 - The product must be easy to use.
 - The product must be easy to install.
 - The product must be easy to maintain.
@@ -64,21 +64,19 @@ The technical requirements are :
 ### 1.5 Non-Goals or Out of Scope
 
 <!-- Product and technical requirements that will be disregarded -->
-The product and technical requirements that will be disregarded are :
+The product and technical requirements that will be disregarded are:
 - Nothing for the moment.
-
-
 
 ### 1.6 Future Goals
 
 <!-- Product and technical requirements slated for a future time -->
-The product and technical requirements slated for a future time are :
+The product and technical requirements slated for a future time are:
 - Nothing for the moment.
 
 ### 1.7 Assumptions
 
 <!-- Conditions and resources that need to be present and accessible for the solution to work as described.  -->
-The conditions and resources that need to be present and accessible for the solution to work as described are :
+The conditions and resources that need to be present and accessible for the solution to work as described are:
 - Nothing for the moment.
 
 ## 2. Solutions
@@ -87,9 +85,9 @@ The conditions and resources that need to be present and accessible for the solu
 
 <!-- Current solution description
 Pros and cons of the current solution -->
-The current solution description is :	
-- Use a smart Tv to display the information.
-- Give an access to someone to change the information on the smart Tv.
+The current solution description is:
+- Use a Smart TV to display the information.
+- Give an access to someone to change the information on the Smart TV.
 - The editing of the information must be easy to use.
 
 
@@ -133,24 +131,28 @@ How will it cope with future requirements? -->
 Unit tests
 Integrations tests
 QA -->
-The tests will make sure user requirements are met.
+The tests will make sure user requirements are met. <!-- TO REDO -->
 
 ### 2.4 Monitoring and Alerting Plan
 
 <!-- Logging plan and tools -->
-The logging plan and tools are :
+The logging plan and tools are:
 - Nothing for the moment.
+- 
 <!-- Monitoring plan and tools -->
-The monitoring plan and tools are :
+The monitoring plan and tools are:
 - Nothing for the moment.
+- 
 <!-- Metrics to be used to measure health -->
-The metrics to be used to measure health are :
+The metrics to be used to measure health are:
 - Nothing for the moment.
+- 
 <!-- How to ensure observability -->
-The observability is :
+The observability is:
 - Nothing for the moment.
+- 
 <!-- Alerting plan and tools -->
-The alerting plan and tools are :
+The alerting plan and tools are:
 - Nothing for the moment.
 
 
@@ -180,41 +182,41 @@ Migration plan to next best alternative in case the proposed solution falls thro
 ### 3.1 Impact on other teams
 
 <!-- How will this increase the work of other people? -->
-It will increase the work of other people , because the product will give information to the employeese and make them feel more informed about the company.
+It will increase the work of other people, because the product will give information to the employees and make them feel more informed about the company.
 
 ### 3.2 Third-party services and platforms considerations
 
 <!-- Is it really worth it compared to building the service in-house? -->
-It's really worth it compared to building the service in-house because the product will give information to the employeese and make them feel more informed about the company.
+It's really worth it compared to building the service in-house because the product will give information to the employees and make them feel more informed about the company.
 <!-- What are some of the security and privacy concerns associated with the services/platforms? -->
-The security and privacy concerns associated with the services/platforms are :
+The security and privacy concerns associated with the services/platforms are:
 - Nothing for the moment.
 <!-- How much will it cost? -->
-It will cost the price of the Smart Tv.(Around 500 euros , depending on the size of the Smart Tv).
+It will cost the price of the Smart TV.(Around 500.00€, depending on the size of the Smart TV).
 <!-- How will it scale? -->
-It will scale with the number of Smart Tv.
+It will scale with the number of Smart TV.
 <!-- What possible future issues are anticipated? -->
-The possible future issues are :
--Version which can change on the Smart Tv.
--Problem with the connection between the Smart Tv and the internet.
+The possible future issues are:
+- Version which can change on the Smart TV.
+- Problem with the connection between the Smart TV and the Internet.
 
 ### 3.3 Cost analysis
 
 <!-- What is the cost to run the solution per day?
 What does it cost to roll it out? -->
-The cost to run the solution per day is :
-- only the price of the electricity use by the Tv.
-- And the maintenance of the Tv if it's necessary.
+The cost to run the solution per day is:
+- Only the price of the electricity use by the TV.
+- And the maintenance of the TV if it's necessary.
 
-The cost to roll it out is :
-- only the price of the Smart Tv.
+The cost to roll it out is:
+- only the price of the Smart TV.
 
 ### 3.4 Security considerations
 
 <!-- What are the potential threats?
 How will they be mitigated?
 How will the solution affect the security of other components, services, and systems? -->
-The potential threats are :
+The potential threats are:
 - Nothing for the moment.
 
 ### 3.5. Privacy considerations
@@ -224,7 +226,7 @@ How does the solution protect users’ data privacy?
 What are some of the tradeoffs between personalization and privacy in the solution? -->
 The solution follow local laws and legal policies on data privacy.
 The solution protect users’ data privacy.
-The tradeoffs between personalization and privacy in the solution are :
+The tradeoffs between personalization and privacy in the solution are:
 - Nothing for the moment.
 
 ### 3.6 Regional considerations
@@ -234,14 +236,14 @@ What are the latency issues?
 What are the legal concerns?
 What is the state of service availability?
 How will data transfer across regions be achieved and what are the concerns here?  -->
-The impact of internationalization and localization on the solution is :
+The impact of internationalization and localization on the solution is:
 - Nothing for the moment.
 
 ### 3.7 Accessibility considerations
 
 <!-- How accessible is the solution?
 What tools will you use to evaluate its accessibility? -->
-To see if the solution is accessible , we will try to use it with a person different from us.
+To see if the solution is accessible, we will try to use it with a different person from us.
 
 ### 3.8. Operational considerations
 
@@ -250,14 +252,14 @@ How will data be recovered in case of failure?
 How will the solution recover in case of a failure?
 How will operational costs be kept low while delivering increased value to the users?  -->
 The solution doesn't cause adverse aftereffects.
-The data will be store in a database , that can be useful with someone miss an information.
+The data will be store in a database, that can be useful with someone miss an information.
 
 ### 3.9 Risks
 
 <!-- What risks are being undertaken with this solution?
 Are there risks that once taken can’t be walked back?
 What is the cost-benefit analysis of taking these risks? -->
-The risks are :
+The risks are:
 - Nothing for the moment.
 - 
 ### 3.10. Support considerations
@@ -279,14 +281,14 @@ The knowledge transfer will be done by the product owner.
 Performance impact
 Cost impact
 Impact on other components and services -->
-The security impact is :
+The security impact is:
 - Nothing for the moment.
 
 ### 4.2. Metrics
 
 <!-- List of metrics to capture
 Tools to capture and measure metrics -->
-The metrics to capture are :
+The metrics to capture are:
 - Nothing for the moment.
 
 ## 5. Work
@@ -327,7 +329,7 @@ Metrics to indicate the passing of the milestone -->
 ### 5.4. Future work
 
 <!-- List of tasks that will be completed in the future -->
-The tasks that will be completed in the future are :
+The tasks that will be completed in the future are:
 - Nothing for the moment.
 
 ## 6. Deliberation
@@ -335,13 +337,17 @@ The tasks that will be completed in the future are :
 ### 6.1 Discussion
 
 <!-- Elements of the solution that members of the team do not agree on and need to be debated further to reach a consensus. -->
-The elements of the solution that members of the team do not agree on and need to be debated further to reach a consensus are :
-- Nothing for the moment.
+The elements of the solution that members of the team do not agree on and need to be debated further to reach a consensus are:
+- Raspberry Pi or Smart TV.
+- The design of the product.
+- Application or application + website.
+- The information to display on the product.
+- MySQL or Firebase.
 
 ### 6.2 Open Questions
 
 <!-- Questions about things you do not know the answers to or are unsure that you pose to the team and stakeholders for their input. These may include aspects of the problem you don’t know how to resolve yet.  -->
-The questions about things you do not know the answers to or are unsure that you pose to the team and stakeholders for their input are :
+The questions about things you do not know the answers to or are unsure that you pose to the team and stakeholders for their input are:
 - Nothing for the moment.
 
 ## 7. End Matter
@@ -349,17 +355,17 @@ The questions about things you do not know the answers to or are unsure that you
 ### 7.1 Related Work
 
 <!-- Any work external to the proposed solution that is similar to it in some way and is worked on by different teams. It’s important to know this to enable knowledge sharing between such teams when faced with related problems. -->
-The work external to the proposed solution that is similar to it in some way and is worked on by different teams are :
+The work external to the proposed solution that is similar to it in some way and is worked on by different teams are:
 - Nothing for the moment.
 
 ### 7.2 References
 
 <!-- Links to documents and resources that you used when coming up with your design and wish to credit. -->
-The documents and resources that we used when coming up with our design and wish to credit are :
+The documents and resources that we used when coming up with our design and wish to credit are:
 - Nothing for the moment.
 
 ### 7.3 Acknowledgments
 
 <!-- Credit people who have contributed to the design that you wish to recognize -->
-The people who have contributed to the design that we wish to recognize are :
+The people who have contributed to the design that we wish to recognize are:
 - Nothing for the moment.
