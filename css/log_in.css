@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(26, 26, 26);
+}
+
+#navbar {
+    text-align: center;
+    font-size: 5em;
+    color: rgb(237, 112, 45);
+}
+
+#jacobi {
+    width: 17%;
+}
