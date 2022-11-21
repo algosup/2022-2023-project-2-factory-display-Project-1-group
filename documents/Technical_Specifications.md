@@ -52,11 +52,13 @@ The solution can fit into the technical strategy because the product can help th
 <!-- Product requirements in the form of user stories 
 Technical requirements -->
 The product requirements are:
+
 - The employees can be more informed about the company.
 - The management can be more efficient.
 - The employees can be more motivated.
 
 The technical requirements are:
+
 - The product must be easy to use.
 - The product must be easy to install.
 - The product must be easy to maintain.
@@ -65,18 +67,21 @@ The technical requirements are:
 
 <!-- Product and technical requirements that will be disregarded -->
 The product and technical requirements that will be disregarded are:
+
 - Nothing for the moment.
 
 ### 1.6 Future Goals
 
 <!-- Product and technical requirements slated for a future time -->
 The product and technical requirements slated for a future time are:
+
 - Nothing for the moment.
 
 ### 1.7 Assumptions
 
 <!-- Conditions and resources that need to be present and accessible for the solution to work as described.  -->
 The conditions and resources that need to be present and accessible for the solution to work as described are:
+
 - Nothing for the moment.
 
 ## 2. Solutions
@@ -140,24 +145,28 @@ The tests will make sure user requirements are met. <!-- TO REDO -->
 
 <!-- Logging plan and tools -->
 The logging plan and tools are:
-- Nothing for the moment.
-- 
-<!-- Monitoring plan and tools -->
-The monitoring plan and tools are:
-- Nothing for the moment.
-- 
-<!-- Metrics to be used to measure health -->
-The metrics to be used to measure health are:
-- Nothing for the moment.
-- 
-<!-- How to ensure observability -->
-The observability is:
-- Nothing for the moment.
-- 
-<!-- Alerting plan and tools -->
-The alerting plan and tools are:
+
 - Nothing for the moment.
 
+<!-- Monitoring plan and tools -->
+The monitoring plan and tools are:
+
+- Nothing for the moment.
+
+<!-- Metrics to be used to measure health -->
+The metrics to be used to measure health are:
+
+- Nothing for the moment.
+
+<!-- How to ensure observability -->
+The observability is:
+
+- Nothing for the moment.
+
+<!-- Alerting plan and tools -->
+The alerting plan and tools are:
+
+- Nothing for the moment.
 
 ### 2.5. Release / Roll-out and Deployment Plan
 
@@ -196,7 +205,7 @@ It's really worth it compared to building the service in-house because the produ
 <!-- What are some of the security and privacy concerns associated with the services/platforms? -->
 The security and privacy concerns associated with the services/platforms are:
 
-- Authentication and authorization.
+- Authentification and authorization.
 - All the data will be stored on the database.
 
 <!-- How much will it cost? -->
@@ -220,11 +229,11 @@ What does it cost to roll it out? -->
 The cost to run the solution per day is:
 
 - Only the price of the electricity use by the TV.
-- And the maintenance of the TV if it's necessary.
+- The maintenance of the TV if it's necessary.
 
 The cost to roll it out :
 
-- only the price of the Smart TV.
+  Only the price of the Smart TV.
 
 ### 3.4 Security considerations
 
@@ -233,7 +242,7 @@ How will they be mitigated?
 How will the solution affect the security of other components, services, and systems? -->
 The potential threats are:
 
-- People who can acces to the tv and change the displayed information.
+- People who can acces to the TV and change the displayed information.
 - People who can acces to the database and change the information.
 - people who can acces to the database and delete the information.
 - People who can acces to the database and access to personal information.
@@ -248,7 +257,7 @@ The solution protect users’ data privacy.
 The tradeoffs between personalization and privacy in the solution are:
 
 - The personalization is the information displayed on the Smart TV.
-- The privacy is the personal information of the compagnie.
+- The privacy is the personal information of the company.
 
 ### 3.6 Regional considerations
 
@@ -327,29 +336,10 @@ The metrics to capture are:
 Resources needed to finish each task
 Time estimates for how long each task needs to be completed -->
 <!-- Table of task -->
-For the timeline, we use Trello to manage the tasks.
-Refer to the Trello board for more details.
+For the work estimation, timelines and milestones, we use Trello to manage the tasks.
+Refer to the [Trello](https://trello.com/b/h4SIY75N/2022-2023-project-2-factory-display-project-1-group) board for more details.
 
-### 5.2. Prioritization
-
-<!-- Categorization of tasks by urgency and impact -->
-<!-- Table of task -->
-| Task | Urgency | Impact |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-
-### 5.3 Milestones
-
-<!-- Dated checkpoints when significant chunks of work will have been completed
-Metrics to indicate the passing of the milestone -->
-<!-- Table of task -->*
-| Task | Date | Metrics |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-
-### 5.4. Future work
+### 5.2. Future work
 
 <!-- List of tasks that will be completed in the future -->
 The tasks that will be completed in the future are:
@@ -364,7 +354,7 @@ The tasks that will be completed in the future are:
 <!-- Elements of the solution that members of the team do not agree on and need to be debated further to reach a consensus. -->
 The elements of the solution that members of the team do not agree on and need to be debated further to reach a consensus are:
 
-- Raspberry Pi or Smart TV.
+- Raspberry PI or Smart TV.
 - The design of the product.
 - Application or application + website.
 - The information to display on the product.
@@ -385,8 +375,8 @@ The questions about things you do not know the answers to or are unsure that you
 <!-- Any work external to the proposed solution that is similar to it in some way and is worked on by different teams. It’s important to know this to enable knowledge sharing between such teams when faced with related problems. -->
 The work external to the proposed solution that is similar to it in some way and is worked on by different teams are:
 
-- The Smart TV of the compagnie.
-- The website of the compagnie.
+- The Smart TV of the company.
+- The website of the company.
 
 ### 7.2 References
 
