@@ -86,9 +86,12 @@ The conditions and resources that need to be present and accessible for the solu
 <!-- Current solution description
 Pros and cons of the current solution -->
 The current solution description is:
+
 - Use a Smart TV to display the information.
 - Give an access to someone to change the information on the Smart TV.
 - The editing of the information must be easy to use.
+
+We are going to use a Smart TV to display the information. The Smart TV is a good solution because it's easy to use and it's easy to install. It's also a good solution because it's easy to maintain. We'll have an application to be able to display information on the Smart TV. We will also have a website for administrators to be able to change the information on the Smart TV. The editing of the information must be easy to use because the administrators are not technical people.
 
 
 ### 2.2. Suggested or Proposed Solution / Design
@@ -324,17 +327,8 @@ The metrics to capture are:
 Resources needed to finish each task
 Time estimates for how long each task needs to be completed -->
 <!-- Table of task -->
-| Task | Resources | Time |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
+For the timeline, we use Trello to manage the tasks.
+Refer to the Trello board for more details.
 
 ### 5.2. Prioritization
 
@@ -398,8 +392,6 @@ The work external to the proposed solution that is similar to it in some way and
 
 <!-- Links to documents and resources that you used when coming up with your design and wish to credit. -->
 The documents and resources that we used when coming up with our design and wish to credit are:
-
-
 
 ### 7.3 Acknowledgments
 
