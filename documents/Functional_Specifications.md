@@ -42,9 +42,9 @@ Stakeholders : an employee, investor, customer, etc. who is involved in or buys 
 
 ### 2.1. Context:
 
-Jacobi Group is world leader in purification solution of air and water, using Activated Carbon, Ion Exchange Resins and Mobile Filtration Units. With its factory in Forges industrial zone since 1956, it has a heritage of being the only French industry manufacturing this unique product and supplying customers like Veolia, Valeo, Honeywell and French Ministry of Defence to name a few. There are over 1000 applications in which activated carbon is used which you can get more information on @ www.jacobi.net
+JACOBI GROUP is the world leader in purification solution of air and water, using Activated Carbon, Ion Exchange Resins and Mobile Filtration Units. With its factory in Forges industrial zone since 1956, it has a heritage of being the only French industry manufacturing this unique product and supplying customers like Veolia, Valeo, Honeywell and French Ministry of Defence to name a few. There are over 1000 applications in which activated carbon is used which you can get more information on @ www.jacobi.net
 The factory in Vierzon is the oldest in the Group however one of the most successful thanks to a flexible and can-do approach.
-The Managing Director of Jacobi in France, Mr Saeed is constantly seeking ways to improve his management. One of his favourite subjects, which is also the one for which he receives most feedback, is communication.
+The Managing Director of JACOBI in France, Mr Saeed is constantly seeking ways to improve his management. One of his favourite subjects, which is also the one for which he receives most feedback, is communication.
 Communication – updated, accurate and transparent. The short and sweet wishlist!
 One of the many ways to achieve this is to digitalise the communication of the Company and make it easy to publish the content. Currently, factory news and important announcements are done by email to groups, on MS Teams Groups, Yammer, etc. However, of the 64 factory staff, only around half of the aforementioned have Company email addresses. Displaying paper format information is outdated and in a huge factory of 8 hectares, it is not efficient.
 
@@ -66,9 +66,9 @@ The first stakeholders type is the engineering team who will directly work on th
 
 ### 3.2. The client:
 
-The second stakeholders type is the client which is the Jacobi Group.
+The second stakeholders type is the client which is the JACOBI GROUP.
 We'll be working in cooperation with them during all the project with the help of Franck Jeannin and all the staff from ALGOSUP.
-The Jacobi team who works on this project is composed of:
+The JACOBI team who works on this project is composed of:
 
 * Usman Saeed as the Project owner
 * Karen Blanque (HR Assistant), Pierre Page (HR Manager), Nicolas Yvelin (Factory Manager) as the Content creator
@@ -78,7 +78,7 @@ The Jacobi team who works on this project is composed of:
 
 ### 4.1. Goal of the project: 
 
-The goal of the project is to improve the communication between the main Jacobi factory with the others.The project is going to simplify and improve the management of the managing director Mr Saeed which will also lead to a better growing mindset for the company. 
+The goal of the project is to improve the communication between the main JACOBI factory with the others.The project is going to simplify and improve the management of the managing director Mr Saeed which will also lead to a better growing mindset for the company. 
 
 ### 4.2. Current Solution: 
 
