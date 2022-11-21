@@ -21,9 +21,12 @@ Version : 1.0
 
 ### 1.1. Overview, Problem Description, Summary, or Abstract
 
-Jacobi Group is world leader in purification solution of air and water, using Activated Carbon, Ion Exchange Resins and Mobile Filtration Units. With its factory in Forges industrial zone since 1956, it has a heritage of being the only French industry manufacturing this unique product and supplying customers like Veolia, Valeo, Honeywell and French Ministry of Defence to name a few. There are over 1000 applications in which activated carbon is used which you can get more information on @ www.jacobi.net
+JACOBI's
+ Group is world leader in purification solution of air and water, using Activated Carbon, Ion Exchange Resins and Mobile Filtration Units. With its factory in Forges industrial zone since 1956, it has a heritage of being the only French industry manufacturing this unique product and supplying customers like Veolia, Valeo, Honeywell and French Ministry of Defence to name a few. There are over 1000 applications in which activated carbon is used which you can get more information on @ www.JACOBI's
+.net
 The factory in Vierzon is the oldest in the Group however one of the most successful thanks to a flexible and can-do approach.
-The Managing Director of Jacobi in France, Mr Saeed is constantly seeking ways to improve his management. One of his favourite subjects, which is also the one for which he receives most feedback, is communication.
+The Managing Director of JACOBI's
+ in France, Mr Saeed is constantly seeking ways to improve his management. One of his favourite subjects, which is also the one for which he receives most feedback, is communication.
 Communication – updated, accurate and transparent. The short and sweet wishlist!
 One of the many ways to achieve this is to digitalise the communication of the Company and make it easy to publish the content. Currently, factory news and important announcements are done by email to groups, on MS Teams Groups, Yammer, etc. However, of the 64 factory staff, only around half of the aforementioned have Company email addresses. Displaying paper format information is outdated and in a huge factory of 8 hectares, it is not efficient.
 
@@ -37,7 +40,8 @@ One of the many ways to achieve this is to digitalise the communication of the C
 
 <!-- Reasons why the problem is worth solving
 Origin of the problem-->
-The problem of the Jacobi Group is the communication with their employees. They want to improve the communication between the employees and the management. They want to make the communication more efficient and more transparent.
+The problem of the JACOBI's
+'s Group is the communication with their employees. They want to improve the communication between the employees and the management. They want to make the communication more efficient and more transparent.
 <!-- How the problem affects users and company goals -->
 This problem can affects the employees and the management. The employees can be more informed about the company and the management can be more efficient. It's can also affect the company goals because the employees can be more motivated and the management can be more efficient.
 <!-- How the product relates to team goals, OKRs -->
@@ -52,11 +56,13 @@ The solution can fit into the technical strategy because the product can help th
 <!-- Product requirements in the form of user stories 
 Technical requirements -->
 The product requirements are:
+
 - The employees can be more informed about the company.
 - The management can be more efficient.
 - The employees can be more motivated.
 
 The technical requirements are:
+
 - The product must be easy to use.
 - The product must be easy to install.
 - The product must be easy to maintain.
@@ -65,18 +71,21 @@ The technical requirements are:
 
 <!-- Product and technical requirements that will be disregarded -->
 The product and technical requirements that will be disregarded are:
+
 - Nothing for the moment.
 
 ### 1.6 Future Goals
 
 <!-- Product and technical requirements slated for a future time -->
 The product and technical requirements slated for a future time are:
+
 - Nothing for the moment.
 
 ### 1.7 Assumptions
 
 <!-- Conditions and resources that need to be present and accessible for the solution to work as described.  -->
 The conditions and resources that need to be present and accessible for the solution to work as described are:
+
 - Nothing for the moment.
 
 ## 2. Solutions
@@ -85,10 +94,7 @@ The conditions and resources that need to be present and accessible for the solu
 
 <!-- Current solution description
 Pros and cons of the current solution -->
-The current solution description is:
-- Use a Smart TV to display the information.
-- Give an access to someone to change the information on the Smart TV.
-- The editing of the information must be easy to use.
+We are going to use a Smart TV with Google TV application to display the information. The Smart TV is a good solution because it's easy to use and it's easy to install. It's also a good solution because it's easy to maintain. We'll have an application to be able to display information on the Smart TV. We will also have a website for administrators to be able to change the information on the Smart TV. The editing of the information must be easy to use because the administrators are not technical people.
 
 
 ### 2.2. Suggested or Proposed Solution / Design
@@ -137,24 +143,28 @@ The tests will make sure user requirements are met. <!-- TO REDO -->
 
 <!-- Logging plan and tools -->
 The logging plan and tools are:
-- Nothing for the moment.
-- 
-<!-- Monitoring plan and tools -->
-The monitoring plan and tools are:
-- Nothing for the moment.
-- 
-<!-- Metrics to be used to measure health -->
-The metrics to be used to measure health are:
-- Nothing for the moment.
-- 
-<!-- How to ensure observability -->
-The observability is:
-- Nothing for the moment.
-- 
-<!-- Alerting plan and tools -->
-The alerting plan and tools are:
+
 - Nothing for the moment.
 
+<!-- Monitoring plan and tools -->
+The monitoring plan and tools are:
+
+- Nothing for the moment.
+
+<!-- Metrics to be used to measure health -->
+The metrics to be used to measure health are:
+
+- Nothing for the moment.
+
+<!-- How to ensure observability -->
+The observability is:
+
+- Nothing for the moment.
+
+<!-- Alerting plan and tools -->
+The alerting plan and tools are:
+
+- Nothing for the moment.
 
 ### 2.5. Release / Roll-out and Deployment Plan
 
@@ -193,7 +203,7 @@ It's really worth it compared to building the service in-house because the produ
 <!-- What are some of the security and privacy concerns associated with the services/platforms? -->
 The security and privacy concerns associated with the services/platforms are:
 
-- Authentication and authorization.
+- Authentification and authorization.
 - All the data will be stored on the database.
 
 <!-- How much will it cost? -->
@@ -217,11 +227,11 @@ What does it cost to roll it out? -->
 The cost to run the solution per day is:
 
 - Only the price of the electricity use by the TV.
-- And the maintenance of the TV if it's necessary.
+- The maintenance of the TV if it's necessary.
 
 The cost to roll it out :
 
-- only the price of the Smart TV.
+  Only the price of the Smart TV.
 
 ### 3.4 Security considerations
 
@@ -230,7 +240,7 @@ How will they be mitigated?
 How will the solution affect the security of other components, services, and systems? -->
 The potential threats are:
 
-- People who can acces to the tv and change the displayed information.
+- People who can acces to the TV and change the displayed information.
 - People who can acces to the database and change the information.
 - people who can acces to the database and delete the information.
 - People who can acces to the database and access to personal information.
@@ -245,7 +255,7 @@ The solution protect users’ data privacy.
 The tradeoffs between personalization and privacy in the solution are:
 
 - The personalization is the information displayed on the Smart TV.
-- The privacy is the personal information of the compagnie.
+- The privacy is the personal information of the company.
 
 ### 3.6 Regional considerations
 
@@ -324,38 +334,10 @@ The metrics to capture are:
 Resources needed to finish each task
 Time estimates for how long each task needs to be completed -->
 <!-- Table of task -->
-| Task | Resources | Time |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
+For the work estimation, timelines and milestones, we use Trello to manage the tasks.
+Refer to the [Trello](https://trello.com/b/h4SIY75N/2022-2023-project-2-factory-display-project-1-group) board for more details.
 
-### 5.2. Prioritization
-
-<!-- Categorization of tasks by urgency and impact -->
-<!-- Table of task -->
-| Task | Urgency | Impact |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-
-### 5.3 Milestones
-
-<!-- Dated checkpoints when significant chunks of work will have been completed
-Metrics to indicate the passing of the milestone -->
-<!-- Table of task -->*
-| Task | Date | Metrics |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
-
-### 5.4. Future work
+### 5.2. Future work
 
 <!-- List of tasks that will be completed in the future -->
 The tasks that will be completed in the future are:
@@ -370,7 +352,7 @@ The tasks that will be completed in the future are:
 <!-- Elements of the solution that members of the team do not agree on and need to be debated further to reach a consensus. -->
 The elements of the solution that members of the team do not agree on and need to be debated further to reach a consensus are:
 
-- Raspberry Pi or Smart TV.
+- Raspberry PI or Smart TV.
 - The design of the product.
 - Application or application + website.
 - The information to display on the product.
@@ -391,15 +373,13 @@ The questions about things you do not know the answers to or are unsure that you
 <!-- Any work external to the proposed solution that is similar to it in some way and is worked on by different teams. It’s important to know this to enable knowledge sharing between such teams when faced with related problems. -->
 The work external to the proposed solution that is similar to it in some way and is worked on by different teams are:
 
-- The Smart TV of the compagnie.
-- The website of the compagnie.
+- The Smart TV of the company.
+- The website of the company.
 
 ### 7.2 References
 
 <!-- Links to documents and resources that you used when coming up with your design and wish to credit. -->
 The documents and resources that we used when coming up with our design and wish to credit are:
-
-
 
 ### 7.3 Acknowledgments
 
