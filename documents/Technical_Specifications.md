@@ -21,9 +21,12 @@ Version : 1.0
 
 ### 1.1. Overview, Problem Description, Summary, or Abstract
 
-Jacobi Group is world leader in purification solution of air and water, using Activated Carbon, Ion Exchange Resins and Mobile Filtration Units. With its factory in Forges industrial zone since 1956, it has a heritage of being the only French industry manufacturing this unique product and supplying customers like Veolia, Valeo, Honeywell and French Ministry of Defence to name a few. There are over 1000 applications in which activated carbon is used which you can get more information on @ www.jacobi.net
+JACOBI's
+ Group is world leader in purification solution of air and water, using Activated Carbon, Ion Exchange Resins and Mobile Filtration Units. With its factory in Forges industrial zone since 1956, it has a heritage of being the only French industry manufacturing this unique product and supplying customers like Veolia, Valeo, Honeywell and French Ministry of Defence to name a few. There are over 1000 applications in which activated carbon is used which you can get more information on @ www.JACOBI's
+.net
 The factory in Vierzon is the oldest in the Group however one of the most successful thanks to a flexible and can-do approach.
-The Managing Director of Jacobi in France, Mr Saeed is constantly seeking ways to improve his management. One of his favourite subjects, which is also the one for which he receives most feedback, is communication.
+The Managing Director of JACOBI's
+ in France, Mr Saeed is constantly seeking ways to improve his management. One of his favourite subjects, which is also the one for which he receives most feedback, is communication.
 Communication – updated, accurate and transparent. The short and sweet wishlist!
 One of the many ways to achieve this is to digitalise the communication of the Company and make it easy to publish the content. Currently, factory news and important announcements are done by email to groups, on MS Teams Groups, Yammer, etc. However, of the 64 factory staff, only around half of the aforementioned have Company email addresses. Displaying paper format information is outdated and in a huge factory of 8 hectares, it is not efficient.
 
@@ -37,7 +40,8 @@ One of the many ways to achieve this is to digitalise the communication of the C
 
 <!-- Reasons why the problem is worth solving
 Origin of the problem-->
-The problem of the Jacobi Group is the communication with their employees. They want to improve the communication between the employees and the management. They want to make the communication more efficient and more transparent.
+The problem of the JACOBI's
+'s Group is the communication with their employees. They want to improve the communication between the employees and the management. They want to make the communication more efficient and more transparent.
 <!-- How the problem affects users and company goals -->
 This problem can affects the employees and the management. The employees can be more informed about the company and the management can be more efficient. It's can also affect the company goals because the employees can be more motivated and the management can be more efficient.
 <!-- How the product relates to team goals, OKRs -->
@@ -90,12 +94,7 @@ The conditions and resources that need to be present and accessible for the solu
 
 <!-- Current solution description
 Pros and cons of the current solution -->
-The current solution description is:
-- Use a Smart TV to display the information.
-- Give an access to someone to change the information on the Smart TV.
-- The editing of the information must be easy to use.
-
-We are going to use a Smart TV to display the information. The Smart TV is a good solution because it's easy to use and it's easy to install. It's also a good solution because it's easy to maintain. We'll have an application to be able to display information on the Smart TV. We will also have a website for administrators to be able to change the information on the Smart TV. The editing of the information must be easy to use because the administrators are not technical people.
+We are going to use a Smart TV with Google TV application to display the information. The Smart TV is a good solution because it's easy to use and it's easy to install. It's also a good solution because it's easy to maintain. We'll have an application to be able to display information on the Smart TV. We will also have a website for administrators to be able to change the information on the Smart TV. The editing of the information must be easy to use because the administrators are not technical people.
 
 
 ### 2.2. Suggested or Proposed Solution / Design
