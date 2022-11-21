@@ -91,7 +91,6 @@ The conditions and resources that need to be present and accessible for the solu
 <!-- Current solution description
 Pros and cons of the current solution -->
 The current solution description is:
-
 - Use a Smart TV to display the information.
 - Give an access to someone to change the information on the Smart TV.
 - The editing of the information must be easy to use.
