@@ -168,6 +168,8 @@ Plan outlining how to communicate changes to the users, for example, with releas
 <!-- Detailed and specific liabilities
 Plan to reduce liabilities
 Plan describing how to prevent other components, services, and systems from being affected -->
+For employees or the staff who missed the information, the information will be available on the database.
+We will every information on the database , so it'll be easy to rollback or just show the information missed to the concerned people.
 
 ### 2.7 Alternate Solutions / Designs
 
@@ -190,13 +192,21 @@ It will increase the work of other people, because the product will give informa
 It's really worth it compared to building the service in-house because the product will give information to the employees and make them feel more informed about the company.
 <!-- What are some of the security and privacy concerns associated with the services/platforms? -->
 The security and privacy concerns associated with the services/platforms are:
-- Nothing for the moment.
+
+- Authentication and authorization.
+- All the data will be stored on the database.
+
 <!-- How much will it cost? -->
+How much it will cost :
+
 It will cost the price of the Smart TV.(Around 500.00€, depending on the size of the Smart TV).
 <!-- How will it scale? -->
+How it will scale :
+
 It will scale with the number of Smart TV.
 <!-- What possible future issues are anticipated? -->
 The possible future issues are:
+
 - Version which can change on the Smart TV.
 - Problem with the connection between the Smart TV and the Internet.
 
@@ -205,10 +215,12 @@ The possible future issues are:
 <!-- What is the cost to run the solution per day?
 What does it cost to roll it out? -->
 The cost to run the solution per day is:
+
 - Only the price of the electricity use by the TV.
 - And the maintenance of the TV if it's necessary.
 
-The cost to roll it out is:
+The cost to roll it out :
+
 - only the price of the Smart TV.
 
 ### 3.4 Security considerations
@@ -217,7 +229,11 @@ The cost to roll it out is:
 How will they be mitigated?
 How will the solution affect the security of other components, services, and systems? -->
 The potential threats are:
-- Nothing for the moment.
+
+- People who can acces to the tv and change the displayed information.
+- People who can acces to the database and change the information.
+- people who can acces to the database and delete the information.
+- People who can acces to the database and access to personal information.
 
 ### 3.5. Privacy considerations
 
@@ -227,7 +243,9 @@ What are some of the tradeoffs between personalization and privacy in the soluti
 The solution follow local laws and legal policies on data privacy.
 The solution protect users’ data privacy.
 The tradeoffs between personalization and privacy in the solution are:
-- Nothing for the moment.
+
+- The personalization is the information displayed on the Smart TV.
+- The privacy is the personal information of the compagnie.
 
 ### 3.6 Regional considerations
 
@@ -237,7 +255,8 @@ What are the legal concerns?
 What is the state of service availability?
 How will data transfer across regions be achieved and what are the concerns here?  -->
 The impact of internationalization and localization on the solution is:
-- Nothing for the moment.
+
+- The information displayed on the Smart TV will be in the language of the country , so here it'll be in french.
 
 ### 3.7 Accessibility considerations
 
@@ -260,8 +279,10 @@ The data will be store in a database, that can be useful with someone miss an in
 Are there risks that once taken can’t be walked back?
 What is the cost-benefit analysis of taking these risks? -->
 The risks are:
-- Nothing for the moment.
-- 
+
+- Be out of date.
+- Not be able to show everything that we want to do for the v1.
+
 ### 3.10. Support considerations
 
 <!-- How will the support team get across information to users about common issues they may face while interacting with the changes?
@@ -282,14 +303,18 @@ Performance impact
 Cost impact
 Impact on other components and services -->
 The security impact is:
-- Nothing for the moment.
+
+- The security of the database.
+- The security of the Smart TV.
 
 ### 4.2. Metrics
 
 <!-- List of metrics to capture
 Tools to capture and measure metrics -->
 The metrics to capture are:
-- Nothing for the moment.
+
+- The number of people who use the Smart TV.
+- The number of people who use a computer to change or add information.
 
 ## 5. Work
 
@@ -324,13 +349,19 @@ Time estimates for how long each task needs to be completed -->
 
 <!-- Dated checkpoints when significant chunks of work will have been completed
 Metrics to indicate the passing of the milestone -->
-
+<!-- Table of task -->*
+| Task | Date | Metrics |
+| --- | --- | --- |
+| --- | --- | --- |
+| --- | --- | --- |
 
 ### 5.4. Future work
 
 <!-- List of tasks that will be completed in the future -->
 The tasks that will be completed in the future are:
-- Nothing for the moment.
+
+- Add more information on the Smart TV.
+- Add the Authentification and authorization.
 
 ## 6. Deliberation
 
@@ -338,6 +369,7 @@ The tasks that will be completed in the future are:
 
 <!-- Elements of the solution that members of the team do not agree on and need to be debated further to reach a consensus. -->
 The elements of the solution that members of the team do not agree on and need to be debated further to reach a consensus are:
+
 - Raspberry Pi or Smart TV.
 - The design of the product.
 - Application or application + website.
@@ -348,7 +380,9 @@ The elements of the solution that members of the team do not agree on and need t
 
 <!-- Questions about things you do not know the answers to or are unsure that you pose to the team and stakeholders for their input. These may include aspects of the problem you don’t know how to resolve yet.  -->
 The questions about things you do not know the answers to or are unsure that you pose to the team and stakeholders for their input are:
-- Nothing for the moment.
+
+- How to make the Smart TV display the information.
+- How to make the Smart TV display the information in a good way.
 
 ## 7. End Matter
 
@@ -356,16 +390,18 @@ The questions about things you do not know the answers to or are unsure that you
 
 <!-- Any work external to the proposed solution that is similar to it in some way and is worked on by different teams. It’s important to know this to enable knowledge sharing between such teams when faced with related problems. -->
 The work external to the proposed solution that is similar to it in some way and is worked on by different teams are:
-- Nothing for the moment.
+
+- The Smart TV of the compagnie.
+- The website of the compagnie.
 
 ### 7.2 References
 
 <!-- Links to documents and resources that you used when coming up with your design and wish to credit. -->
 The documents and resources that we used when coming up with our design and wish to credit are:
-- Nothing for the moment.
+
+
 
 ### 7.3 Acknowledgments
 
 <!-- Credit people who have contributed to the design that you wish to recognize -->
 The people who have contributed to the design that we wish to recognize are:
-- Nothing for the moment.
