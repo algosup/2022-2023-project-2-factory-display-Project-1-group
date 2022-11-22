@@ -63,8 +63,8 @@ btn.addEventListener('click',() =>{
 // Show input value on the page
 function updatevalue(){
     outputText.textContent = `${inputText.value}`; 
-   indexDisplay.append(outputText);
-    //setting.append(outputText);
+   //indexDisplay.append(outputText);
+    setting.append(outputText);
 } 
 
 
