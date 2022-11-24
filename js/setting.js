@@ -1,4 +1,4 @@
-// Setting content
+// Setting content in setting page
 const setting = document.querySelector('#setting');
 setting.innerHTML ='';
 
@@ -48,13 +48,16 @@ function updatevalue(){
 } 
 */
 // Index display
+
 //const indexDisplay = document.querySelector('#index-display');
 //indexDisplay.innerHTML = '';
+
 
 btn.addEventListener('click',() =>{
     let trig = true;
     if(trig = true){
         updatevalue();
+      
         trig = false;
     }
     
@@ -62,10 +65,15 @@ btn.addEventListener('click',() =>{
 
 // Show input value on the page
 function updatevalue(){
+   
     outputText.textContent = `${inputText.value}`; 
    //indexDisplay.append(outputText);
     setting.append(outputText);
 } 
+
+
+
+
 
 
 
