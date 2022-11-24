@@ -1,0 +1,7 @@
+{
+  "name": "Project_factory_jacobi_app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
