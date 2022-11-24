@@ -3,31 +3,37 @@
 <details> 
 <summary style="text-decoration: underline; font-size:150%">Table of contents:</summary>
 
-- [1. Glossary:](#1-glossary)
-- [2. Project Overview](#2-project-Overview)
-  - [2.1. Context:](#21-Context)
-  - [2.2. Planning:](#22-Planning)
-- [3. Stakeholders:](#3-stakeholders)
-  - [3.1. The client:](#31-The-client)
-  - [3.2. The engineering team:](#32-The-engineering-team)
-- [4. Product Description:](#4-Product-Description)
-  - [4.1. Goal of the project:](#41-Goal-of-the-project)
-  - [4.2. Current Solution:](#42-Current-Solution)
-  - [4.3. Proposed Solution:](#43-Proposed-Solution)
-  - [4.4. Content:](#44-Content)
-- [5. Requirements:](#5-Requirements)
-  - [5.1 Priority:](#51-Priority)
-  - [5.2 User Interface:](#52-User-Interface)
-  - [5.3 Maintainability :](#53-Maintainability)
-  - [5.4 Security:](#54-Security)
-  - [5.5 Data Management:](#55-Data-Management)
-- [6. Personas:](#6-personas)
-  - [6.1 Project owner:](#61-Project-Owner)
-  - [6.2 Content creator:](#62-Content-Creator)
-  - [6.3 Power User:](#63-Power-User)
-  - [6.4 On-site Installation Manager:](#64-On-site-Installation-Manager)
+- [1. Glossary](#1-glossary)
+- [2. Project Overview](#2-project-overview)
+  - [2.1. Context:](#21-context)
+  - [2.2. Planning:](#22-planning)
+- [3. Stakeholders](#3-stakeholders)
+  - [3.1. The engineering team:](#31-the-engineering-team)
+  - [3.2. The client:](#32-the-client)
+- [4. Product Description](#4-product-description)
+  - [4.1. Goal of the project:](#41-goal-of-the-project)
+  - [4.2. Current Solution:](#42-current-solution)
+  - [4.3. Proposed Solution:](#43-proposed-solution)
+  - [4.4. Content:](#44-content)
+  - [4.5. Flowchart:](#45-flowchart)
+    - [Screen by Screen Specification](#screen-by-screen-specification)
+    - [Log In Screen](#log-in-screen)
+    - [Home Screen](#home-screen)
+    - [History Screen](#history-screen)
+    - [Widget Screen](#widget-screen)
+- [5. Requirements](#5-requirements)
+  - [5.1. Priority:](#51-priority)
+  - [5.2. User Interface:](#52-user-interface)
+  - [5.3. Maintainability:](#53-maintainability)
+  - [5.4. Security:](#54-security)
+  - [5.5. Data Management:](#55-data-management)
+- [6. Personas](#6-personas)
+  - [6.1. Project owner:](#61-project-owner)
+  - [6.2. Content creator:](#62-content-creator)
+  - [6.3. Power User:](#63-power-user)
+  - [6.4. On-site Installation Manager:](#64-on-site-installation-manager)
 - [7. Improvements for V2](#7-improvements-for-v2)
-- [8. Conclusion:](#8-conclusion)
+- [8. Conclusion](#8-conclusion)
 </details>
 
 ## 1. Glossary 
@@ -102,6 +108,52 @@ We'll be displaying different type of content on the screen :
 The screen will be switching automatically between the different information. We can also set priority to show some content during a long time or just make them appear more often on the screen. 
 
 All the information that can be displayed will be in french.
+
+### 4.5. Flowchart:
+
+#### Screen by Screen Specification
+
+JOCABIweb consists of quite a few different screens.  This document is more concerned with the functionality and the interaction design, not the exact look and layout.
+
+#### Log In Screen
+
+the log in Page serves two purposes:
+
+* Allow members who have already signed up to log on
+* Allow members who already have an account but who have forgotten their password to be able to change it
+
+The first screen that the user will see is the log in screen.  This screen will be used to log in to the app.  The user will be able to enter their username and password.  If the user enters the correct username and password, they will be taken to the home screen.  If the user enters the wrong username and password, they will be taken to the log in screen again. It looks like this:
+
+TODO: add image
+
+* If the email address was provided, and it matches a registered member, and a password was provided, but the password is incorrect, the server returns an error message saying "The password or email address you provided is invalid." Please check. Whenever the password is incorrect, the login form returns with the password box empty.
+* If the email address was provided, but it does not match a registered member, and a password was provided, the server returns an error message saying "The password or The email address you provided is not valid." Please check. Whenever the password is incorrect, the login form returns with the password box empty.
+* If the email address and password are OK, jump straight to the home screen.
+
+#### Home Screen
+
+The Home Page looks like this:
+
+TODO: add image
+
+On this, and on all screens except the login page, clicking on the JACOBI GROUP logo in the top left corner goes back to Home Page.
+
+On this page you will find several features:
+* A disconnect button
+* A button to access the history
+* A button that allows you to create or modify widgets
+
+#### History Screen
+
+The History Page looks like this:
+
+TODO: add image
+
+#### Widget Screen
+
+The Widget Page looks like this:  
+
+TODO: add image
 
 ## 5. Requirements
 
