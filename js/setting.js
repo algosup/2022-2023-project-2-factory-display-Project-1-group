@@ -18,39 +18,29 @@ inputText.value = '';
 setting.append(inputText);
 const input = document.querySelector('.input');
 
-// Button
+// AddButton
 const button = document.createElement('button');
 button.textContent = 'Validate';
 button.id = 'btn';
+button.className = 'btn btn-success';
 button.onclick = 'updatevalue';
 setting.append(button);
 const btn = document.querySelector('#btn');
+
+// ClearButton
+const clear_button = document.createElement('button');
+clear_button.textContent = 'Clear';
+clear_button.id = 'clear-btn';
+clear_button.className = 'btn btn-danger';
+clear_button.onclick = 'updatevalue';
+setting.append(clear_button);
+const clear_btn = document.querySelector('#clear-btn');
 
 // Output
 const outputText = document.createElement('p')
 outputText.textContent = '';
 outputText.className = 'output';
-/*
-// Triger via onclick input     
-btn.addEventListener('click',() =>{
-    let trig = true;
-    if(trig = true){
-        updatevalue();
-        trig = false;
-    }
-    
-});        
 
-// Show input value on the page
-function updatevalue(){
-    outputText.textContent = `${inputText.value}`; 
-    setting.append(outputText);
-} 
-*/
-// Index display
-
-//const indexDisplay = document.querySelector('#index-display');
-//indexDisplay.innerHTML = '';
 
 
 btn.addEventListener('click',() =>{
@@ -61,7 +51,14 @@ btn.addEventListener('click',() =>{
         trig = false;
     }
     
-});        
+});
+
+clear_btn.addEventListener('click',() =>{
+    outputText.textContent = ''; 
+    setting.append(outputText);
+     
+    
+});
 
 // Show input value on the page
 function updatevalue(){
