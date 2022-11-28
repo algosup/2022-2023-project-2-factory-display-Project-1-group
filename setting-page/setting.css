@@ -1,7 +1,10 @@
-#jacobi-logo{
-    height: 5rem;
+/*#jacobi-logo{
+    height: 5rem;   
     width: 10rem;
-}
+    
+ }*/
+
+
 /*@media screen and(max-width:740px){
     #jacobi-logo{
         height: 2.5rem;
@@ -58,6 +61,11 @@
         margin-top: -50px;   
 
     }
+    #jacobi-logo{
+        height: 5rem;   
+        width: 10rem;
+        
+     }
 }
 @media screen and (max-width:1000px) {
     #setting-page{
@@ -71,6 +79,10 @@
         margin-top: -50px;   
 
     }
+    #jacobi-logo{
+        display: none;
+        
+     }
 }
 
 
