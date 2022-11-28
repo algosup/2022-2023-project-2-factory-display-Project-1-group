@@ -32,7 +32,6 @@
   - [6.2. Director Paul:](#62-Director-Paul)
   - [6.3. Employee Sophie:](#63-Employee-Sophie)
 - [7. Improvements for V2](#7-improvements-for-v2)
-- [8. Conclusion](#8-conclusion)
 </details>
 
 ## 1. Glossary 
@@ -212,5 +211,3 @@ There are multiple things that we can improve in our product :
 - First, we can make the app support multiple languages like English.
 
 - We can put a screen in a different town like Paris that will display the same information than the one in Vierzon.
-
-## 8. Conclusion
