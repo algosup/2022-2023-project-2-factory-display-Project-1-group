@@ -100,13 +100,13 @@ carrousel_btn.addEventListener('click', () =>{
     
     
 });
-var $ = require( "jquery" );
+/*var $ = require( "jquery" );
 $('#carrousel').slick({
     arrows: true,
     dots: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-  });
+  });*/
 
 
 
