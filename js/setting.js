@@ -1,9 +1,10 @@
+//import $ from "jquery";
 // Setting content in setting page
 const setting = document.querySelector('#setting');
 setting.innerHTML ='';
 
 // Option note
-const note = [ 'Add carousel','Select your title', 'Theme color']
+const note = [ 'Add carrousel','Select your title', 'Theme color']
 
 // Display note
 const text =document.createElement('h2');
@@ -41,8 +42,28 @@ const outputText = document.createElement('p')
 outputText.textContent = '';
 outputText.className = 'output';
 
+//  Carrousel
+const carrousel = document.createElement('div');
+carrousel.id = 'carrousel';
+setting.append(carrousel);
+carrousel.innerHTML = '';
+const carr = document.querySelector('#carrousel');
+
+// Creat Carrousel
+const carrousel_button = document.createElement('button');
+carrousel_button.id = 'carrousel-btn';
+carrousel_button.textContent = 'Add new carrousel';
+carrousel_button.className ='btn btn-success';
+setting.append(carrousel_button);
+const carrousel_btn = document.querySelector('#carrousel-btn');
+
+// Article
+const article = document.createElement('article');
+article.textContent ='';
 
 
+
+// Add writting content
 btn.addEventListener('click',() =>{
     let trig = true;
     if(trig = true){
@@ -53,6 +74,7 @@ btn.addEventListener('click',() =>{
     
 });
 
+// clear writting content
 clear_btn.addEventListener('click',() =>{
     outputText.textContent = ''; 
     setting.append(outputText);
@@ -64,11 +86,27 @@ clear_btn.addEventListener('click',() =>{
 function updatevalue(){
    
     outputText.textContent = `${inputText.value}`; 
-   //indexDisplay.append(outputText);
     setting.append(outputText);
+    
 } 
 
-
+carrousel_btn.addEventListener('click', () =>{
+    article.textContent = ' <img src="https://fakeimg.pl/600x400">';
+    carrousel.append(article);
+    
+  
+   
+        
+    
+    
+});
+var $ = require( "jquery" );
+$('#carrousel').slick({
+    arrows: true,
+    dots: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
 
 
 
