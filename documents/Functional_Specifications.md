@@ -28,12 +28,10 @@
   - [5.4. Security:](#54-security)
   - [5.5. Data Management:](#55-data-management)
 - [6. Personas](#6-personas)
-  - [6.1. Project owner:](#61-project-owner)
-  - [6.2. Content creator:](#62-content-creator)
-  - [6.3. Power User:](#63-power-user)
-  - [6.4. On-site Installation Manager:](#64-on-site-installation-manager)
+  - [6.1. Visitor Christophe:](#61-Visitor-Christophe)
+  - [6.2. Director Paul:](#62-Director-Paul)
+  - [6.3. Employee Sophie:](#63-Employee-Sophie)
 - [7. Improvements for V2](#7-improvements-for-v2)
-- [8. Conclusion](#8-conclusion)
 </details>
 
 ## 1. Glossary 
@@ -104,6 +102,8 @@ We'll be displaying different type of content on the screen :
 * information related to Covid 
 * Map of the factory
 * Information on some important day like the water's day
+* Security measure
+* Visitor/delay
 
 The screen will be switching automatically between the different information. We can also set priority to show some content during a long time or just make them appear more often on the screen. 
 
@@ -113,7 +113,7 @@ All the information that can be displayed will be in french.
 
 #### Screen by Screen Specification
 
-JOCABIweb consists of quite a few different screens.  This document is more concerned with the functionality and the interaction design, not the exact look and layout.
+JACOBIweb consists of quite a few different screens. This document is more concerned with the functionality and the interaction design, not the exact look and layout.
 
 #### Log In Screen
 
@@ -186,13 +186,23 @@ We'll be storing data in a database that can be access by Vierzon Site in order 
 
 ## 6. Personas
 
-### 6.1. Project owner:
+### 6.1. Visitor Christophe:
 
-### 6.2. Content creator:
+Christophe is a area manager for the company VEOLIA. He is 50 years old. He is in a relationship with Silvie and they have 3 children who already leaved the family house. He lived in Massay close to Vierzon. In order to go to work, he use his personal car. He love doing multiplayer sports which help him improve his communication skills with other and he is a ambitious person with a lot of project in mind.
+He need to visite the JACOBI company at 11pm in order to see what solution they can provided for the water treatment for his company. He arrive at the reception where he can see the screen with the basic information about the JACOBI company (News, weather, Map, Security measure) while waiting for Paul (The director). Afterward, they goes into the office to discuss about the partnership of their company. Once the meeting is over, He go back to the entrance and take his car in order to get back home.
 
-### 6.3. Power User:
+### 6.2. Director Paul:
 
-### 6.4. On-site Installation Manager:
+Paul is a director of the JACOBI GROUP. He is 38 years old. He is single since he broke up with Maria his ex wife 3 years ago. He live in Vierzon close to the company. To go to work, he goes on foot but from time to time he use his car if he need to move somewhere during the day. He is a serious person when it's about work but outside of it he have a lot of humor. He is really meticullous and prepare everything in advance to avoid last minutes problems.
+First at 9AM he goes to the reception, take off his coat and begin speaking with Patrick who was already here. While the conservation continue, he saw on the screen that one of the visitor that should come at 10:30 AM will be late by 30 min. He note the information and went back to his office. At 11 AM, he meets with Christophe.
+At lunch time, he eat with everyone and discuss with his employee. He talk about the new patnership with Veolia and think it's important that the worker of the company know this information. Afterward he decided to ask the content manager Justine to display the new patnership directly on the screen. At the end of the day, he came back to the reception, take his coat and go back to his house. 
+
+
+### 6.3. Employee Sophie:
+
+Sophie is a employee of the JACOBI GROUP. She is 29 years old. She is married with Nathan for 5 years. They have one child named Jerome which is 3 years old. She lives in mereau. In order to go to work she use her personal car. She is an energetic person, she like doing sports and work-out at the gym. She is ponctual and curious. 
+First, she arrived at the company and goes to the reception. She takes a quick look on the screen and left in order to go to work. At lunch break, she eat with the other member of the company. She look at the screen during the conversation and happened to learn that there are a reunion with everyone to talk about the future of the company in 2 weeks. Afterward, she finishes her lunch and go back to work. At the end of the day, she goes back to home.
+
 
 ## 7. Improvements for V2
 
@@ -201,5 +211,3 @@ There are multiple things that we can improve in our product :
 - First, we can make the app support multiple languages like English.
 
 - We can put a screen in a different town like Paris that will display the same information than the one in Vierzon.
-
-## 8. Conclusion
