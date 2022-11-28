@@ -21,12 +21,9 @@ Version : 1.0
 
 ### 1.1. Overview, Problem Description, Summary, or Abstract
 
-JACOBI's
- Group is world leader in purification solution of air and water, using Activated Carbon, Ion Exchange Resins and Mobile Filtration Units. With its factory in Forges industrial zone since 1956, it has a heritage of being the only French industry manufacturing this unique product and supplying customers like Veolia, Valeo, Honeywell and French Ministry of Defence to name a few. There are over 1000 applications in which activated carbon is used which you can get more information on @ www.JACOBI's
-.net
+JACOBI's Group is world leader in purification solution of air and water, using Activated Carbon, Ion Exchange Resins and Mobile Filtration Units. With its factory in Forges industrial zone since 1956, it has a heritage of being the only French industry manufacturing this unique product and supplying customers like Veolia, Valeo, Honeywell and French Ministry of Defence to name a few. There are over 1000 applications in which activated carbon is used which you can get more information on www.jacobi.net
 The factory in Vierzon is the oldest in the Group however one of the most successful thanks to a flexible and can-do approach.
-The Managing Director of JACOBI's
- in France, Mr Saeed is constantly seeking ways to improve his management. One of his favourite subjects, which is also the one for which he receives most feedback, is communication.
+The Managing Director of JACOBI's in France, Mr Saeed is constantly seeking ways to improve his management. One of his favourite subjects, which is also the one for which he receives most feedback, is communication.
 Communication – updated, accurate and transparent. The short and sweet wishlist!
 One of the many ways to achieve this is to digitalise the communication of the Company and make it easy to publish the content. Currently, factory news and important announcements are done by email to groups, on MS Teams Groups, Yammer, etc. However, of the 64 factory staff, only around half of the aforementioned have Company email addresses. Displaying paper format information is outdated and in a huge factory of 8 hectares, it is not efficient.
 
@@ -40,8 +37,7 @@ One of the many ways to achieve this is to digitalise the communication of the C
 
 <!-- Reasons why the problem is worth solving
 Origin of the problem-->
-The problem of the JACOBI's
-'s Group is the communication with their employees. They want to improve the communication between the employees and the management. They want to make the communication more efficient and more transparent.
+The problem of the JACOBI's Group is the communication with their employees. They want to improve the communication between the employees and the management. They want to make the communication more efficient and more transparent.
 <!-- How the problem affects users and company goals -->
 This problem can affects the employees and the management. The employees can be more informed about the company and the management can be more efficient. It's can also affect the company goals because the employees can be more motivated and the management can be more efficient.
 <!-- How the product relates to team goals, OKRs -->
@@ -94,7 +90,7 @@ The conditions and resources that need to be present and accessible for the solu
 
 <!-- Current solution description
 Pros and cons of the current solution -->
-We are going to use a Smart TV with Google TV application to display the information. The Smart TV is a good solution because it's easy to use and it's easy to install. It's also a good solution because it's easy to maintain. We'll have an application to be able to display information on the Smart TV. We will also have a website for administrators to be able to change the information on the Smart TV. The editing of the information must be easy to use because the administrators are not technical people.
+We are going to use a Smart TV with Google TV application to display the information. The Smart TV is a good solution because it's easy to use and it's easy to install. It's also a good solution because it's easy to maintain. We will have an application to be able to display information on the Smart TV. We will also have a website for administrators to be able to change the information on the Smart TV. The editing of the information must be easy to use because the administrators are not technical people.
 
 ### 2.2 Test
 
@@ -102,7 +98,7 @@ We are going to use a Smart TV with Google TV application to display the informa
 Unit tests
 Integrations tests
 QA -->
-The will be done when we will get the first version , and we will ask directly the client to get a real feedback. <!-- TO REDO -->
+The test will be done when we will get the first version, and we will ask directly the client to get a real feedback.
 
 ### 2.3 Monitoring
 
@@ -113,7 +109,7 @@ The logging plan is :
 
 The observability is:
 
--We need to take care of the fac that sometimes there are visitors in the factory and they can see the information on the Smart TV.So the display needs to be different for the employees and the visitors.
+- We need to take care of the fact that sometimes there are visitors in the factory and they can see the information on the Smart TV. So the display needs to be different for the employees and the visitors.
 
 ### 2.4. Release / Roll-out and Deployment Plan
 
@@ -123,8 +119,8 @@ Phased roll-out plan e.g. using feature flags
 Plan outlining how to communicate changes to the users, for example, with release notes -->
 The deployment architecture is:
 
--Do all the work neccessary to upload the app on google play.
--Create the database and set it up (Authentification, Linking, etc.).
+- Do all the work neccessary to upload the app on google play.
+- Create the database and set it up (Authentification, Linking, etc.).
 
 ### 2.5 Rollback Plan
 
@@ -132,7 +128,7 @@ The deployment architecture is:
 Plan to reduce liabilities
 Plan describing how to prevent other components, services, and systems from being affected -->
 For employees or the staff who missed the information, the information will be available on the database.
-We will every information on the database , so it'll be easy to rollback or just show the information missed to the concerned people.
+We will upload every information on the database, so it will be easy to rollback or just show the information missed to the concerned people.
 
 ## 3. Further Considerations
 
@@ -155,10 +151,12 @@ The security and privacy concerns associated with the services/platforms are:
 How much it will cost :
 
 It will cost the price of the Smart TV.(Around 500.00€, depending on the size of the Smart TV).
+
 <!-- How will it scale? -->
 How it will scale :
 
 It will scale with the number of Smart TV.
+
 <!-- What possible future issues are anticipated? -->
 The possible future issues are:
 
@@ -211,7 +209,7 @@ What is the state of service availability?
 How will data transfer across regions be achieved and what are the concerns here?  -->
 The impact of internationalization and localization on the solution is:
 
-- The information displayed on the Smart TV will be in the language of the country , so here it'll be in french.
+- The information displayed on the Smart TV will be in the language of the country, so here it will be in french.
 
 ### 3.7. Operational considerations
 
@@ -295,7 +293,7 @@ The elements of the solution that members of the team do not agree on and need t
 - The design of the product.
 - Application or application + website.
 - The information to display on the product.
-- MySQL or Firebase.
+- MySQL, Firebase, MongoDB or Supabase.
 
 ### 6.2 Open Questions
 
@@ -324,3 +322,14 @@ The documents and resources that we used when coming up with our design and wish
 
 <!-- Credit people who have contributed to the design that you wish to recognize -->
 The people who have contributed to the design that we wish to recognize are:
+
+
+### 8. Glossary  or Terminology
+
+<!-- New terms you come across as you research your design or terms you may suspect your readers/stakeholders not to know.   -->
+Firebase //  https://firebase.google.com
+MongoDB // https://www.mongodb.com
+MySQL // https://www.mysql.com
+Raspberry PI // https://www.raspberrypi.org
+Smart TV // https://www.tcl.fr
+Supabase // https://supabase.io
