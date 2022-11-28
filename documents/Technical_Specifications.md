@@ -327,3 +327,9 @@ The people who have contributed to the design that we wish to recognize are:
 ### 8. Glossary  or Terminology
 
 <!-- New terms you come across as you research your design or terms you may suspect your readers/stakeholders not to know.   -->
+Firebase //  https://firebase.google.com
+MongoDB // https://www.mongodb.com
+MySQL // https://www.mysql.com
+Raspberry PI // https://www.raspberrypi.org
+Smart TV // https://www.tcl.fr
+Supabase // https://supabase.io
