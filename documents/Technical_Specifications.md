@@ -77,16 +77,16 @@ The product and technical requirements that will be disregarded are:
 ### 1.6 Future Goals
 
 <!-- Product and technical requirements slated for a future time -->
-The product and technical requirements slated for a future time are:
-
-- Nothing for the moment.
+We could add some need widgets in the future , or stuff that the industry needs.
 
 ### 1.7 Assumptions
 
 <!-- Conditions and resources that need to be present and accessible for the solution to work as described.  -->
 The conditions and resources that need to be present and accessible for the solution to work as described are:
 
-- Nothing for the moment.
+- The Website must be accessible to the client to be able to use the product.
+- The Application needs to be accessible on google play to be able to install it on the client's TV.
+- The Database needs to work to be able to store the data and redirect it to the application.
 
 ## 2. Solutions
 
@@ -96,98 +96,43 @@ The conditions and resources that need to be present and accessible for the solu
 Pros and cons of the current solution -->
 We are going to use a Smart TV with Google TV application to display the information. The Smart TV is a good solution because it's easy to use and it's easy to install. It's also a good solution because it's easy to maintain. We'll have an application to be able to display information on the Smart TV. We will also have a website for administrators to be able to change the information on the Smart TV. The editing of the information must be easy to use because the administrators are not technical people.
 
-
-### 2.2. Suggested or Proposed Solution / Design
-
-<!-- External components that the solution will interact with and that it will alter
-Dependencies of the current solution
-Pros and cons of the proposed  solution
-Data Model / Schema Changes
-Schema definitions
-New data models
-Modified data models
-Data validation methods
-Business Logic
-API changes
-Pseudocode
-Flowcharts
-Error states
-Failure scenarios
-Conditions that lead to errors and failures
-Limitations
-Presentation Layer
-User requirements
-UX changes
-UI changes
-Wireframes with descriptions
-Links to UI/UX designer’s work
-Mobile concerns
-Web concerns
-UI states
-Error handling
-Other questions to answer
-How will the solution scale?
-What are the limitations of the solution?
-How will it recover in the event of a failure?
-How will it cope with future requirements? -->
-
-### 2.3 Test Plan
+### 2.2 Test
 
 <!-- Explanations of how the tests will make sure user requirements are met
 Unit tests
 Integrations tests
 QA -->
-The tests will make sure user requirements are met. <!-- TO REDO -->
+The will be done when we will get the first version , and we will ask directly the client to get a real feedback. <!-- TO REDO -->
 
-### 2.4 Monitoring and Alerting Plan
+### 2.3 Monitoring
 
 <!-- Logging plan and tools -->
-The logging plan and tools are:
+The logging plan is :
 
-- Nothing for the moment.
+- Use the authentification system of Supabase to be able to log the users.
 
-<!-- Monitoring plan and tools -->
-The monitoring plan and tools are:
-
-- Nothing for the moment.
-
-<!-- Metrics to be used to measure health -->
-The metrics to be used to measure health are:
-
-- Nothing for the moment.
-
-<!-- How to ensure observability -->
 The observability is:
 
-- Nothing for the moment.
+-We need to take care of the fac that sometimes there are visitors in the factory and they can see the information on the Smart TV.So the display needs to be different for the employees and the visitors.
 
-<!-- Alerting plan and tools -->
-The alerting plan and tools are:
-
-- Nothing for the moment.
-
-### 2.5. Release / Roll-out and Deployment Plan
+### 2.4. Release / Roll-out and Deployment Plan
 
 <!-- Deployment architecture 
 Deployment environments
 Phased roll-out plan e.g. using feature flags
 Plan outlining how to communicate changes to the users, for example, with release notes -->
+The deployment architecture is:
 
-### 2.6 Rollback Plan
+-Do all the work neccessary to upload the app on google play.
+-Create the database and set it up (Authentification, Linking, etc.).
+
+### 2.5 Rollback Plan
 
 <!-- Detailed and specific liabilities
 Plan to reduce liabilities
 Plan describing how to prevent other components, services, and systems from being affected -->
 For employees or the staff who missed the information, the information will be available on the database.
 We will every information on the database , so it'll be easy to rollback or just show the information missed to the concerned people.
-
-### 2.7 Alternate Solutions / Designs
-
-<!-- Short summary statement for each alternative solution
-Pros and cons for each alternative
-Reasons why each solution couldn’t work
-Ways in which alternatives were inferior to the proposed solution
-Migration plan to next best alternative in case the proposed solution falls through -->
 
 ## 3. Further Considerations
 
@@ -268,13 +213,7 @@ The impact of internationalization and localization on the solution is:
 
 - The information displayed on the Smart TV will be in the language of the country , so here it'll be in french.
 
-### 3.7 Accessibility considerations
-
-<!-- How accessible is the solution?
-What tools will you use to evaluate its accessibility? -->
-To see if the solution is accessible, we will try to use it with a different person from us.
-
-### 3.8. Operational considerations
+### 3.7. Operational considerations
 
 <!-- Does this solution cause adverse aftereffects?
 How will data be recovered in case of failure?
@@ -283,7 +222,7 @@ How will operational costs be kept low while delivering increased value to the u
 The solution doesn't cause adverse aftereffects.
 The data will be store in a database, that can be useful with someone miss an information.
 
-### 3.9 Risks
+### 3.8 Risks
 
 <!-- What risks are being undertaken with this solution?
 Are there risks that once taken can’t be walked back?
@@ -293,7 +232,7 @@ The risks are:
 - Be out of date.
 - Not be able to show everything that we want to do for the v1.
 
-### 3.10. Support considerations
+### 3.9. Support considerations
 
 <!-- How will the support team get across information to users about common issues they may face while interacting with the changes?
 How will we ensure that the users are satisfied with the solution and can interact with it with minimal support?
