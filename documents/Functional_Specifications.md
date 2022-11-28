@@ -27,6 +27,7 @@
   - [5.3. Maintainability:](#53-maintainability)
   - [5.4. Security:](#54-security)
   - [5.5. Data Management:](#55-data-management)
+  - [5.6. Accessibility/Hardware:](#56-Accessibility/Hardware)
 - [6. Personas](#6-personas)
   - [6.1. Visitor Christophe:](#61-Visitor-Christophe)
   - [6.2. Director Paul:](#62-Director-Paul)
@@ -149,6 +150,8 @@ The History Page looks like this:
 
 TODO: add image
 
+In the history page, you can see every content that has be made so far and modify it. You can also delete the content if you don't want it to be in the database.
+
 #### Widget Screen
 
 The Widget Page looks like this:  
@@ -184,6 +187,9 @@ The security of the product is one of the major part of the project. We need to 
 
 We'll be storing data in a database that can be access by Vierzon Site in order to change what will be displayed or to see old content. 
 
+### 5.6. Accessibility/Hardware:
+
+The application will work on android smart TV that can get access to the google play. In our case, we will be using a smart TV LED TCL.
 ## 6. Personas
 
 ### 6.1. Visitor Christophe:
