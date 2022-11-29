@@ -1,9 +1,12 @@
 <h1 style="text-align: center">2022-2023-project-2-factory-display-Project-1-group - Functional Specification</h1>
 
+Document is still in progress and some part can be missing.
+
 <details> 
 <summary style="text-decoration: underline; font-size:150%">Table of contents:</summary>
 
-- [1. Glossary](#1-glossary)
+
+- [1. Glossary (not finished)](#1-glossary)
 - [2. Project Overview](#2-project-overview)
   - [2.1. Context:](#21-context)
   - [2.2. Planning:](#22-planning)
@@ -15,14 +18,14 @@
   - [4.2. Current Solution:](#42-current-solution)
   - [4.3. Proposed Solution:](#43-proposed-solution)
   - [4.4. Content:](#44-content)
-  - [4.5. Flowchart:](#45-flowchart)
+  - [4.5. Flowchart (not finished):](#45-flowchart)
     - [Screen by Screen Specification](#screen-by-screen-specification)
     - [Log In Screen](#log-in-screen)
     - [Home Screen](#home-screen)
     - [History Screen](#history-screen)
     - [Widget Screen](#widget-screen)
 - [5. Requirements](#5-requirements)
-  - [5.1. Priority:](#51-priority)
+  - [5.1. Priority (need revue):](#51-priority)
   - [5.2. User Interface:](#52-user-interface)
   - [5.3. Maintainability:](#53-maintainability)
   - [5.4. Security:](#54-security)
@@ -32,7 +35,7 @@
   - [6.1. Visitor Christophe:](#61-Visitor-Christophe)
   - [6.2. Director Paul:](#62-Director-Paul)
   - [6.3. Employee Sophie:](#63-Employee-Sophie)
-- [7. Improvements for V2](#7-improvements-for-v2)
+- [7. Improvements for V2 (need revue)](#7-improvements-for-v2)
 </details>
 
 ## 1. Glossary 
@@ -43,11 +46,32 @@ Database : A database is an organized collection of data stored and accessed ele
 
 Stakeholders : an employee, investor, customer, etc. who is involved in or buys from a business and has an interest in its success
 
+TV LED TCL:
+
+JACOBI GROUP:
+
+Charbon actif: 
+
+Screen: 
+
+Website: 
+
+Widget: 
+
+IT skills: 
+
+Google play: 
+
+
+
+
+
+
 ## 2. Project Overview
 
 ### 2.1. Context:
 
-JACOBI GROUP is the world leader in purification solution of air and water, using Activated Carbon, Ion Exchange Resins and Mobile Filtration Units. With its factory in Forges industrial zone since 1956, it has a heritage of being the only French industry manufacturing this unique product and supplying customers like Veolia, Valeo, Honeywell and French Ministry of Defence to name a few. There are over 1000 applications in which activated carbon is used which you can get more information on @ www.jacobi.net
+JACOBI GROUP is the world leader in purification solution of air and water, using Activated Carbon, Ion Exchange Resins and Mobile Filtration Units. With its factory in Forges industrial zone since 1956, it has a heritage of being the only French industry manufacturing this unique product and supplying customers like VEOLIA, VALEO, HONEYWELL and French Ministry of Defence to name a few. There are over 1000 applications in which activated carbon is used which you can get more information on @ www.jacobi.net
 The factory in Vierzon is the oldest in the Group however one of the most successful thanks to a flexible and can-do approach.
 The Managing Director of JACOBI in France, Mr Saeed is constantly seeking ways to improve his management. One of his favourite subjects, which is also the one for which he receives most feedback, is communication.
 Communication – updated, accurate and transparent. The short and sweet wishlist!
@@ -158,6 +182,8 @@ The Widget Page looks like this:
 
 TODO: add image
 
+Each widget pages is composed of one title, a content and will be displayed between 20 to 30 s. You can't interact with the screen on that page (only display information). 
+
 ## 5. Requirements
 
 ### 5.1. Priority:
@@ -177,7 +203,7 @@ The users will have access to an app where he can change the content that is dis
 
 ### 5.3. Maintainability:
 
-Our product will be easily maintainable and upgradable. If there is any problem with the device, we can send ??? from ALGOSUP to check and fix the problem.
+Our product will be easily maintainable and upgradable. If there is any problem with the device, we can send someone from ALGOSUP to check and fix the problem.
 
 ### 5.4. Security:
 The security of the product is one of the major part of the project. We need to make sure that the device cannot be access and use by a tier users. In addition, we need to ensure that data can't be reach without autorization.
@@ -201,12 +227,12 @@ He need to visite the JACOBI company at 11pm in order to see what solution they 
 
 Paul is a director of the JACOBI GROUP. He is 38 years old. He is single since he broke up with Maria his ex wife 3 years ago. He live in Vierzon close to the company. To go to work, he goes on foot but from time to time he use his car if he need to move somewhere during the day. He is a serious person when it's about work but outside of it he have a lot of humor. He is really meticullous and prepare everything in advance to avoid last minutes problems.
 First at 9AM he goes to the reception, take off his coat and begin speaking with Patrick who was already here. While the conservation continue, he saw on the screen that one of the visitor that should come at 10:30 AM will be late by 30 min. He note the information and went back to his office. At 11 AM, he meets with Christophe.
-At lunch time, he eat with everyone and discuss with his employee. He talk about the new patnership with Veolia and think it's important that the worker of the company know this information. Afterward he decided to ask the content manager Justine to display the new patnership directly on the screen. At the end of the day, he came back to the reception, take his coat and go back to his house. 
+At lunch time, he eat with everyone and discuss with his employee. He talk about the new patnership with VEOLIA and think it's important that the worker of the company know this information. Afterward he decided to ask the content manager Justine to display the new patnership directly on the screen. At the end of the day, he came back to the reception, take his coat and go back to his house. 
 
 
 ### 6.3. Employee Sophie:
 
-Sophie is a employee of the JACOBI GROUP. She is 29 years old. She is married with Nathan for 5 years. They have one child named Jerome which is 3 years old. She lives in mereau. In order to go to work she use her personal car. She is an energetic person, she like doing sports and work-out at the gym. She is ponctual and curious. 
+Sophie is a employee of the JACOBI GROUP. She is 29 years old. She is married with Nathan for 5 years. They have one child named Jerome which is 3 years old. She lives in Mereau. In order to go to work she use her personal car. She is an energetic person, she like doing sports and work-out at the gym. She is ponctual and curious. 
 First, she arrived at the company and goes to the reception. She takes a quick look on the screen and left in order to go to work. At lunch break, she eat with the other member of the company. She look at the screen during the conversation and happened to learn that there are a reunion with everyone to talk about the future of the company in 2 weeks. Afterward, she finishes her lunch and go back to work. At the end of the day, she goes back to home.
 
 
