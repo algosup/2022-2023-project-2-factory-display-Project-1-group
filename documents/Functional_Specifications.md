@@ -19,6 +19,7 @@ Document is still in progress and some part can be missing.
   - [4.3. Proposed Solution:](#43-proposed-solution)
   - [4.4. Content:](#44-content)
   - [4.5. Flowchart (not finished):](#45-flowchart)
+  - [4.6. Users experience (not finished):](#46-users-experience)
     - [Screen by Screen Specification](#screen-by-screen-specification)
     - [Log In Screen](#log-in-screen)
     - [Home Screen](#home-screen)
@@ -30,11 +31,11 @@ Document is still in progress and some part can be missing.
   - [5.3. Maintainability:](#53-maintainability)
   - [5.4. Security:](#54-security)
   - [5.5. Data Management:](#55-data-management)
-  - [5.6. Accessibility/Hardware:](#56-Accessibility/Hardware)
+  - [5.6. Accessibility/Hardware:](#56-accessibility/hardware)
 - [6. Personas](#6-personas)
-  - [6.1. Visitor Christophe:](#61-Visitor-Christophe)
-  - [6.2. Director Paul:](#62-Director-Paul)
-  - [6.3. Employee Sophie:](#63-Employee-Sophie)
+  - [6.1. Visitor Christophe:](#61-visitor-christophe)
+  - [6.2. Director Paul:](#62-director-paul)
+  - [6.3. Employee Sophie:](#63-employee-sophie)
 - [7. Improvements for V2](#7-improvements-for-v2)
 </details>
 
@@ -109,7 +110,7 @@ The JACOBI team who works on this project is composed of:
 
 ### 4.1. Goal of the project: 
 
-The goal of the project is to improve the communication between the main JACOBI factory with the others.The project is going to simplify and improve the management of the managing director Mr Saeed which will also lead to a better growing mindset for the company. 
+The goal of the project is to improve the communication between the main JACOBI factory and the others factories.The project is going to simplify and improve the management of the managing director Mr Saeed which will also lead to a better growing mindset for the company. 
 
 ### 4.2. Current Solution: 
 
@@ -126,7 +127,7 @@ We'll be displaying different type of content on the screen :
 * Factory news
 * Important annoucements
 * Weather forecast
-* information related to Covid 
+* Covid information 
 * Map of the factory
 * Information on some important day like the water's day
 * Security measure
@@ -135,6 +136,8 @@ We'll be displaying different type of content on the screen :
 The screen will be switching automatically between the different information. We can also set priority to show some content during a long time or just make them appear more often on the screen. 
 
 All the information that can be displayed will be in french.
+
+The content creator will be able to create and personnalize his own widget and he will be able to import PDF, Word document, images, videos ... 
 
 ### 4.5. Flowchart:
 
@@ -186,6 +189,14 @@ TODO: add image
 
 Each widget pages is composed of one title, a content and will be displayed between 20 to 30 s. You can't interact with the screen on that page (only display information). 
 
+### 4.6. Content creator experience:
+ 
+ First of all, the content creator gets into the website and put his login name and password. If he can't renember his password, he can click on the "forgot your password" button. Once it done that, an email will be send to reset his password. 
+ When he manage to login into the website, he will access the home screen. From here, he can choose to click to the history page button or the different widget.
+ He decided to go to the history page. From there, he can see every content that has be made so far and modify it. He can also delete the content if he don't want it to be in the database anymore. Once he is done, he can click on the return button and get back to the home page.
+ Afterward, he decided to create a new content to inform the employee about the news. From there, he will be ask to insert a title and a text content. He can personnalize the content by clicking on the settings button in front of the text box. He can choose the font of the text, the colour, to underline the text... He can also choose during how many time the widget will be display on the TV and at which date it will be display in the application. Once he is done, he click on the confirm button and get back to the home page where he can see his new widget appearing.
+
+ ### 4.7.  experience:
 ## 5. Requirements
 
 ### 5.1. Priority:
@@ -201,7 +212,9 @@ Each widget pages is composed of one title, a content and will be displayed betw
 
 ### 5.2. User Interface:
 
-The users will have access to an app where he can change the content that is display on the different screen. He can choose which screen would be displaying important information based on the location of the screen. In addition, the user can set priority in the app to display information more often on screen. The app will be user friendly and easy to use even if you may not be advanced in IT skills.
+The users will have access to an app where he can change the content that is display on the different screen. He can choose which screen would be displaying important information based on the location of the screen. In addition, the user can set priority in the app to display information more often on screen.
+The app will be user friendly and easy to use even if you may not be advanced in IT skills.
+
 
 ### 5.3. Maintainability:
 
@@ -217,7 +230,7 @@ We'll be storing data in a database that can be access by Vierzon Site in order 
 
 ### 5.6. Accessibility/Hardware:
 
-The application will work on android smart TV that can get access to the google play. In our case, we will be using a smart TV LED TCL.
+The application will work on android smart TV that can get access to the google play. In our case, we will be using a smart TV LED TCL. The device need to be connect to the Wi-Fi in order to get the information from the database and also for the update of the application. The update will be done automaticaly, the users will have to restart the TV or launch the app after it's done.
 ## 6. Personas
 
 ### 6.1. Visitor Christophe:
