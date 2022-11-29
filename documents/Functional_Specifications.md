@@ -44,23 +44,25 @@ Trello : Trello is a visual web-based application that allow you to easely commu
 
 Database : A database is an organized collection of data stored and accessed electronically
 
-Stakeholders : an employee, investor, customer, etc. who is involved in or buys from a business and has an interest in its success
+Stakeholders : An employee, investor, customer, etc. who is involved in or buys from a business and has an interest in its success
 
-TV LED TCL:
+TV LED: LED TV is a type of LCD television that uses light-emitting diodes (LEDs) to backlight the display instead of the cold cathode fluorescent lights.
 
-JACOBI GROUP:
+JACOBI GROUP: It's a company based in Vierzon. Their field of acitivity is mainly about activated carbon
 
-Charbon actif: 
+Activated carbon: Charcoal that has been heated or otherwise treated to increase its adsorptive power.
 
-Screen: 
+Screen: A flat panel or area on an electronic device such as a television, computer, or smartphone, on which images and data are displayed.
 
-Website: 
+Website: A website (also written as a web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server. Examples of notable websites are Google, Facebook, Amazon, and Wikipedia.
 
-Widget: 
+Widget: An application, or a component of an interface, that enables a user to perform a function or access a service.
 
-IT skills: 
+Skills: The ability to do something well; expertise.
 
-Google play: 
+IT: Short for information technology. The study or use of systems (especially computers and telecommunications) for storing, retrieving, and sending information.
+
+Google play: Google Play is an online store where people go to find their favorite apps, games, movies, TV shows, books, and more
 
 
 
