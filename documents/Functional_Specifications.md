@@ -62,7 +62,7 @@ Skills: The ability to do something well; expertise.
 
 IT: Short for information technology. The study or use of systems (especially computers and telecommunications) for storing, retrieving, and sending information.
 
-Google play: Google Play is an online store where people go to find their favorite apps, games, movies, TV shows, books, and more
+Google play: Google Play is an online store where people go to find their favorite apps, games, movies, TV shows, books, and more.
 
 
 
@@ -245,3 +245,5 @@ There are multiple things that we can improve in our product :
 - First, we can make the app support multiple languages like English.
 
 - We can put a screen in a different town like Paris that will display the same information than the one in Vierzon.
+
+- In addition, we can add more fonctionnality to the creation of widgets for the users.
