@@ -1,9 +1,82 @@
 {
+  
+
+  "name": "2022-2023-project-2-factory-display-project-1-group",
+  
+
+  "description": "<h1>2022-2023-project-2-factory-display-Project-1-group</h1>",
+  
+
+  "version": "1.0.0",
+  
+
   "type": "module",
+  
+
+  "main": "setting.js",
+  
+
+  "scripts": {},
+  
+
+  "repository": {
+  
+
+    
+
+  "type": "git",
+  
+
+    
+
+  "url": "git+https://github.com/algosup/2022-2023-project-2-factory-display-Project-1-group.git"
+  
+
+  },
+  
+
+  "author": "",
+  
+
+  "license": "ISC",
+  
+
+  "bugs": {
+  
+
+    
+
+  "url": "https://github.com/algosup/2022-2023-project-2-factory-display-Project-1-group/issues"
+  
+
+  },
+  
+
+  "homepage": "https://github.com/algosup/2022-2023-project-2-factory-display-Project-1-group#readme",
+  
+
   "dependencies": {
-    "firebase": "^9.14.0",
-    "jquery": "^3.6.1",
-    "slick": "^1.12.2",
-    "slick-carousel": "^1.8.1"
+  
+
+    
+
+  "firebase": "^9.14.0",
+  
+
+    
+
+  "jquery": "^3.6.1",
+  
+
+    
+
+  "slick": "^1.12.2",
+  
+
+    
+
+  "slick-carousel": "^1.8.1"
+  
+
   }
 }

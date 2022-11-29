@@ -1,4 +1,4 @@
-//import $ from "jquery";
+
 // Setting content in setting page
 const setting = document.querySelector('#setting');
 setting.innerHTML ='';
@@ -45,9 +45,10 @@ outputText.className = 'output';
 //  Carrousel
 const carrousel = document.createElement('div');
 carrousel.id = 'carrousel';
+carrousel.className = 'carrousel slide';
+// carrousel.dataset = 'carousel'
 setting.append(carrousel);
-carrousel.innerHTML = '';
-const carr = document.querySelector('#carrousel');
+ const carr = document.querySelector('#carrousel');
 
 // Creat Carrousel
 const carrousel_button = document.createElement('button');
@@ -57,9 +58,7 @@ carrousel_button.className ='btn btn-success';
 setting.append(carrousel_button);
 const carrousel_btn = document.querySelector('#carrousel-btn');
 
-// Article
-const article = document.createElement('article');
-article.textContent ='';
+
 
 
 
@@ -91,8 +90,8 @@ function updatevalue(){
 } 
 
 carrousel_btn.addEventListener('click', () =>{
-    article.textContent = ' <img src="https://fakeimg.pl/600x400">';
-    carrousel.append(article);
+   
+    carrousel.append('hello folk');
     
   
    
@@ -100,13 +99,9 @@ carrousel_btn.addEventListener('click', () =>{
     
     
 });
-/*var $ = require( "jquery" );
-$('#carrousel').slick({
-    arrows: true,
-    dots: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  });*/
+
+
+
 
 
 

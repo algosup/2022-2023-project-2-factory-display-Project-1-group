@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/jacobi-favicon.png" type="image/png" sizes="32x32">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="setting.css">
-    <script src="/js/setting.js" defer></script>
-    <link href="/index/index.html">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="../setting-page/setting.css">
+    <script type="module" src="../js/setting.js" defer></script>
+    <link href="../index/index.html">
     
     <!-- Slick -->
-    <link rel="stylesheet" type="text/css" href="/node_modules/slick-carousel/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="/node_modules/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="../node_modules/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../node_modules/slick-carousel/slick/slick-theme.css"/>
 
       <!-- jQuery -->
-    <script  type="module" src="/node_modules/jquery/dist/jquery.min.js" defer></script>  
+      <script src="jquery-3.6.1.min.js" defer></script>
+    <!--<script src="../node_modules/jquery/dist/jquery.min.js" defer></script>-->  
     <!-- Slick -->
-    <script type="text/javascript" src="/node_modules/slick-carousel/slick/slick.min.js" defer></script>
+    <script type="text/javascript" src="../node_modules/slick-carousel/slick/slick.min.js" defer></script>
     
     <title>Setting Pages</title>
 </head>
@@ -68,33 +69,37 @@
         <section id="setting">
             
         </section>
+        
+        
         <!-- Carrousel sample -->
-        <div class="card">
-          <div id="carrousel">
-            <article>
-              <img src="https://fakeimg.pl/200x200">
-            </article>
-            <article>
-              <img src="https://fakeimg.pl/200x200/a00">
-            </article>
-            <article>
-              <img src="https://fakeimg.pl/200x200/aa0">
-            </article>
-            <article>
-              <img src="https://fakeimg.pl/200x200/0a0">
-            </article>
-            <article>
-              <img src="https://fakeimg.pl/200x200/0aa">
-            </article>
-            <article>
-              <img src="https://fakeimg.pl/200x200/00a">
-            </article>
-            <article>
-              <img src="https://fakeimg.pl/200x200/a0a">
-            </article>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" style="background-color: black;">
+              <div class="carousel-item active">
+                <h1 style="color:red ;">1, 2, 3</h1>
+              </div>
+              <div class="carousel-item">
+                <h1 style="color:red ;">Viva</h1>
+              </div>
+              <div class="carousel-item">
+                <h1 style="color:red ;">Algerie</h1>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-        </div>
         <!-- Carrousel sample END -->
+        
       </section>
    
 </body>
