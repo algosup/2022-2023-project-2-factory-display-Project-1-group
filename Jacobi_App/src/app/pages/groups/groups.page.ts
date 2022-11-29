@@ -20,16 +20,36 @@ export class GroupsPage implements OnInit {
   ) {}
 
   
-  ngOnInit() {}
+  ngOnInit() {
+    this.loadMultipleContent();
+  }
   async createContent(){
     const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
-    const test = await supabase.from('data').insert([{id: 4,content:"test2"}]);
+    const element = await supabase.from('data').insert([{id: 5,content:"okmec"}]);
   }
   async loadContent(){
     const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
-    const test = await (await supabase.from('data').select("content")).data[0];
-    console.log(test);
-    document.getElementById("loader").innerHTML = test.content;
+    const element = (await supabase.from('data').select("content")).data[0];
+    console.log(element);
+    const currentdiv = document.getElementById("loader");
+    currentdiv.appendChild(element.content);
+    };
+
+  async loadMultipleContent(){
+      const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
+      const element = (await supabase.from('data').select("content")).data;
+      console.log(element);
+      element.forEach(async elements => {
+        console.log(elements);
+        // var doc = new DOMParser().parseFromString(elements.content, "text/xml");
+        // console.log(doc);
+        // const ok =await (await supabase.from('data').select("id")).data;
+        const newdiv = document.createElement("div")
+        newdiv.innerHTML = elements.content;
+        const currentdiv = document.getElementById("loader");
+        currentdiv.appendChild(newdiv);
+
+      });
     
   }
 }

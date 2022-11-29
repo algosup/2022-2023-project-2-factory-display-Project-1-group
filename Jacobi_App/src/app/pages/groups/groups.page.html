@@ -5,13 +5,13 @@
 </ion-header>
 
 <ion-content>
+  <ion-label id="loader"></ion-label>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button (click)="createContent()">
       <ion-icon name="getContent"></ion-icon>create
     </ion-fab-button>
-    <ion-fab-button (click)="loadContent()">
+    <ion-fab-button (click)="loadMultipleContent()">
       <ion-icon name="getContent"></ion-icon>load
     </ion-fab-button>
-    <ion-label id="loader"></ion-label>
-  </ion-fab>
+    </ion-fab>
 </ion-content>
