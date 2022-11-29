@@ -6,7 +6,7 @@ Document is still in progress and some part can be missing.
 <summary style="text-decoration: underline; font-size:150%">Table of contents:</summary>
 
 
-- [1. Glossary (not finished)](#1-glossary)
+- [1. Glossary](#1-glossary)
 - [2. Project Overview](#2-project-overview)
   - [2.1. Context:](#21-context)
   - [2.2. Planning:](#22-planning)
@@ -35,7 +35,7 @@ Document is still in progress and some part can be missing.
   - [6.1. Visitor Christophe:](#61-Visitor-Christophe)
   - [6.2. Director Paul:](#62-Director-Paul)
   - [6.3. Employee Sophie:](#63-Employee-Sophie)
-- [7. Improvements for V2 (need revue)](#7-improvements-for-v2)
+- [7. Improvements for V2](#7-improvements-for-v2)
 </details>
 
 ## 1. Glossary 
