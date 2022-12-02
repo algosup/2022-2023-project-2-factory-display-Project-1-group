@@ -42,13 +42,19 @@ const outputText = document.createElement('p')
 outputText.textContent = '';
 outputText.className = 'output';
 
-//  Carrousel
-const carrousel = document.createElement('div');
-carrousel.id = 'carrousel';
-carrousel.className = 'carrousel slide';
+// List
+let list = document.createElement('li')
+list.textContent = '';
+list.className = 'output';
+setting.append(list);
+
+
+// const carrousel = document.createElement('div');
+// carrousel.id = 'carrousel';
+// carrousel.className = 'carrousel slide';
 // carrousel.dataset = 'carousel'
-setting.append(carrousel);
- const carr = document.querySelector('#carrousel');
+// setting.append(carrousel);
+//  const carr = document.querySelector('#carrousel');
 
 // Creat Carrousel
 const carrousel_button = document.createElement('button');
@@ -57,6 +63,20 @@ carrousel_button.textContent = 'Add new carrousel';
 carrousel_button.className ='btn btn-success';
 setting.append(carrousel_button);
 const carrousel_btn = document.querySelector('#carrousel-btn');
+
+//  Carrousel
+// const carousel = document.querySelector('div');
+// carrousel.id = 'carousel';
+// carrousel.className = 'carousel slide';
+
+
+
+// setting.append(carrousel);
+
+
+
+// setting.append(carrousel);
+
 
 
 
@@ -83,9 +103,12 @@ clear_btn.addEventListener('click',() =>{
 
 // Show input value on the page
 function updatevalue(){
-   
-    outputText.textContent = `${inputText.value}`; 
-    setting.append(outputText);
+   for(let i = 0; i<10;i++){
+    console.log(`i = ${i}`);
+    outputText.textContent += `${inputText.value}`; 
+    list.append(outputText);
+   }
+    
     
 } 
 
