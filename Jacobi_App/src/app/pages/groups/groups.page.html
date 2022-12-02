@@ -1,17 +1,26 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar class="header" color="primary">
     <ion-title>Application Jacobi Group</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-label id="loader"></ion-label>
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button (click)="createContent()">
-      <ion-icon name="getContent"></ion-icon>create
-    </ion-fab-button>
-    <ion-fab-button (click)="loadMultipleContent()">
-      <ion-icon name="getContent"></ion-icon>load
-    </ion-fab-button>
-    </ion-fab>
+  <div class="contentmanager">
+    <a class="weatherwidget-io" href="https://forecast7.com/fr/47d222d07/vierzon/" data-label_1="VIERZON" data-label_2="WEATHER" data-theme="original" >VIERZON WEATHER</a>
+    <ion-label id="loader"></ion-label>
+  </div>
+  <div>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button (click)="createContent()">
+        <ion-icon name="getContent"></ion-icon>create
+      </ion-fab-button>
+      <ion-fab-button (click)="loadMultipleContent()">
+        <ion-icon name="getContent"></ion-icon>load
+      </ion-fab-button>
+      <ion-fab-button (click)='readAPI()'>
+        <ion-icon name="getContent"></ion-icon>api
+      </ion-fab-button>
+      </ion-fab>
+  </div>
+
 </ion-content>

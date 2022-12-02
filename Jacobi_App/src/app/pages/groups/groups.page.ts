@@ -3,7 +3,8 @@ import { AlertController, NavController, LoadingController } from '@ionic/angula
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { createClient, SupabaseClient, User } from "@supabase/supabase-js";
-
+import { HttpClient } from '@angular/common/http';
+import OpenWeatherMap from 'openweathermap-ts';
 @Component({
   selector: 'app-groups',
   templateUrl: './groups.page.html',
@@ -16,12 +17,14 @@ export class GroupsPage implements OnInit {
     private alertController: AlertController,
     private loadingController: LoadingController,
     private navContoller: NavController,
-    private router: Router
+    private router: Router,
+    private http: HttpClient,
   ) {}
 
   
   ngOnInit() {
     this.loadMultipleContent();
+    const a = function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
   }
   async createContent(){
     const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
@@ -50,6 +53,9 @@ export class GroupsPage implements OnInit {
         currentdiv.appendChild(newdiv);
 
       });
+    
+  }
+  readAPI() {
     
   }
 }
