@@ -191,12 +191,15 @@ Each widget pages is composed of one title, a content and will be displayed betw
 
 ### 4.6. Content creator experience:
  
- First of all, the content creator gets into the website and put his login name and password. If he can't renember his password, he can click on the "forgot your password" button. Once it done that, an email will be send to reset his password. 
+ First of all, the content creator gets into the website and put his login name and password. If he can't remember his password, he can click on the "forgot your password" button. Once it done that, an email will be send to reset his password. 
  When he manage to login into the website, he will access the home screen. From here, he can choose to click to the history page button or the different widget.
  He decided to go to the history page. From there, he can see every content that has be made so far and modify it. He can also delete the content if he don't want it to be in the database anymore. Once he is done, he can click on the return button and get back to the home page.
  Afterward, he decided to create a new content to inform the employee about the news. From there, he will be ask to insert a title and a text content. He can personnalize the content by clicking on the settings button in front of the text box. He can choose the font of the text, the colour, to underline the text... He can also choose during how many time the widget will be display on the TV and at which date it will be display in the application. Once he is done, he click on the confirm button and get back to the home page where he can see his new widget appearing.
 
- ### 4.7.  experience:
+### 4.7. On site installation experience:
+
+First of all, On-site Installation Manager will take the hardware where he want to put the screen. He will plug the screen to a electricity source and start the screen with the remote. After the TV is ON, he is going to go to the parameter of the TV and set up the Wifi. Once the wifi is up, he can launch the app or restart the TV. The first time on launching, He will be ask to choose if this TV is going to display sensitive information or not. Afterward, the application will start and the information will be display automatically. If the On-site Installation Manager forgot to put the WiFi for example, he can exit the app by using a combination of input on the remote(insert exact combination) and insert the password for the TV.
+
 ## 5. Requirements
 
 ### 5.1. Priority:
