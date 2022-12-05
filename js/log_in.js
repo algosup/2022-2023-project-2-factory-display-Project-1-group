@@ -12,6 +12,7 @@ document.querySelectorAll('.button').forEach(button => {
 document.querySelector('.restart').addEventListener('click', e => {
   document.querySelectorAll('.button').forEach(button => {
       button.classList.remove('processing');
+      span.style.display = 'block';
   });
   e.preventDefault();
 
