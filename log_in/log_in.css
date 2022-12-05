@@ -11,6 +11,11 @@ body {
     margin-top: 50px;
     padding: 20px;
     color: rgb(255, 255, 255);
+    font-family: oswald;
+}
+#login h3{
+    font-size: 30px;
+    margin-bottom: 40px;
 }
 #login input{
     width: 100%;
