@@ -42,12 +42,9 @@ body {
     border-radius: 5px;
     margin: 5%;
 }
+
 #jacobi {
     width: 17%;
-}
-
-/* Put the img in the middle */
-#jacobi {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -64,6 +61,7 @@ body {
     position: absolute;
     top: 60px;
     left: -420px;
+    z-index: -1;
 }
 
 /*White circle*/
@@ -76,6 +74,7 @@ body {
     position: absolute;
     top: 100px;
     left: 100px;
+    z-index: -1;
 }
 
 /*Orange circle*/
@@ -88,6 +87,7 @@ body {
     position: absolute;
     top: -450px;
     left: 1100px;
+    z-index: -1;
 }
 
 /* Simple bar across the orange circle */
@@ -100,6 +100,7 @@ body {
     top: -400px;
     left: 1200px;
     transform: rotate(45deg);
+    z-index: -1;
 }
 
 #five {
@@ -110,6 +111,7 @@ body {
     top: -300px;
     left: 1200px;
     transform: rotate(45deg);
+    z-index: -1;
 }
 
 #six {
@@ -120,6 +122,7 @@ body {
     top: -200px;
     left: 1200px;
     transform: rotate(45deg);
+    z-index: -1;
 }
 
 #seven {
@@ -130,6 +133,7 @@ body {
     top: -100px;
     left: 1200px;
     transform: rotate(45deg);
+    z-index: -1;
 }
 
 #eight {
@@ -140,6 +144,7 @@ body {
     top: 0px;
     left: 1200px;
     transform: rotate(45deg);
+    z-index: -1;
 }
 
 /*Orange triangle*/
@@ -155,6 +160,7 @@ body {
     left: 1060px;
     transform: rotate(-44deg);
     opacity: 0.6;
+    z-index: -1;
 }
 
 #ten {
@@ -168,6 +174,7 @@ body {
     left: 1145px;
     transform: rotate(-44deg);
     opacity: 0.6;
+    z-index: -1;
 }
 
 #eleven {
@@ -181,4 +188,5 @@ body {
     left: 1230px;
     transform: rotate(-44deg);
     opacity: 0.6;
+    z-index: -1;
 }

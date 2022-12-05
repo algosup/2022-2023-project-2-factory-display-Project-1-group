@@ -12,3 +12,7 @@ signInWithEmailAndPassword(auth, email, password)
     const errorMessage = error.message;
   });
 
+// display none if the screen is too small
+if (window.innerWidth < 768) {
+  document.getElementById(piecesbackground).style.display = 'none';
+}
