@@ -1,0 +1,30 @@
+#navbar {
+    width: 20%;
+    height: 800px;
+    background-color: #000000;
+}
+
+#navbar img {
+    width: 100%;
+    height: 20%;
+}
+
+#navbar hr {
+    border: 1px solid #fff;
+}
+
+#navbar button {
+    width: 90%;
+    height: 40px;
+    margin-top: 540px;
+    margin-left: 5%;
+    padding: 10px;
+    background-color: #555;
+    border: none;
+    color: white;
+    border-radius: 1px;
+}
+
+#navbar button:hover {
+    background-color: #666;
+}
