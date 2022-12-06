@@ -1,7 +1,3 @@
-// Some weird issues on mobile & safari - damn .. any ideas?
-const span = document.querySelector('span');
-const button = document.querySelector('button');
-
 document.querySelectorAll('.button').forEach(button => {
   button.addEventListener('click', e => {
       button.classList.add('processing');
@@ -12,16 +8,6 @@ document.querySelectorAll('.button').forEach(button => {
 document.querySelector('.restart').addEventListener('click', e => {
   document.querySelectorAll('.button').forEach(button => {
       button.classList.remove('processing');
-      span.style.display = 'block';
   });
   e.preventDefault();
-
-});
-
-// display none span on click
-
-
-
-button.addEventListener('click', () => {
-  span.style.display = 'none';
 });
