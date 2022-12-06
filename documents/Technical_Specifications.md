@@ -4,7 +4,6 @@ Project Name : Factory Display
 
 Version : 1.0
 
-<!--Markdown table -->
 ## Team
 
 | Name        | Role            |
@@ -245,9 +244,7 @@ The documents and resources that we used when coming up with our design and wish
 
 ### 7.3 Acknowledgments
 
-<!-- Credit people who have contributed to the design that you wish to recognize -->
 The people who have contributed to the design that we wish to recognize are:
-
 
 ### 8. Glossary  or Terminology
 
