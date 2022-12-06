@@ -1,16 +1,30 @@
-#navbar{
+#navbar {
     width: 20%;
-    height: 100%;
+    height: 800px;
     background-color: #000000;
-    color: #ffffff;
-    font-size: 20px;
-    font-family: "Times New Roman", Times, serif;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
 }
-#imgnavabar{
-    width: 2;
+
+#navbar img {
+    width: 100%;
     height: 20%;
+}
+
+#navbar hr {
+    border: 1px solid #fff;
+}
+
+#navbar button {
+    width: 90%;
+    height: 40px;
+    margin-top: 540px;
+    margin-left: 5%;
+    padding: 10px;
+    background-color: #555;
+    border: none;
+    color: white;
+    border-radius: 1px;
+}
+
+#navbar button:hover {
+    background-color: #666;
 }
