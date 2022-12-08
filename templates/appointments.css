@@ -72,3 +72,11 @@ body {
 .container{
     margin-left: 30%;
 }
+
+li{
+    list-style-type: none;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 20px;
+    color: black; 
+}
