@@ -1,8 +1,361 @@
-ion-content {
-  --padding-top: 10%;
-  --padding-start: 5%;
-  --padding-end: 5%;
-  --background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url("https://images.unsplash.com/photo-1508964942454-1a56651d54ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80")
-      no-repeat;
+html,
+body {
+    overflow: hidden;
+}
+
+// body {
+//     background-color: rgb(16, 15, 15);
+// }
+
+
+#login {
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#login h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#login input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgb(16, 15, 15);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+}
+
+#submit {
+    color: white;
+    width: 90%;
+    height: 40px;
+    background-color: #ff6a00;
+    border: 0px;
+    border-radius: 5px;
+    margin: 5%;
+}
+
+#jacobi {
+    width: 17%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+/*Orange circle in gray gradient*/
+
+#one {
+    width: 700px;
+    height: 700px;
+    background: linear-gradient(0deg, rgba(16, 15, 15, 1) 0%, rgba(255, 106, 0, 1) 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: -420px;
+    z-index: -1;
+}
+
+/*White circle*/
+
+#two {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: -1;
+}
+
+/*Orange circle*/
+
+#three {
+    width: 700px;
+    height: 700px;
+    background: #ff6a00;
+    border-radius: 50%;
+    position: absolute;
+    top: -450px;
+    left: 1100px;
+    z-index: -1;
+}
+
+/* Simple bar across the orange circle */
+
+#four {
+    width: 40px;
+    height: 800px;
+    background: rgb(16, 15, 15);
+    position: absolute;
+    top: -500px;
+    left: 1200px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+#five {
+    width: 40px;
+    height: 800px;
+    background: rgb(16, 15, 15);
+    position: absolute;
+    top: -400px;
+    left: 1200px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+#six {
+    width: 40px;
+    height: 800px;
+    background: rgb(16, 15, 15);
+    position: absolute;
+    top: -300px;
+    left: 1200px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+#seven {
+    width: 40px;
+    height: 800px;
+    background: rgb(16, 15, 15);
+    position: absolute;
+    top: -100px;
+    left: 1200px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+#eight {
+    width: 40px;
+    height: 800px;
+    background: rgb(16, 15, 15);
+    position: absolute;
+    top: 0px;
+    left: 1200px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+/*Orange triangle*/
+
+#nine {
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 200px solid #ff6a00;
+    position: absolute;
+    top: 350px;
+    left: 960px;
+    transform: rotate(-44deg);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+#ten {
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 200px solid #ff6a00;
+    position: absolute;
+    top: 440px;
+    left: 1045px;
+    transform: rotate(-44deg);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+#eleven {
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 200px solid #ff6a00;
+    position: absolute;
+    top: 530px;
+    left: 130px;
+    transform: rotate(-44deg);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.button {
+    --color: #fff;
+    --background: #ff6a00;
+    --height: 41px;
+    --width: 160px;
+    --icon: #fff;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    border: none;
+    outline: none;
+    background: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    width: var(--width);
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color);
+    line-height: var(--height);
+}
+.button:before, .button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.button:before {
+    transform: translate(-50%, -50%);
+    width: var(--before-w, var(--width));
+    height: var(--before-h, var(--height));
+    border-radius: var(--before-r, 7px);
+    background: var(--background);
+    transform-origin: 50% 50%;
+    transition: width 0.3s, height 0.3s, border-radius 0.2s;
+    transition-delay: 0.2s;
+}
+.button:after {
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    background: var(--icon);
+    z-index: 2;
+    border-radius: 50%;
+    transform: scale(0);
+}
+.button span {
+    z-index: 1;
+    display: block;
+    position: relative;
+    opacity: var(--span-o, 1);
+    transform: scale(var(--span-s, 1));
+    transition: opacity 0.3s, transform 0.2s;
+    transition-delay: 0.2s;
+}
+.button svg {
+    width: 15px;
+    height: 13px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    stroke: var(--icon);
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    transform: translate(-50%, -50%);
+    stroke-dasharray: 17px;
+    stroke-dashoffset: var(--svg-o, 17px);
+    transition: stroke-dashoffset 0.3s ease;
+}
+.button.processing {
+    --before-w: 41px;
+    --before-h: 41px;
+    --before-r: 22px;
+    --span-o: 0;
+    --span-s: 0.6;
+    --after-s: 1;
+    --svg-o: 34px;
+}
+.button.processing:before {
+    animation: pulse 3s linear forwards;
+}
+.button.processing:after {
+    animation: dot 3s linear forwards;
+}
+.button.processing svg {
+    transition-delay: 3s;
+}
+@keyframes pulse {
+    4% {
+        transform: translate(-50%, -50%) scaleX(1.1);
+    }
+    8% {
+        transform: translate(-50%, -50%);
+    }
+    24%, 56%, 88% {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    40%, 72% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+@keyframes dot {
+    8% {
+        transform: scale(0);
+    }
+    16% {
+        transform: scale(1) rotate(30deg) translateX(48px);
+    }
+    95% {
+        transform: scale(1) rotate(1000deg) translateX(48px);
+    }
+    100% {
+        transform: scale(0.125) rotate(1050deg) translate(52px, -6px);
+    }
+}
+.restart {
+    display: table;
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    line-height: 23px;
+    color: #404660;
+    font-size: 14px;
+    font-weight: 500;
+}
+.restart svg {
+    margin: 4px 4px 0 0;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+}
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+* {
+    box-sizing: inherit;
+}
+*:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    font-family: 'Roboto', Arial;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #0d0f18;
+}
+
+#valid_btn {
+    margin-left: 100px;
+    margin-top: 20px;
 }

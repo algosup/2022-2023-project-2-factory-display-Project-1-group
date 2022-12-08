@@ -29,6 +29,14 @@ export class LoginPage {
       }
     });
   }
+  ngOnInit() {
+    document.querySelectorAll('.button').forEach(button => {
+      button.addEventListener('click', e => {
+          button.classList.add('processing');
+          e.preventDefault();
+      });
+    });
+  }
 
   get email() {
     return this.credentials.controls.email;
