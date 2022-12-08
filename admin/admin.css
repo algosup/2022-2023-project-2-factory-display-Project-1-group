@@ -1,6 +1,6 @@
 #navbar {
     width: 20%;
-    height: 800px;
+    height: 100%;
     background-color: #000000;
 }
 
@@ -16,7 +16,8 @@
 #navbar button {
     width: 90%;
     height: 40px;
-    margin-top: 540px;
+    margin-top: 150%;
+    margin-bottom: 10%;
     margin-left: 5%;
     padding: 10px;
     background-color: #555;
