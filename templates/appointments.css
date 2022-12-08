@@ -1,3 +1,6 @@
+body {
+    background-color: #888;
+}
 
 .btn {
     height: 10% ;
@@ -53,4 +56,15 @@
 
 #navbar hr {
     border: 1px solid #fff;
+}
+
+#main {
+    width: 76%;
+    height: 93%;
+    background-color: #fff;
+    margin-left: 22%;
+    display: flex;
+    position: absolute;
+    margin-top: 2%;
+    border-radius: 20px;
 }
