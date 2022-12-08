@@ -1,16 +1,19 @@
 
 .btn {
     height: 10% ;
-    margin-top: 30%;
     border-radius: 5px;
     background-color: white;
     color: #000000;
     width: 90%;
     margin-left: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 3%;
     border: none;
     padding: 7%;
     font-size: 18px;
+}
+
+.btn:hover{
+    background-color: #ccc;
 }
 
 #decobtn{
@@ -24,6 +27,19 @@
     margin-bottom: 10%;
     border: none;
 }
+
+#decobtn:hover {
+    background-color: #666;
+}
+
+#pageload {
+    background-color: #ff6a00;
+}
+
+#pageload:hover {
+    background-color: #ff7a00;
+}
+
 #navbar {
     width: 20%;
     height: 100%;
@@ -37,13 +53,4 @@
 
 #navbar hr {
     border: 1px solid #fff;
-}
-
-
-#navbar button:hover {
-    background-color: #666;
-}
-
-.btn:hover{
-    background-color: #666;
 }

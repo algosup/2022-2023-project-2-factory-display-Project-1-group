@@ -13,6 +13,10 @@
     font-size: 18px;
 }
 
+.btn:hover{
+    background-color: #ccc;
+}
+
 #decobtn{
     height: 6%;
     margin-top: 30%;
@@ -24,6 +28,11 @@
     margin-bottom: 10%;
     border: none;
 }
+
+#decobtn:hover {
+    background-color: #666;
+}
+
 #navbar {
     width: 20%;
     height: 100%;
@@ -37,13 +46,4 @@
 
 #navbar hr {
     border: 1px solid #fff;
-}
-
-
-#navbar button:hover {
-    background-color: #666;
-}
-
-.btn:hover{
-    background-color: #666;
 }
