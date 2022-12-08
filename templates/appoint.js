@@ -6,7 +6,7 @@ var addTask = function () {
     var text = taskInput.value;
     var li = document.createElement('li');
     li.innerHTML =
-        "<label>" + text + "</label>" +
+        "<label class='appointment'>" + text + "</label>" +
         "<button class='delete'>Delete</button>";
     incompleteTasks.appendChild(li);
     taskInput.value = '';
