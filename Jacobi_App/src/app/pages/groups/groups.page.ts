@@ -19,7 +19,7 @@ export class GroupsPage implements OnInit {
     slidesPerView: 1,
     speed: 1000,
     autoplay: {
-      delay: 8000
+      delay: 8000 // in ms (1s ==> 1000ms)
     }
     
   };
@@ -61,6 +61,7 @@ export class GroupsPage implements OnInit {
   async loadMultipleContent(){
       const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
       const element = (await supabase.from('data').select("content")).data;
+      var numbercontent = 0;
       console.log(element);
       element.forEach(async elements => {
         console.log(elements);
@@ -69,8 +70,9 @@ export class GroupsPage implements OnInit {
         // const ok =await (await supabase.from('data').select("id")).data;
         const newdiv = document.createElement("div")
         newdiv.innerHTML = elements.content;
-        const currentdiv = document.getElementById("loader");
+        const currentdiv = document.getElementById("loader"+numbercontent);
         currentdiv.appendChild(newdiv);
+        numbercontent +=1
 
       });
     
