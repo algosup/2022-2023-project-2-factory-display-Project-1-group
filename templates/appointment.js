@@ -1,33 +1,38 @@
-var taskInput = document.getElementById('newTask');
-var addTaskButton = document.getElementById('addTaskButton');
-var incompleteTasks = document.getElementById('toDo');
+var appointmentDate = document.getElementById('visitorDate');
+var appointmentTime = document.getElementById('visitorTime');
+var appointmentVisitor = document.getElementById('newVisitor'); // taskInput
+var addAppointmentButton = document.getElementById('addAppointmentButton'); // addTaskButton
+var appointmentList = document.getElementById('appointmentList'); // incompleteTask
 
 
-var addTask = function () {
-    var text = taskInput.value;
+var addAppointment = function () {
+    var date = appointmentDate.value;
+    var time = appointmentTime.value;
+    var text = appointmentVisitor.value;
     var li = document.createElement('li');
     li.innerHTML =
-        "<span class='dateapp'>" + text + "</span>" +
-        "<span class='hourapp'>" + text + "</span>" +
-        "<label class='nameapp'>" + text + "</label>" +
-        "<button class='edit'>Edit</button>" +
-        "<button class='delete'>Delete</button>";
-    incompleteTasks.appendChild(li);
-    taskInput.value = '';
+        "<label id='dateapp'>" + date + "</label>" +
+        "<label id='timeapp'>" + time + "</label>" +
+        "<label id='nameapp'>" + text + "</label>" +
+        "<button id='edit'>Editer</button>" +
+        "<button class='delete' id='delete'>Supprimer</button>";
+    appointmentList.appendChild(li);
+    appointmentDate.value = '';
+    appointmentTime.value = '';
+    appointmentVisitor.value = '';
 }
 
-addTaskButton.onclick = addTask;
+addAppointmentButton.onclick = addAppointment;
 
 addEventListener('keypress', function (e) {
     if (e.keyCode === 13) {
-        addTask();
+        addAppointment();
     }
 });
 
-incompleteTasks.addEventListener('click', function (e) {
+appointmentList.addEventListener('click', function (e) {
     if (e.target.className === 'delete') {
         var li = e.target.parentElement;
-        incompleteTasks.removeChild(li);
+        appointmentList.removeChild(li);
     }
 });
-

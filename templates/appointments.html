@@ -14,8 +14,8 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="appointments.css">
     <script src="appointment.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
 </head>
-
 <body>
     <div id="navbar">
         <img src="../images/Jacobi-group.png" alt="Jacobi Logo">
@@ -29,17 +29,14 @@
     </div>
     <div id="main">
         <div class='container'>
-
-            <h3> Ajouter un Rendez-vous </h3>
-
-            <input id='newTask' type='text'>
-            <button id='addTaskButton'>Add</button>
-            <ul id='toDo'>
+            <h3 id="title">Ajouter un rendez-vous</h3>
+            <input id='visitorDate' type='date'>
+            <input id='visitorTime' type='time'>
+            <input id='newVisitor' type='text'>
+            <button id='addAppointmentButton' type= "button">Ajouter</button>
+            <ul id='appointmentList'>
             </ul>
         </div>
     </div>
-
-
 </body>
-
 </html>
