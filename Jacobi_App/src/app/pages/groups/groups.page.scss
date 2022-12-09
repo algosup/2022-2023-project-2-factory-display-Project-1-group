@@ -7,9 +7,16 @@
     flex-direction: row;
 }
 
-.header{
-   height:100%;
-}
 #weatherWidget {
     height: 20px;
+}
+.padding_block{
+    height: 50px;
+}
+ion-slides {
+    height: 100%;
+}
+.carrousel_pos{
+    display: flex;
+    flex-direction: column;
 }

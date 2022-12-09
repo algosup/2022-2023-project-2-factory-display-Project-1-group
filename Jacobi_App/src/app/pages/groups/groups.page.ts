@@ -1,10 +1,12 @@
 import { Router } from '@angular/router';
-import { AlertController, NavController, LoadingController } from '@ionic/angular';
+import { AlertController, NavController, LoadingController, IonSlides } from '@ionic/angular';
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { createClient, SupabaseClient, User } from "@supabase/supabase-js";
 import { HttpClient } from '@angular/common/http';
 import OpenWeatherMap from 'openweathermap-ts';
+import { ViewChild } from '@angular/core';
+import { IonicSlides } from '@ionic/angular';
 @Component({
   selector: 'app-groups',
   templateUrl: './groups.page.html',
@@ -12,6 +14,14 @@ import OpenWeatherMap from 'openweathermap-ts';
 })
 export class GroupsPage implements OnInit {
   groups = [];
+  slideOpts = {
+    initialSlide: 0,
+    slidesPerView: 1,
+    speed: 500,
+    autoplay: true
+  };
+  @ViewChild("Slides") slides: IonSlides;
+
 
   constructor(
     private alertController: AlertController,
@@ -20,12 +30,19 @@ export class GroupsPage implements OnInit {
     private router: Router,
     private http: HttpClient,
   ) {}
+  
 
   
   ngOnInit() {
     this.loadMultipleContent();
     const a = function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    document.getElementById("size_height").innerHTML = h.toString();
+    document.getElementById("size_width").innerHTML = w.toString();
   }
+  
+
   async createContent(){
     const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
     const element = await supabase.from('data').insert([{id: 5,content:"okmec"}]);
@@ -53,9 +70,6 @@ export class GroupsPage implements OnInit {
         currentdiv.appendChild(newdiv);
 
       });
-    
-  }
-  readAPI() {
     
   }
 }
