@@ -17,8 +17,11 @@ export class GroupsPage implements OnInit {
   slideOpts = {
     initialSlide: 0,
     slidesPerView: 1,
-    speed: 500,
-    autoplay: true
+    speed: 1000,
+    autoplay: {
+      delay: 8000
+    }
+    
   };
   @ViewChild("Slides") slides: IonSlides;
 
