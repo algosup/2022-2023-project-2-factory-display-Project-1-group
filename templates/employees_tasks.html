@@ -12,6 +12,8 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="employees_tasks.css">
+    <script src="employees_tasks.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
 </head>
 <body>
     <div id="navbar">
@@ -25,7 +27,15 @@
         <button id="decobtn">Déconnexion</button>
     </div>
     <div id="main">
-        
+        <div class="container">
+            <h3 id="title">Ajouter une tâche</h3>
+            <input id="newTask" type="text">
+            <input id="beginDate" type="date">
+            <input id="endDate" type="date">
+            <button id="addTaskButton" type="button">Ajouter</button>
+            <ul id="appointmentList">
+            </ul>
+        </div>
     </div>
 </body>
 </html>
