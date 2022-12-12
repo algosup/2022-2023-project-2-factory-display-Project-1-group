@@ -15,14 +15,14 @@ import { Console } from 'console';
 })
 export class GroupsPage implements OnInit {
   groups = [];
-  slideOpts = {
-    initialSlide: 0,
-    slidesPerView: 1,
-    speed: 1000,
-    autoplay: {
-      delay: 8000 // in ms (1s ==> 1000ms)
-    }
-    
+  slideOpts = { // All the settings related to the slider is here
+
+    initialSlide: 0, // Change the initial slide of the slider (0 is the first element)
+    slidesPerView: 1, // Display how many slide to you want to see at the same time
+    speed: 1000, // speed of the animation when sliding 
+    autoplay: { 
+      delay: 8000 // Time to wait before sliding in ms (1s ==> 1000ms)   
+    }   
   };
   @ViewChild("Slides") slides: IonSlides;
 
@@ -38,24 +38,20 @@ export class GroupsPage implements OnInit {
 
   
   ngOnInit() {
-    this.loadMultipleContent();
-    const a = function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    this.loadMultipleContent(); // Load all the widgets first
+    const a = function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js'); // load the weather widget into the page
     var w = window.innerWidth;
     var h = window.innerHeight;
-    var hasMeeting = false;
-    var hasVisitors = false;
-    var hasEmployeeTask = false;
-    var hasSecurityMeasure = false;
-    document.getElementById("size_height").innerHTML = h.toString();
-    document.getElementById("size_width").innerHTML = w.toString();
+    document.getElementById("size_height").innerHTML = h.toString(); // Allow the weather widget to be more responsive
+    document.getElementById("size_width").innerHTML = w.toString(); // Allow the weather widget to be more responsive
   }
   
 
-  async createContent(){
+  async createContent(){ // Function that create a row in the database in the category "data"
     const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
     const element = await supabase.from('data').insert([{id: 5,content:"okmec"}]);
   }
-  async loadContent(){
+  async loadContent(){ // Function that load a single widget to the page
     const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
     const element = (await supabase.from('data').select("content")).data[0];
     console.log(element);
@@ -63,9 +59,9 @@ export class GroupsPage implements OnInit {
     currentdiv.appendChild(element.content);
     };
 
-  async loadMultipleContent(){
+  async loadMultipleContent(){ // Function that load all the widgets into the slide
       const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
-      const content = (await supabase.from('data').select("content")).data;
+      const content = (await supabase.from('data').select("content")).data; // Here we load all the part of the database that we need
       const id = (await supabase.from('data').select("id")).data;
       const title = (await supabase.from('data').select("title")).data;
       const created_at = (await supabase.from('data').select("created_at")).data;
@@ -76,9 +72,8 @@ export class GroupsPage implements OnInit {
       const isMeeting = (await supabase.from('data').select("isMeeting")).data;
       const beginningTask = (await supabase.from('data').select("beginningTask")).data;
       const endingTask = (await supabase.from('data').select("endingTask")).data;
-      // var numbercontent = 0;
       for (let i = 0; i < id.length; i++) {        
-          if(isPersonalWidget[i].isPersonalWidget == true) {
+          if(isPersonalWidget[i].isPersonalWidget == true) { // We load all the content in each widget 
             const newdiv = document.createElement("div")
             newdiv.innerHTML = title[i].title + content[i].content;
             const currentdiv = document.getElementById("loader0");

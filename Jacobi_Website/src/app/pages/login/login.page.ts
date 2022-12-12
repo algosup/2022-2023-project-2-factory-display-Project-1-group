@@ -22,7 +22,7 @@ export class LoginPage {
     private alertController: AlertController,
     private router: Router
   ) {
-    this.authService.getCurrentUser().subscribe((user) => {
+    this.authService.getCurrentUser().subscribe((user) => { // this function check if the user is already identified and redirect him to the content of the website
       if (user) {
         console.log('GOT USER ON LOGIN');
         this.router.navigateByUrl('/groups', { replaceUrl: true });
@@ -46,7 +46,7 @@ export class LoginPage {
     return this.credentials.controls.password;
   }
 
-  async login() {
+  async login() { // This function check if the users have put the correct credentials
     const loading = await this.loadingController.create();
     await loading.present();
 
@@ -58,7 +58,7 @@ export class LoginPage {
       }
     });
   }
-  async forgotPw() {
+  async forgotPw() { // This function allow the users to change is password if he has forgotten it (reset password will be send in their email)
     const alert = await this.alertController.create({
       header: 'Changer votre mot de passe',
       message: 'Inserer votre email',
