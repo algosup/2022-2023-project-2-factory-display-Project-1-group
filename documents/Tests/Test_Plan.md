@@ -9,7 +9,7 @@
 | A2 | password_true | If true, the client can enter into the website | 1 enter email address and password <br>2 click on the connect button <br> 3 you are redirected to the next page| 3 |tested|
 | A3 | forgot_password | If the customer still does not have the correct password on the 3rd try, a message to change his password is displayed | 1 when you click on the button you will be asked to enter your email address <br> 2 an email will be sent to you so that you can change your password <br> 3 you can return to the log in page to log in | 1 |in test|
 | A4 | login_page | The customer can write his email address and password | 1 enter email address and password <br>2 click on the connect button <br> 3 you are redirected to the next page| 3 |tested|
-| A5 | log_out_page | When the customer click on the log out button he will be disconnected | when you click on the button you will be redirected to the log in page | 2 |in test|
+| A5 | log_out_page | When the customer click on the log out button he will be disconnected | when you click on the button you will be redirected to the log in page | 2 |tested|
 
 ### For Database/ Interface:
 | Test ID | Name | Description | Steps to perform | Priority (from 3 to 1) | Status |
