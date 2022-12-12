@@ -13,7 +13,7 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="appointments.css">
-    <script src="appointment.js" defer></script>
+    <script src="appointments.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
 </head>
 <body>
@@ -28,14 +28,16 @@
         <button id="decobtn">Déconnexion</button>
     </div>
     <div id="main">
-        <div class='container'>
+        <div class="container">
             <h3 id="title">Ajouter un rendez-vous</h3>
-            <input id='visitorDate' type='date'>
-            <input id='visitorTime' type='time'>
-            <input id='newVisitor' type='text'>
-            <button id='addAppointmentButton' type= "button">Ajouter</button>
-            <ul id='appointmentList'>
+            <div id="inputDate">
+            <input id="visitorDate" type="date">
+            <input id="visitorTime" type="time">
+            <input id="newVisitor" type="text">
+            <button id="addAppointmentButton" type= "button">Ajouter</button>
+            <ul id="appointmentList">
             </ul>
+        </div>
         </div>
     </div>
 </body>
