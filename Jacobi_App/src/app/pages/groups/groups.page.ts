@@ -45,7 +45,11 @@ export class GroupsPage implements OnInit {
     document.getElementById("size_height").innerHTML = h.toString(); // Allow the weather widget to be more responsive
     document.getElementById("size_width").innerHTML = w.toString(); // Allow the weather widget to be more responsive
   }
-  
+  // async getFileFromDatabase(){
+  //   const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
+  //   const spaceCat = document.getElementById("loader")
+  //   const { data, error } = await supabase.storage.from('avatars').upload('space-cat.png', spaceCat)
+  // }
 
   async createContent(){ // Function that create a row in the database in the category "data"
     const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);

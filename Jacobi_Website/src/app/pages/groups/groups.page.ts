@@ -87,5 +87,6 @@ export class GroupsPage implements OnInit {
     document.getElementById("loader").innerHTML = test.content;
     
   }
+  
 }
 
