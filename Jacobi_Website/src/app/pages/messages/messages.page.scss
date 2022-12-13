@@ -1,45 +1,52 @@
-ion-content {
-  --background: url("../../../assets/pattern.png") no-repeat;
+body {
+  background-color: #ccc;
 }
 
-.message-input {
-  // width: 100%;
-  border: 1px solid #c3c3c3;
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 5%);
+.btn {
+  height: 10% ;
+  margin-top: 30%;
+  border-radius: 5px;
+  background-color: white;
+  color: #000000;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+  border: none;
+  padding: 7%;
+  font-size: 18px;
 }
 
-ion-textarea {
-  --padding-start: 20px;
-  --padding-top: 4px;
-  --padding-bottom: 4px;
-
-  min-height: 30px;
+.btn:hover{
+  background-color: #ccc;
 }
 
-.message {
-  padding: 10px !important;
-  border-radius: 10px !important;
-  margin-bottom: 8px !important;
-
-  img {
-    width: 100%;
-  }
+#decobtn{
+  height: 6%;
+  margin-top: 30%;
+  background-color: #555;
+  color: white;
+  border-radius: 2px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+  border: none;
 }
 
-.my-message {
-  background: #dbf7c5;
-  color: #000;
+#decobtn:hover {
+  background-color: #666;
 }
 
-.other-message {
-  background: #fff;
-  color: #000;
+#navbar {
+  width: 20%;
+  height: 100%;
+  background-color: #000000;
+  position: fixed;
+}
+#navbar img {
+  width: 100%;
+  height: 20%;
 }
 
-.time {
-  color: #cacaca;
-  float: right;
-  font-size: small;
+#navbar hr {
+  border: 1px solid #fff;
 }

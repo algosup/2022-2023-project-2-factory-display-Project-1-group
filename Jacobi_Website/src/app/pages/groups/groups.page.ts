@@ -25,7 +25,14 @@ export class GroupsPage implements OnInit {
   ) {}
 
   
-  ngOnInit() {}
+  ngOnInit() {
+    document.querySelectorAll('.button').forEach(button => {
+      button.addEventListener('click', e => {
+          button.classList.add('processing');
+          e.preventDefault();
+      });
+    });
+  }
 
   async ionViewWillEnter() {
     this.groups = await this.data.getGroups();

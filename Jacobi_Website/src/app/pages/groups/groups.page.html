@@ -6,16 +6,14 @@
       <ion-button (click)="openLogin()" *ngIf="(user | async) === false"> Connexion </ion-button>
     </ion-buttons>
   </ion-list>
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed" *ngIf="user | async">
-    <ion-fab-button (click)="createGroup()">
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-button (click)="createContent()">
-      <ion-icon name="getContent"></ion-icon>create
-    </ion-fab-button>
-    <ion-fab-button (click)="loadContent()">
-      <ion-icon name="getContent"></ion-icon>load
-    </ion-fab-button>
-    <ion-label id="loader"></ion-label>
-  </ion-fab>
+  <div id="navbar">
+    <img src="../images/Jacobi-group.png" alt="Jacobi Logo">
+    <hr>
+    <a class="btn" href="../templates/employees_tasks.html">Modifier</a>
+    <a class="btn" href="../templates/historic.html">Historique</a>
+    <button id="decobtn">Déconnexion</button>
+</div>
+<div id="main">
+</div>
+
 </ion-content>
