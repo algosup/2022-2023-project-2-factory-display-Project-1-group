@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-employees-tasks',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeesTasksPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private authService: AuthService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     var appointmentDate = document.getElementById('beginDate');
@@ -49,5 +54,14 @@ addEventListener('keypress', function (e) {
 //     }
 // });
   }
+  switchPage(page: string){
+    this.authService.getCurrentUser().subscribe((user) => { // this function check if the user is already identified and redirect him to the content of the website
+      if (user) {
+        console.log('GOT USER ON LOGIN');
+        this.router.navigateByUrl(page, { replaceUrl: true });
+      }
+    });
+  }
+  
 
 }
