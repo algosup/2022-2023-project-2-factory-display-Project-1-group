@@ -3,11 +3,16 @@
   <div id="navbar">
     <img src="../images/Jacobi-group.png" alt="Jacobi Logo">
     <hr>
-    <a class="btn" href="../templates/employees_tasks.html">Tâches des employés</a>
+    <ion-button class="btn" (click)="switchPage('/employees-tasks')">Tâches des employés</ion-button>
+    <ion-button class="btn" (click)="switchPage('/security-measures')">Mesures de sécurité</ion-button>
+    <ion-button class="btn" (click)="switchPage('/appointments')">Rendez-vous</ion-button>
+    <ion-button class="btn" (click)="switchPage('/visitors')">Visiteurs</ion-button>
+    <ion-button class="btn" (click)="switchPage('/historic')">Historique</ion-button>
+    <!-- <a class="btn" href="../templates/employees_tasks.html">Tâches des employés</a>
     <a class="btn" id="pageload" href="../templates/security_measures.html">Mesures de sécurité</a>
     <a class="btn" href="../templates/appointments.html">Rendez-vous</a>
     <a class="btn" href="../templates/visitors.html">Visiteurs</a>
-    <a class="btn" href="../templates/historic.html">Historique</a>
+    <a class="btn" href="../templates/historic.html">Historique</a> -->
     <button id="decobtn">Déconnexion</button>
 </div>
 <div id="main">
