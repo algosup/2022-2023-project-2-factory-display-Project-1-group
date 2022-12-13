@@ -1,0 +1,153 @@
+body {
+    background-color: #888;
+}
+
+.btn {
+    height: 10% ;
+    border-radius: 5px;
+    background-color: white;
+    color: #000000;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    border: none;
+    padding: 7%;
+    font-size: 18px;
+}
+
+.btn:hover{
+    background-color: #ccc;
+}
+
+#decobtn{
+    height: 6%;
+    margin-top: 30%;
+    background-color: #555;
+    color: white;
+    border-radius: 2px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    border: none;
+}
+
+#decobtn:hover {
+    background-color: #666;
+}
+
+#pageload {
+    background-color: #ff6a00;
+}
+
+#pageload:hover {
+    background-color: #ff7a00;
+}
+
+#navbar {
+    width: 20%;
+    height: 100%;
+    background-color: #000000;
+    position: fixed;
+}
+
+#navbar img {
+    width: 100%;
+    height: 20%;
+}
+
+#navbar hr {
+    border: 1px solid #fff;
+}
+
+#main {
+    width: 76%;
+    height: 93%;
+    background-color: #fff;
+    margin-left: 22%;
+    display: flex;
+    position: absolute;
+    margin-top: 2%;
+    border-radius: 20px;
+}
+
+#title {
+    margin-top: 3%;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Kanit;
+    margin-left: 28%;
+}
+
+#inputVisitor{
+    margin-left: 20%;
+}
+
+li{
+    list-style-type: none;
+    margin-top: 5%;
+    margin-left: -10%;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    height: 5%;
+}
+
+#dateVisitor{
+    padding-right: 15%;
+    width: 35%;
+}
+
+#nameVisitor{
+    font-size: 20px;
+    font-family: Kanit;
+    width: 25%;
+}
+
+#edit{
+    margin-left: 5%;
+    border: none;
+    font-family: Kanit;
+    font-size: 25px;
+    border-radius: 3px;
+    width: 15%;
+}
+
+#delete{
+    border: none;
+    font-family: Kanit;
+    font-size: 25px;
+    border-radius: 3px;
+    width: 15%;
+}
+
+#addVisitorButton{
+    border: none;
+    font-family: Kanit;
+    font-size: 25px;
+    border-radius: 3px;
+    margin-top: 4%;
+    margin-left: 13%;
+}
+
+#addVisitorButton:hover{
+    background-color: #ddd;
+}
+
+#visitorDate{
+    border: none;
+}
+
+#newVisitor{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 20px;
+    font-family: Kanit;
+}
+
+#delete:hover{
+    background-color: #ddd;
+}
+
+#edit:hover{
+    background-color: #ddd;
+}

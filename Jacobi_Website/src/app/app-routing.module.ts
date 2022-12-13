@@ -36,7 +36,19 @@ const routes: Routes = [
   {
     path: 'employees-tasks',
     loadChildren: () => import('./pages/employees-tasks/employees-tasks.module').then( m => m.EmployeesTasksPageModule)
+  },  {
+    path: 'security-measures',
+    loadChildren: () => import('./pages/security-measures/security-measures.module').then( m => m.SecurityMeasuresPageModule)
   },
+  {
+    path: 'visitors',
+    loadChildren: () => import('./pages/visitors/visitors.module').then( m => m.VisitorsPageModule)
+  },
+  {
+    path: 'historic',
+    loadChildren: () => import('./pages/historic/historic.module').then( m => m.HistoricPageModule)
+  },
+
 
 
 ];
