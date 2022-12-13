@@ -8,7 +8,7 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./admin.page.scss'],
 })
 export class AdminPage implements OnInit {
-
+  user = this.authService.getCurrentUser();
   constructor(
     private authService: AuthService,
     private router: Router
@@ -31,6 +31,9 @@ export class AdminPage implements OnInit {
         this.router.navigateByUrl('/employees-tasks', { replaceUrl: true });
       }
     });
+  }
+  signOut() {
+    this.authService.signOut();
   }
 
 }

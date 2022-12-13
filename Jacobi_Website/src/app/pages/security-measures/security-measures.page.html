@@ -13,7 +13,8 @@
     <a class="btn" href="../templates/appointments.html">Rendez-vous</a>
     <a class="btn" href="../templates/visitors.html">Visiteurs</a>
     <a class="btn" href="../templates/historic.html">Historique</a> -->
-    <button id="decobtn">Déconnexion</button>
+    <ion-button (click)="signOut()" *ngIf="user | async"> <ion-icon name="log-out-outline" slot="icon-only"></ion-icon> </ion-button>
+    <!-- <button id="decobtn">Déconnexion</button> -->
 </div>
 <div id="main">
     <div class="container">

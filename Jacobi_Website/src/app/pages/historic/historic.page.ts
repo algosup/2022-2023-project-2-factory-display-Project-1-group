@@ -8,6 +8,7 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./historic.page.scss'],
 })
 export class HistoricPage implements OnInit {
+  user = this.authService.getCurrentUser();
 
   constructor(
     private authService: AuthService,
@@ -23,6 +24,9 @@ export class HistoricPage implements OnInit {
         this.router.navigateByUrl(page, { replaceUrl: true });
       }
     });
+  }
+  signOut() {
+    this.authService.signOut();
   }
 
 }

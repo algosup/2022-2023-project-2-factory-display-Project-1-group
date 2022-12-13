@@ -8,6 +8,7 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./appointments.page.scss'],
 })
 export class AppointmentsPage implements OnInit {
+  user = this.authService.getCurrentUser();
 
   constructor(
     private authService: AuthService,
@@ -61,6 +62,9 @@ addEventListener('keypress', function (e) {
         this.router.navigateByUrl(page, { replaceUrl: true });
       }
     });
+  }
+  signOut() {
+    this.authService.signOut();
   }
 
 

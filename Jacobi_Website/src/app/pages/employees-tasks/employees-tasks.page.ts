@@ -8,7 +8,7 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./employees-tasks.page.scss'],
 })
 export class EmployeesTasksPage implements OnInit {
-
+  user = this.authService.getCurrentUser();
   constructor(
     private authService: AuthService,
     private router: Router
@@ -61,6 +61,9 @@ addEventListener('keypress', function (e) {
         this.router.navigateByUrl(page, { replaceUrl: true });
       }
     });
+  }
+  signOut() {
+    this.authService.signOut();
   }
   
 
