@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { createClient } from '@supabase/supabase-js';
 import { AuthService } from 'src/app/services/auth.service';
+import { environment } from 'src/environments/environment';
+
 
 @Component({
   selector: 'app-appointments',
@@ -65,6 +68,23 @@ addEventListener('keypress', function (e) {
   }
   signOut() {
     this.authService.signOut();
+  }
+  async sendDatabase(){
+    var date = (<HTMLInputElement>document.getElementById("visitorDate")).value
+    var time = (<HTMLInputElement>document.getElementById("visitorTime")).value
+    var visitorName = (<HTMLInputElement>document.getElementById("newVisitor")).value
+    const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
+    const id = (await supabase.from('settings').select("id")).data[0];
+    console.log(id.id);
+    console.log(time);
+    console.log(date);
+    console.log(visitorName);
+    await supabase.from('settings')[0].update([{idmax: 1}])
+    // .eq('id', 1)
+    // await supabase.from('settings').insert([{id: id.id + 1}]);
+    var dateTime = date + " " + time
+    await supabase.from('data').insert([{id: id,content: visitorName,beginningTask: dateTime}]);
+
   }
 
 

@@ -23,7 +23,8 @@
             <input id="visitorDate" type="date">
             <input id="visitorTime" type="time">
             <input id="newVisitor" type="text">
-            <button id="addAppointmentButton" type= "button">Ajouter</button>
+            <ion-button class="btn" id="addAppointmentButton" (click)="sendDatabase()">Ajouter</ion-button>
+            <!-- <button id="addAppointmentButton" type= "button">Ajouter</button> -->
             <ul id="appointmentList">
             </ul>
         </div>
