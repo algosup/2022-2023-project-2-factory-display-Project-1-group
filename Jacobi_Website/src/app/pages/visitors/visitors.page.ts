@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { createClient } from '@supabase/supabase-js';
 import { AuthService } from 'src/app/services/auth.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-visitors',
@@ -16,13 +18,18 @@ export class VisitorsPage implements OnInit {
   ) { }
 
   ngOnInit() {
+// visitorList.addEventListener('click', function (e) {
+//     if (e.target.className === 'delete') {
+//         var li = e.target.parentElement;
+//         visitorList.removeChild(li);
+//     }
+// });
+  }
+  addVisitor() {
     var visitorDate = document.getElementById('visitorDate');
-var newVisitor = document.getElementById('newVisitor'); // taskInput
-var addVisitorButton = document.getElementById('addVisitorButton'); // addTaskButton
-var visitorList = document.getElementById('visitorList'); // incompleteTask
-
-
-var addVisitor = function () {
+    var newVisitor = document.getElementById('newVisitor'); // taskInput
+    var addVisitorButton = document.getElementById('addVisitorButton'); // addTaskButton
+    var visitorList = document.getElementById('visitorList'); // incompleteTask    
     var date = (<HTMLInputElement>visitorDate).value;
     var text = (<HTMLInputElement>newVisitor).value;
     var li = document.createElement('li');
@@ -35,22 +42,6 @@ var addVisitor = function () {
     (<HTMLInputElement>visitorDate).value    = '';
     (<HTMLInputElement>newVisitor).value = '';
 }
-
-addVisitorButton.onclick = addVisitor;
-
-addEventListener('keypress', function (e) {
-    if (e.keyCode === 13) {
-        addVisitor();
-    }
-});
-
-// visitorList.addEventListener('click', function (e) {
-//     if (e.target.className === 'delete') {
-//         var li = e.target.parentElement;
-//         visitorList.removeChild(li);
-//     }
-// });
-  }
   switchPage(page: string){
     this.authService.getCurrentUser().subscribe((user) => { // this function check if the user is already identified and redirect him to the content of the website
       if (user) {
@@ -61,6 +52,14 @@ addEventListener('keypress', function (e) {
   }
   signOut() {
     this.authService.signOut();
+  }
+  async sendDatabase(){
+    var date = (<HTMLInputElement>document.getElementById("visitorDate")).value
+    var visitorName = (<HTMLInputElement>document.getElementById("newVisitor")).value
+    const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
+    const idmax = (await supabase.from('settings').select("idmax")).data[0];
+    await supabase.from('settings').upsert({id: 1, idmax: idmax.idmax+1})
+    await supabase.from('data').insert([{id: idmax.idmax,content: "<p>" +visitorName+"<p>",isVisitorWidget: true,beginningTask: "<p>" +date +"<p>"}]);
   }
 
 }

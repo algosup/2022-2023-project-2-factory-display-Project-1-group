@@ -22,7 +22,7 @@
         <div id="inputVisitor">
             <input id="visitorDate" type="date">
             <input id="newVisitor" type="text">
-            <ion-button color="medium" id="addVisitorButton">Ajouter</ion-button>
+            <ion-button color="medium" id="addVisitorButton" (click)="sendDatabase();addVisitor()">Ajouter</ion-button>
             <ul id="visitorList">
             </ul>
         </div>

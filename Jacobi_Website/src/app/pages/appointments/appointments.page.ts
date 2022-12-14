@@ -19,14 +19,20 @@ export class AppointmentsPage implements OnInit {
   ) { }
 
   ngOnInit() {
+
+// appointmentList.addEventListener('click', function (e) {
+//     if (e.target.className === 'delete') {
+//         var li = e.target.parentElement;
+//         appointmentList.removeChild(li);
+//     }
+// });
+  }
+  addAppointment() {
     var appointmentDate = document.getElementById('appointmentDate');
-var appointmentTime = document.getElementById('appointmentTime');
-var appointmentVisitor = document.getElementById('newAppointment'); // taskInput
-var addAppointmentButton = document.getElementById('addAppointmentButton'); // addTaskButton
-var appointmentList = document.getElementById('appointmentList'); // incompleteTask
-
-
-var addAppointment = function () {
+    var appointmentTime = document.getElementById('appointmentTime');
+    var appointmentVisitor = document.getElementById('newAppointment'); // taskInput
+    var addAppointmentButton = document.getElementById('addAppointmentButton'); // addTaskButton
+    var appointmentList = document.getElementById('appointmentList'); // incompleteTask    
     var date = (<HTMLInputElement>appointmentDate).value;
     var time = (<HTMLInputElement>appointmentTime).value;
     var text = (<HTMLInputElement>appointmentVisitor).value;
@@ -42,22 +48,6 @@ var addAppointment = function () {
     (<HTMLInputElement>appointmentTime).value = '';
     (<HTMLInputElement>appointmentVisitor).value = '';
 }
-
-addAppointmentButton.onclick = addAppointment;
-
-addEventListener('keypress', function (e) {
-    if (e.keyCode === 13) {
-        addAppointment();
-    }
-});
-
-// appointmentList.addEventListener('click', function (e) {
-//     if (e.target.className === 'delete') {
-//         var li = e.target.parentElement;
-//         appointmentList.removeChild(li);
-//     }
-// });
-  }
   switchPage(page: string){
     this.authService.getCurrentUser().subscribe((user) => { // this function check if the user is already identified and redirect him to the content of the website
       if (user) {
@@ -70,14 +60,14 @@ addEventListener('keypress', function (e) {
     this.authService.signOut();
   }
   async sendDatabase(){
-    var date = (<HTMLInputElement>document.getElementById("visitorDate")).value
-    var time = (<HTMLInputElement>document.getElementById("visitorTime")).value
-    var visitorName = (<HTMLInputElement>document.getElementById("newVisitor")).value
+    var date = (<HTMLInputElement>document.getElementById("appointmentDate")).value
+    var time = (<HTMLInputElement>document.getElementById("appointmentTime")).value
+    var appointement = (<HTMLInputElement>document.getElementById("newAppointment")).value
     const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
     const idmax = (await supabase.from('settings').select("idmax")).data[0];
     await supabase.from('settings').upsert({id: 1, idmax: idmax.idmax+1})
     var dateTime = date + " " + time
-    await supabase.from('data').insert([{id: idmax.idmax,content: visitorName,isMeeting: true,beginningTask: dateTime}]);
+    await supabase.from('data').insert([{id: idmax.idmax,content: "<p>"+appointement+"<p>",isMeeting: true,beginningTask: "<p>"+dateTime+"<p>"}]);
   }
 
 
