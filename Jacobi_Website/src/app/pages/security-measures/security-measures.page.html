@@ -7,7 +7,7 @@
     <ion-button class="btn" (click)="switchPage('/security-measures')">Mesures de sécurité</ion-button>
     <ion-button class="btn" (click)="switchPage('/appointments')">Rendez-vous</ion-button>
     <ion-button class="btn" (click)="switchPage('/visitors')">Visiteurs</ion-button>
-    <ion-button class="btn" (click)="switchPage('/historic')">Historique</ion-button>
+    <ion-button class="btn" (click)="switchPage('/custom-ressource')">Custom-ressource</ion-button>
     <!-- <a class="btn" href="../templates/employees_tasks.html">Tâches des employés</a>
     <a class="btn" id="pageload" href="../templates/security_measures.html">Mesures de sécurité</a>
     <a class="btn" href="../templates/appointments.html">Rendez-vous</a>
@@ -21,7 +21,8 @@
         <h3 id="title">Ajouter une mesure de sécurité</h3>
         <div id="inputVisitor">
             <input id="newVisitor" type="text">
-            <button id="addVisitorButton" type="button">Ajouter</button>
+            <ion-button color="medium" id="addAppointmentButton" (click)="sendDatabase();addVisitor()">Ajouter</ion-button>
+            <!-- <button id="addVisitorButton" type="button">Ajouter</button> -->
             <ul id="visitorList">
             </ul>
         </div>

@@ -48,6 +48,10 @@ const routes: Routes = [
     path: 'historic',
     loadChildren: () => import('./pages/historic/historic.module').then( m => m.HistoricPageModule)
   },
+  {
+    path: 'custom-ressource',
+    loadChildren: () => import('./pages/custom-ressource/custom-ressource.module').then( m => m.CustomRessourcePageModule)
+  },
 
 
 
