@@ -4,9 +4,10 @@
     <img src="../assets/images/Jacobi-group.png" alt="Jacobi Logo">
     <hr>
     <div id="navbtn">
-      <ion-button class="btn" (click)="switchPage()">Modifier</ion-button>
+      <ion-button class="btn" (click)="switchPage('/historic')">Modifier</ion-button>
     <!-- <a class="btn"   [] onclick="switchPage()">Modifier</a> -->
-    <a class="btn" href="../templates/historic.html">Historique</a>
+    <ion-button class="btn" (click)="switchPage('/historic')">Historique</ion-button>
+    <!-- <a class="btn" href="../templates/historic.html">Historique</a> -->
   </div>
   <ion-button (click)="signOut()" *ngIf="user | async"> <ion-icon name="log-out-outline" slot="icon-only"></ion-icon> </ion-button>
     <!-- <button id="decobtn">Déconnexion</button> -->

@@ -24,16 +24,17 @@ export class AdminPage implements OnInit {
       });
     });
   }
-  switchPage(){
+  switchPage(page: string){
     this.authService.getCurrentUser().subscribe((user) => { // this function check if the user is already identified and redirect him to the content of the website
       if (user) {
         console.log('GOT USER ON LOGIN');
-        this.router.navigateByUrl('/employees-tasks', { replaceUrl: true });
+        this.router.navigateByUrl(page, { replaceUrl: true });
       }
     });
   }
   signOut() {
     this.authService.signOut();
   }
+
 
 }
