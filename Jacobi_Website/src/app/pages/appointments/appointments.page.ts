@@ -19,9 +19,9 @@ export class AppointmentsPage implements OnInit {
   ) { }
 
   ngOnInit() {
-    var appointmentDate = document.getElementById('visitorDate');
-var appointmentTime = document.getElementById('visitorTime');
-var appointmentVisitor = document.getElementById('newVisitor'); // taskInput
+    var appointmentDate = document.getElementById('appointmentDate');
+var appointmentTime = document.getElementById('appointmentTime');
+var appointmentVisitor = document.getElementById('newAppointment'); // taskInput
 var addAppointmentButton = document.getElementById('addAppointmentButton'); // addTaskButton
 var appointmentList = document.getElementById('appointmentList'); // incompleteTask
 

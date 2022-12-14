@@ -13,6 +13,7 @@ body {
     background-color: #ccc;
 }
 
+
 #decobtn{
     height: 6%;
     margin-top: 30%;
@@ -51,6 +52,19 @@ body {
 #navbar hr {
     border: 1px solid #fff;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#inputDate {
+    width: 90%;
+    height: 10%;
+    margin-left: 10%;
+    margin-top: -5%;
+}
 
 #main {
     width: 76%;
@@ -61,102 +75,48 @@ body {
     position: absolute;
     margin-top: 2%;
     border-radius: 20px;
+    color: #000000;
 }
-
-.container{
-}
-
-
 
 #title {
-    margin-top: 3%;
+    width: 100%;
     font-size: 50px;
     font-weight: bold;
     font-family: Kanit;
-    margin-left: 25%;
+    color: #000000;
+    text-align: center;
 }
 
-#inputDate{
-    margin-left: 15%;
-}
-
-li{
-    list-style-type: none;
-    margin-top: 5%;
-    margin-left: -10%;
-    font-size: 20px;
-    color: black;
-    display: flex;
-    height: 5%;
-}
-
-#dateapp{
-    padding-right: 8%;
-    width: 20%;
-}
-
-#timeapp{
-    padding-right: 20%;
-    width: 20%;
-}
-
-#nameapp{
-    font-size: 20px;
-    font-family: Kanit;
-    width: 20%;
-}
-
-#edit{
+#newAppointment {
+    width:25%;
     margin-left: 5%;
-    border: none;
-    font-family: Kanit;
-    font-size: 25px;
-    border-radius: 3px;
-    width: 15%;
 }
-#delete{
-    border: none;
-    font-family: Kanit;
-    font-size: 25px;
-    border-radius: 3px;
-    width: 15%;
-}
+
 
 #addAppointmentButton{
-    border: none;
     font-family: Kanit;
     font-size: 25px;
     border-radius: 3px;
-    margin-top: 4%;
-    margin-left: 13%;
+    width: 15%;
+}
+
+#appointmentTime {
+    margin-left: 5%;
+}
+li{
+    display: flex;
+    flex-direction: row;
 }
 
 #addAppointmentButton:hover{
     background-color: #ddd;
 }
 
-#visitorDate{
-    border: none;
-}
-
-#visitorTime{
-    border: none;
-    margin-left: 5%;
-}
-
-#newVisitor{
-    margin-top: 5%;
-    margin-left: 5%;
-    font-size: 20px;
-    font-family: Kanit;
-}
 
 
 #delete:hover{
     background-color: #ddd;
 }
-
-
 
 #edit:hover{
     background-color: #ddd;
