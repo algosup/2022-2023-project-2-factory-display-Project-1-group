@@ -34,9 +34,9 @@ export class EmployeesTasksPage implements OnInit {
     var text = (<HTMLInputElement>appointmentVisitor).value;
     var li = document.createElement('li');
     li.innerHTML =
-        "<label id='nametask' >" + 'Nom de la tâche : ' + text + "</label>" +
-        "<label id='timestart' >" + ' ---- Début : ' + date + "</label>" +
-        "<label id='timeend' >" + ' ---- Fin : ' + date2 + "</label>" +
+        "<label id='nametask' >" + 'Nom de la tâche : ' + text +'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ "</label>" +
+        "<label id='timestart' >" + 'Début : ' + date + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ "</label>" +
+        "<label id='timeend' >" + 'Fin : ' + date2 + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ "</label>" +
         "<button id='edit' >Editer</button>" +
         "<button id='delete' >Supprimer</button>";
     appointmentList.appendChild(li);
