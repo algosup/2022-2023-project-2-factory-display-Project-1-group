@@ -74,17 +74,10 @@ addEventListener('keypress', function (e) {
     var time = (<HTMLInputElement>document.getElementById("visitorTime")).value
     var visitorName = (<HTMLInputElement>document.getElementById("newVisitor")).value
     const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
-    const id = (await supabase.from('settings').select("id")).data[0];
-    console.log(id.id);
-    console.log(time);
-    console.log(date);
-    console.log(visitorName);
-    await supabase.from('settings')[0].update([{idmax: 1}])
-    // .eq('id', 1)
-    // await supabase.from('settings').insert([{id: id.id + 1}]);
+    const idmax = (await supabase.from('settings').select("idmax")).data[0];
+    await supabase.from('settings').upsert({id: 1, idmax: idmax.idmax+1})
     var dateTime = date + " " + time
-    await supabase.from('data').insert([{id: id,content: visitorName,beginningTask: dateTime}]);
-
+    await supabase.from('data').insert([{id: idmax.idmax,content: visitorName,isMeeting: true,beginningTask: dateTime}]);
   }
 
 
