@@ -91,6 +91,9 @@ body {
     text-align: center;
 }
 
+#inputVisitor{
+    margin-top: 3%;
+}
 #newVisitor {
     width:25%;
     margin-left: 5%;
@@ -101,9 +104,8 @@ body {
     width: 25%;
     margin-left: 10%;
 }
-#addTaskButton{
+#addVisitorButton{
     font-family: Kanit;
-    font-size: 25px;
     border-radius: 3px;
     width: 15%;
     margin-right: 10%;

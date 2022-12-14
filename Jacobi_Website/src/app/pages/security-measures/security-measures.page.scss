@@ -59,7 +59,7 @@ body {
     width: 100%;
 }
 
-#input {
+#inputSecurityMesure {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -69,6 +69,17 @@ body {
     margin-top: 2%;
     border-radius: 20px;
 }
+#addSecurityMesureButton{
+    width: 20%;
+    margin-top: -3%;
+    margin-left : 20%;
+}
+
+#newSecurityMesure {
+    width: 60%;
+    margin-left: 10%;
+}
+
 
 #main {
     width: 76%;
