@@ -28,11 +28,11 @@ var addAppointment = function () {
     var text = (<HTMLInputElement>appointmentVisitor).value;
     var li = document.createElement('li');
     li.innerHTML =
-        "<label id='dateapp'>" + text + "</label>" +
-        "<label id='timeapp'>" + date + "</label>" +
-        "<label id='nameapp'>" + date2 + "</label>" +
-        "<button id='edit'>Editer</button>" +
-        "<button class='delete' id='delete'>Supprimer</button>";
+        "<label id='nametask' >" + 'Nom de la tâche : ' + text + "</label>" +
+        "<label id='timestart' >" + ' ---- Début : ' + date + "</label>" +
+        "<label id='timeend' >" + ' ---- Fin : ' + date2 + "</label>" +
+        "<button id='edit' >Editer</button>" +
+        "<button id='delete' >Supprimer</button>";
     appointmentList.appendChild(li);
     (<HTMLInputElement>appointmentDate).value = '';
     (<HTMLInputElement>appointmentTime).value = '';
