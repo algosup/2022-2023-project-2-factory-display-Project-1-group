@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { createClient } from '@supabase/supabase-js';
 import { AuthService } from 'src/app/services/auth.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-employees-tasks',
@@ -55,8 +57,15 @@ export class EmployeesTasksPage implements OnInit {
   signOut() {
     this.authService.signOut();
   }
-  sendDatabase(){
-
+  async sendDatabase(){
+    var beginDate = (<HTMLInputElement>document.getElementById("beginDate")).value
+    var endDate = (<HTMLInputElement>document.getElementById("endDate")).value
+    var task = (<HTMLInputElement>document.getElementById("newTask")).value
+    const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
+    const idmax = (await supabase.from('settings').select("idmax")).data[0];
+    await supabase.from('settings').upsert({id: 1, idmax: idmax.idmax+1})
+    var dateTime = beginDate + " jusqu'a "
+    await supabase.from('data').insert([{id: idmax.idmax,content: "<p>"+task+"<p>",isTaskEmployee: true,beginningTask: "<p>"+dateTime+"<p>",endingTask: "<p>"+endDate+"<p>"}]);
   }
   
 
