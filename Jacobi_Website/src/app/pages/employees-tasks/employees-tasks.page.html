@@ -24,7 +24,8 @@
                 <input id="newTask" type="text" placeholder="Rentrez votre tâche">
                 <input id="beginDate" type="date">
                 <input id="endDate" type="date">
-                <button id="addTaskButton" type="button">Ajouter</button>
+                <ion-button color="medium" id="addAppointmentButton" (click)="sendDatabase();addAppointment()">Ajouter</ion-button>
+                <!-- <button id="addTaskButton" type="button">Ajouter</button> -->
             </section>
             <ul id="appointmentList">
             </ul>

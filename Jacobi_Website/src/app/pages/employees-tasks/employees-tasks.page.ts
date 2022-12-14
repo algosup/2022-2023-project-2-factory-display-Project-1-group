@@ -15,14 +15,20 @@ export class EmployeesTasksPage implements OnInit {
   ) { }
 
   ngOnInit() {
+
+// appointmentList.addEventListener('click', function (e) {
+//     if (e.target.className === 'delete') {
+//         var li = e.target.parentElement;
+//         appointmentList.removeChild(li);
+//     }
+// });
+  }
+  addAppointment(){
     var appointmentDate = document.getElementById('beginDate');
-var appointmentTime = document.getElementById('endDate');
-var appointmentVisitor = document.getElementById('newTask'); // taskInput
-var addAppointmentButton = document.getElementById('addTaskButton'); // addTaskButton
-var appointmentList = document.getElementById('appointmentList'); // incompleteTask
-
-
-var addAppointment = function () {
+    var appointmentTime = document.getElementById('endDate');
+    var appointmentVisitor = document.getElementById('newTask'); // taskInput
+    var addAppointmentButton = document.getElementById('addTaskButton'); // addTaskButton
+    var appointmentList = document.getElementById('appointmentList'); // incompleteTask    
     var date = (<HTMLInputElement>appointmentDate).value;
     var date2 = (<HTMLInputElement>appointmentTime).value;
     var text = (<HTMLInputElement>appointmentVisitor).value;
@@ -38,22 +44,6 @@ var addAppointment = function () {
     (<HTMLInputElement>appointmentTime).value = '';
     (<HTMLInputElement>appointmentVisitor).value = '';
 }
-
-addAppointmentButton.onclick = addAppointment;
-
-addEventListener('keypress', function (e) {
-    if (e.keyCode === 13) {
-        addAppointment();
-    }
-});
-
-// appointmentList.addEventListener('click', function (e) {
-//     if (e.target.className === 'delete') {
-//         var li = e.target.parentElement;
-//         appointmentList.removeChild(li);
-//     }
-// });
-  }
   switchPage(page: string){
     this.authService.getCurrentUser().subscribe((user) => { // this function check if the user is already identified and redirect him to the content of the website
       if (user) {
@@ -64,6 +54,9 @@ addEventListener('keypress', function (e) {
   }
   signOut() {
     this.authService.signOut();
+  }
+  sendDatabase(){
+
   }
   
 
