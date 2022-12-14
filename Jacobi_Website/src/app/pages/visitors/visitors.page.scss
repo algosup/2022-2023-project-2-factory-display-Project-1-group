@@ -13,6 +13,7 @@ body {
     background-color: #ccc;
 }
 
+
 #decobtn{
     height: 6%;
     margin-top: 30%;
@@ -43,7 +44,6 @@ body {
     background-color: #000000;
     position: fixed;
 }
-
 #navbar img {
     width: 100%;
     height: 20%;
@@ -51,6 +51,23 @@ body {
 
 #navbar hr {
     border: 1px solid #fff;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 2%;
+    border-radius: 20px;
 }
 
 #main {
@@ -62,80 +79,53 @@ body {
     position: absolute;
     margin-top: 2%;
     border-radius: 20px;
+    color: #000000;
 }
 
 #title {
-    margin-top: 3%;
+    width: 100%;
     font-size: 50px;
     font-weight: bold;
     font-family: Kanit;
-    margin-left: 28%;
+    color: #000000;
+    text-align: center;
 }
 
-#inputVisitor{
-    margin-left: 20%;
+#newVisitor {
+    width:25%;
+    margin-left: 5%;
 }
 
-li{
-    list-style-type: none;
-    margin-top: 5%;
-    margin-left: -10%;
-    font-size: 20px;
-    color: black;
-    display: flex;
-    height: 5%;
-}
 
-#dateVisitor{
-    padding-right: 15%;
-    width: 35%;
-}
-
-#nameVisitor{
-    font-size: 20px;
-    font-family: Kanit;
+#visitorDate {
     width: 25%;
+    margin-left: 10%;
 }
-
-#edit{
-    margin-left: 5%;
-    border: none;
+#addTaskButton{
     font-family: Kanit;
     font-size: 25px;
     border-radius: 3px;
     width: 15%;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
-#delete{
-    border: none;
-    font-family: Kanit;
-    font-size: 25px;
-    border-radius: 3px;
-    width: 15%;
-}
-
-#addVisitorButton{
-    border: none;
-    font-family: Kanit;
-    font-size: 25px;
-    border-radius: 3px;
-    margin-top: 4%;
-    margin-left: 13%;
-}
-
-#addVisitorButton:hover{
-    background-color: #ddd;
-}
-
-#visitorDate{
-    border: none;
-}
-
-#newVisitor{
+#taskList{
+    width: 100%;
     margin-top: 5%;
     margin-left: 5%;
-    font-size: 20px;
-    font-family: Kanit;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+li{
+    display: flex;
+    flex-direction: row;
+}
+
+#addTaskButton:hover{
+    background-color: #ddd;
 }
 
 #delete:hover{
