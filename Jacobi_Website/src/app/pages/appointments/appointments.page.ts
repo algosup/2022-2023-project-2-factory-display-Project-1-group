@@ -89,12 +89,19 @@ export class AppointmentsPage implements OnInit {
             "<label id='timeapp'>" + time + "</label>" +
             "<label id='nameapp'>" + text.content + "</label>" +
             "<button id='edit'>Editer</button>" +
-            "<button class='delete' id='delete'>Supprimer</button>";
+            "<ion-button color='medium' id='delete"+i.toString()+"' (click)='deleteRow("+i+")'>Supprimer</ion-button>"
+            // "<button class='delete' id='delete'+"+i.toString()+">Supprimer</button>";
         appointmentList.appendChild(li);
       }
     }
   }
-
+  async deleteRow(id: any){
+    const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
+        var btn = document.getElementById("delete"+id.toString());
+        btn.parentElement.remove()
+        console.log(btn);
+        console.log(btn.parentElement);
+  }
 
 
 

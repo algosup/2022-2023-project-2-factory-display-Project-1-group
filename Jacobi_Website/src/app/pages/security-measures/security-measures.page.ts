@@ -28,17 +28,16 @@ export class SecurityMeasuresPage implements OnInit {
   }
   
 addVisitor() {
-  var newVisitor = document.getElementById('newVisitor'); // taskInput
-  var addVisitorButton = document.getElementById('addVisitorButton'); // addTaskButton
-  var visitorList = document.getElementById('visitorList'); // incompleteTask  
-  var text = (<HTMLInputElement>newVisitor).value;
+  var newSecurityMesure = document.getElementById('newSecurityMesure'); // taskInput
+  var securityMesureList = document.getElementById('securityMesureList'); // incompleteTask  
+  var text = (<HTMLInputElement>newSecurityMesure).value;
   var li = document.createElement('li');
   li.innerHTML =
       "<label id='nameVisitor'>" + text + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ "</label>" +
       "<button id='edit'>Editer</button>" +
       "<button class='delete' id='delete'>Supprimer</button>";
-  visitorList.appendChild(li);
-  (<HTMLInputElement>newVisitor).value = '';
+  securityMesureList.appendChild(li);
+  (<HTMLInputElement>newSecurityMesure).value = '';
 }
 
   switchPage(page: string){
@@ -53,11 +52,11 @@ addVisitor() {
     this.authService.signOut();
   }
   async sendDatabase(){
-    var visitorName = (<HTMLInputElement>document.getElementById("newVisitor")).value
+    var newSecurityMesure = (<HTMLInputElement>document.getElementById("newSecurityMesure")).value
     const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
     const idmax = (await supabase.from('settings').select("idmax")).data[0];
     await supabase.from('settings').upsert({id: 1, idmax: idmax.idmax+1})
-    await supabase.from('data').insert([{id: idmax.idmax,content: "<p>"+visitorName+"<p>",isSecurityMeasure: true}]);
+    await supabase.from('data').insert([{id: idmax.idmax,content:newSecurityMesure,isSecurityMeasure: true}]);
   }
   async getDatabase(){
     const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
