@@ -84,8 +84,8 @@ export class AppointmentsPage implements OnInit {
         var text = (await supabase.from('data').select("content")).data[i]
         var li = document.createElement('li');
         li.innerHTML =
-            "<label id='dateapp'>" + date + "</label>" +
-            "<label id='timeapp'>" + time + "</label>" +
+            "<label id='dateapp'>" + date +"  "+ "</label>" +
+            "<label id='timeapp'>" + time +"  "+ "</label>" +
             "<label id='nameapp'>" + text.content + "</label>" +
             "<button id='edit'>Editer</button>" +
             '<ion-button color="medium" id="delete'+i+'" (click)="deleteRow('+i+')">Supprimer</ion-button>'

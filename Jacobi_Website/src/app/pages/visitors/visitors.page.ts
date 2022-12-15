@@ -73,7 +73,7 @@ export class VisitorsPage implements OnInit {
         var date = (await supabase.from('data').select("beginningTask")).data[i]
         var li = document.createElement('li');
         li.innerHTML =
-        "<label id='dateVisitor'>" +"Date : "+ date +  '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+"</label>" +
+        "<label id='dateVisitor'>" +"Date : "+ date.beginningTask +  '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+"</label>" +
         "<label id='nameVisitor'>" + text.content + "</label>" +
         "<button class='delete' id='delete'>Supprimer</button>";
         visitorList.appendChild(li);

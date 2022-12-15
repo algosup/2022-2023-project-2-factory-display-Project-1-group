@@ -90,19 +90,23 @@ export class GroupsPage implements OnInit {
             const newdiv = document.createElement("div")
             newdiv.innerHTML = "<p>"+beginningTask[i].beginningTask+"</p>" + "<p>"+content[i].content+"</p>";
             const currentdiv = document.getElementById("loader1");
+            newdiv.className = "new"
             currentdiv.appendChild(newdiv);
           } else if(isTaskEmployee[i].isTaskEmployee == true){
             const newdiv = document.createElement("div")
             newdiv.innerHTML = "<p>"+beginningTask[i].beginningTask + "  "+ endingTask[i].endingTask+"</p>" + "<p>"+content[i].content+"</p>";
             const currentdiv = document.getElementById("loader2");
+            newdiv.className = "new"
             currentdiv.appendChild(newdiv);
           } else if(isSecurityMeasure[i].isSecurityMeasure == true){
             const newdiv = document.createElement("div")
+            newdiv.className = "new"
             newdiv.innerHTML ="<p>"+content[i].content+"</p>";
             const currentdiv = document.getElementById("loader3");
             currentdiv.appendChild(newdiv);
           } else if(isMeeting[i].isMeeting == true){
             const newdiv = document.createElement("div")
+            newdiv.className = "new"
             newdiv.innerHTML = "<p>"+beginningTask[i].beginningTask+"</p>" + "<p>"+content[i].content+"</p>";
             const currentdiv = document.getElementById("loader4");
             currentdiv.appendChild(newdiv);
