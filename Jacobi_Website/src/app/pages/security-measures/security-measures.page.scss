@@ -69,18 +69,30 @@ body {
     margin-top: 2%;
     border-radius: 20px;
 }
+#newSecurityMesure {
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: #fff;
+    font-size: 20px;
+    font-family: Kanit;
+}
 #addSecurityMesureButton{
     width: 20%;
-    margin-top: -3%;
-    margin-left : 20%;
-}
-
-#newSecurityMesure {
-    width: 60%;
+    margin-right: 10%;
     margin-left: 10%;
 }
 
-
+#securityMesureList{
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    background-color: #fff;
+    border-radius: 20px;
+}
 #main {
     width: 76%;
     height: 93%;
