@@ -35,8 +35,8 @@ export class VisitorsPage implements OnInit {
     var text = (<HTMLInputElement>newVisitor).value;
     var li = document.createElement('li');
     li.innerHTML =
-        "<label id='dateVisitor'>" + date + "</label>" +
-        "<label id='nameVisitor'>" + text + "</label>" +
+        "<label id='dateVisitor'>" +"Date :"+ date +  '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+"</label>" +
+        "<label id='nameVisitor'>" +"Nom du visiteur" + text + "</label>" +
         "<button id='edit'>Editer</button>" +
         "<button class='delete' id='delete'>Supprimer</button>";
     visitorList.appendChild(li);

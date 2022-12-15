@@ -38,9 +38,9 @@ export class AppointmentsPage implements OnInit {
     var text = (<HTMLInputElement>appointmentVisitor).value;
     var li = document.createElement('li');
     li.innerHTML =
-        "<label id='dateapp'>" + date + "</label>" +
-        "<label id='timeapp'>" + time + "</label>" +
-        "<label id='nameapp'>" + text + "</label>" +
+        "<label id='dateapp'>" + "Date :"+ date + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+"</label>" +
+        "<label id='timeapp'>" + "Heure :"+ time + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+"</label>" +
+        "<label id='nameapp'>" +"Nom du rendez-vous"+ text + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+"</label>" +
         "<button id='edit'>Editer</button>" +
         "<button class='delete' id='delete'>Supprimer</button>";
     appointmentList.appendChild(li);
