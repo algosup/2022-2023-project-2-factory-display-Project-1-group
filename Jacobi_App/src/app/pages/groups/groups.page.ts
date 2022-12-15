@@ -104,7 +104,7 @@ export class GroupsPage implements OnInit {
         newdiv.style.marginLeft = "12%";
         newdiv.style.marginTop = "2%";
         newdiv.style.fontSize = "20px";
-        newdiv.innerHTML = "<p>" + 'Date : '+beginningTask[i].beginningTask +' Au '+ endingTask[i].endingTask + "</p>" + "<p style='margin-left:10%'>" +'Tâche : '+ content[i].content + "</p>";
+        newdiv.innerHTML = "<p>" + 'Date : '+beginningTask[i].beginningTask + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+' Au ' + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ endingTask[i].endingTask + "</p>" + "<p style='margin-left:10%'>" +'Tâche : '+ content[i].content + "</p>";
         const currentdiv = document.getElementById("loader2");
         newdiv.className = "new"
         currentdiv.appendChild(newdiv);
