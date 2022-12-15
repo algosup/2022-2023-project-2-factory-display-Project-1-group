@@ -34,7 +34,6 @@ addVisitor() {
   var li = document.createElement('li');
   li.innerHTML =
       "<label id='nameVisitor'>" + text + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ "</label>" +
-      "<button id='edit'>Editer</button>" +
       "<button class='delete' id='delete'>Supprimer</button>";
   securityMesureList.appendChild(li);
   (<HTMLInputElement>newSecurityMesure).value = '';
