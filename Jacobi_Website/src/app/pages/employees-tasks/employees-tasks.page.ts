@@ -64,7 +64,7 @@ export class EmployeesTasksPage implements OnInit {
     const idmax = (await supabase.from('settings').select("idmax")).data[0];
     await supabase.from('settings').upsert({id: 1, idmax: idmax.idmax+1})
     var dateTime = beginDate
-    await supabase.from('data').insert([{id: idmax.idmax,content: task,isTaskEmployee: true,beginningTask: dateTime,endingTask: +endDate}]);
+    await supabase.from('data').insert([{id: idmax.idmax,content: task,isTaskEmployee: true,beginningTask: dateTime,endingTask: endDate}]);
   }
   async getDatabase(){
     const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);

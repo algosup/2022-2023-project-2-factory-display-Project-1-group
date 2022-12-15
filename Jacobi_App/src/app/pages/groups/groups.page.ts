@@ -82,10 +82,10 @@ export class GroupsPage implements OnInit {
       const endingTask = (await supabase.from('data').select("endingTask")).data;
       for (let i = 0; i < id.length; i++) {        
           if(isPersonalWidget[i].isPersonalWidget == true) { // We load all the content in each widget 
-            const newdiv = document.createElement("div")
-            newdiv.innerHTML = "<h1>"+title[i].title+"</h1>" + "<p>"+content[i].content+ "</p>";
-            const currentdiv = document.getElementById("loader0");
-            currentdiv.appendChild(newdiv);
+            // const newdiv = document.createElement("div")
+            // newdiv.innerHTML = "<h1>"+title[i].title+"</h1>" + "<p>"+content[i].content+ "</p>";
+            // const currentdiv = document.getElementById("loader0");
+            // currentdiv.appendChild(newdiv);
           } else if(isVisitorWidget[i].isVisitorWidget == true){
             const newdiv = document.createElement("div")
             newdiv.innerHTML = "<p>"+beginningTask[i].beginningTask+"</p>" + "<p>"+content[i].content+"</p>";
