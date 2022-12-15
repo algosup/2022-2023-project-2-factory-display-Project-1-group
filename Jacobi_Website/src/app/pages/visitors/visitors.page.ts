@@ -18,6 +18,7 @@ export class VisitorsPage implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.getDatabase()
 // visitorList.addEventListener('click', function (e) {
 //     if (e.target.className === 'delete') {
 //         var li = e.target.parentElement;
@@ -60,6 +61,23 @@ export class VisitorsPage implements OnInit {
     const idmax = (await supabase.from('settings').select("idmax")).data[0];
     await supabase.from('settings').upsert({id: 1, idmax: idmax.idmax+1})
     await supabase.from('data').insert([{id: idmax.idmax,content: "<p>" +visitorName+"<p>",isVisitorWidget: true,beginningTask: "<p>" +date +"<p>"}]);
+  }
+  async getDatabase(){
+    const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
+    var visitorList = document.getElementById('visitorList'); // incompleteTask  
+    const id = (await supabase.from('data').select("id")).data;   
+    const isVisitorWidget= (await supabase.from('data').select("isVisitorWidget")).data;
+    for (let i = 0; i < id.length; i++) {        
+      if(isVisitorWidget[i].isVisitorWidget == true) {
+        var text = (await supabase.from('data').select("content")).data[i]
+        var li = document.createElement('li');
+        li.innerHTML =
+        "<label id='nameVisitor'>" + text.content + "</label>" +
+        "<button id='edit'>Editer</button>" +
+        "<button class='delete' id='delete'>Supprimer</button>";
+        visitorList.appendChild(li);
+      }
+    }
   }
 
 }
