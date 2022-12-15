@@ -79,27 +79,27 @@ export class GroupsPage implements OnInit {
       for (let i = 0; i < id.length; i++) {        
           if(isPersonalWidget[i].isPersonalWidget == true) { // We load all the content in each widget 
             const newdiv = document.createElement("div")
-            newdiv.innerHTML = title[i].title + content[i].content;
+            newdiv.innerHTML = "<h1>"+title[i].title+"</h1>" + "<p>"+content[i].content+ "</p>";
             const currentdiv = document.getElementById("loader0");
             currentdiv.appendChild(newdiv);
           } else if(isVisitorWidget[i].isVisitorWidget == true){
             const newdiv = document.createElement("div")
-            newdiv.innerHTML = created_at[i].created_at + content[i].content;
+            newdiv.innerHTML = "<p>"+created_at[i].created_at+"</p>" + "<p>"+content[i].content+"</p>";
             const currentdiv = document.getElementById("loader1");
             currentdiv.appendChild(newdiv);
           } else if(isTaskEmployee[i].isTaskEmployee == true){
             const newdiv = document.createElement("div")
-            newdiv.innerHTML = beginningTask[i].beginningTask + "  "+ endingTask[i].endingTask + content[i].content;
+            newdiv.innerHTML = "<p>"+beginningTask[i].beginningTask + "  "+ endingTask[i].endingTask+"</p>" + "<p>"+content[i].content+"</p>";
             const currentdiv = document.getElementById("loader2");
             currentdiv.appendChild(newdiv);
           } else if(isSecurityMeasure[i].isSecurityMeasure == true){
             const newdiv = document.createElement("div")
-            newdiv.innerHTML = content[i].content;
+            newdiv.innerHTML ="<p>"+content[i].content+"</p>";
             const currentdiv = document.getElementById("loader3");
             currentdiv.appendChild(newdiv);
           } else if(isMeeting[i].isMeeting == true){
             const newdiv = document.createElement("div")
-            newdiv.innerHTML = beginningTask[i].beginningTask + content[i].content;
+            newdiv.innerHTML = "<p>"+beginningTask[i].beginningTask+"</p>" + "<p>"+content[i].content+"</p>";
             const currentdiv = document.getElementById("loader4");
             currentdiv.appendChild(newdiv);
           } else{

@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
+import { NgClass, NgStyle} from '@angular/common';
+// import { FileUploader } from 'ng2-file-upload';;
 
 @Component({
   selector: 'app-custom-ressource',
   templateUrl: './custom-ressource.page.html',
   styleUrls: ['./custom-ressource.page.scss'],
+  // directives: [NgClass, NgStyle]
 })
 export class CustomRessourcePage implements OnInit {
   user = this.authService.getCurrentUser();

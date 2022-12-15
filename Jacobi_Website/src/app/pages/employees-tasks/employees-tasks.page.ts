@@ -17,7 +17,7 @@ export class EmployeesTasksPage implements OnInit {
   ) { }
 
   ngOnInit() {
-
+      this.getDatabase()
 // appointmentList.addEventListener('click', function (e) {
 //     if (e.target.className === 'delete') {
 //         var li = e.target.parentElement;
@@ -64,8 +64,29 @@ export class EmployeesTasksPage implements OnInit {
     const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
     const idmax = (await supabase.from('settings').select("idmax")).data[0];
     await supabase.from('settings').upsert({id: 1, idmax: idmax.idmax+1})
-    var dateTime = beginDate + " jusqu'a "
-    await supabase.from('data').insert([{id: idmax.idmax,content: "<p>"+task+"<p>",isTaskEmployee: true,beginningTask: "<p>"+dateTime+"<p>",endingTask: "<p>"+endDate+"<p>"}]);
+    var dateTime = beginDate
+    await supabase.from('data').insert([{id: idmax.idmax,content: task,isTaskEmployee: true,beginningTask: dateTime,endingTask: +endDate}]);
+  }
+  async getDatabase(){
+    const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
+    var appointmentList = document.getElementById('appointmentList'); // incompleteTask    
+    const id = (await supabase.from('data').select("id")).data;   
+    const isTaskEmployee = (await supabase.from('data').select("isTaskEmployee")).data;
+    for (let i = 0; i < id.length; i++) {        
+      if(isTaskEmployee[i].isTaskEmployee == true) {
+        var date = (await supabase.from('data').select("beginningTask")).data[i]
+        var date2 = (await supabase.from('data').select("endingTask")).data[i]
+        var text = (await supabase.from('data').select("content")).data[i]
+        var li = document.createElement('li');
+        li.innerHTML =
+        "<label id='nametask' >" + 'Nom de la tâche : ' + text.content +'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ "</label>" +
+        "<label id='timestart' >" + 'Début : ' + date.beginningTask + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ "</label>" +
+        "<label id='timeend' >" + 'Fin : ' + date2.endingTask + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ "</label>" +
+        "<button id='edit' >Editer</button>" +
+        "<button id='delete' >Supprimer</button>";
+        appointmentList.appendChild(li);
+      }
+    }
   }
   
 

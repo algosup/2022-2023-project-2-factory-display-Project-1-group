@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { createClient } from '@supabase/supabase-js';
 import { AuthService } from 'src/app/services/auth.service';
 import { environment } from 'src/environments/environment';
+import { createClient, SupabaseClient, User } from "@supabase/supabase-js";
 
 
 @Component({
@@ -19,7 +19,7 @@ export class AppointmentsPage implements OnInit {
   ) { }
 
   ngOnInit() {
-
+    this.getDatabase()
 // appointmentList.addEventListener('click', function (e) {
 //     if (e.target.className === 'delete') {
 //         var li = e.target.parentElement;
@@ -67,7 +67,32 @@ export class AppointmentsPage implements OnInit {
     const idmax = (await supabase.from('settings').select("idmax")).data[0];
     await supabase.from('settings').upsert({id: 1, idmax: idmax.idmax+1})
     var dateTime = date + " " + time
-    await supabase.from('data').insert([{id: idmax.idmax,content: "<p>"+appointement+"<p>",isMeeting: true,beginningTask: "<p>"+dateTime+"<p>"}]);
+    await supabase.from('data').insert([{id: idmax.idmax,content: appointement,isMeeting: true,beginningTask: dateTime}]);
+  }
+  async getDatabase(){
+    const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
+    var appointmentList = document.getElementById('appointmentList'); // incompleteTask    
+    const id = (await supabase.from('data').select("id")).data;   
+    const isMeeting = (await supabase.from('data').select("isMeeting")).data;
+    for (let i = 0; i < id.length; i++) {        
+      if(isMeeting[i].isMeeting == true) {
+        var timeStamp = (await supabase.from('data').select("beginningTask")).data[i]
+        var tempDate = timeStamp.beginningTask.toString().split(" ");
+        var date = tempDate[0]
+        var time = tempDate[1]
+        console.log(date);
+        console.log(time);
+        var text = (await supabase.from('data').select("content")).data[i]
+        var li = document.createElement('li');
+        li.innerHTML =
+            "<label id='dateapp'>" + date + "</label>" +
+            "<label id='timeapp'>" + time + "</label>" +
+            "<label id='nameapp'>" + text.content + "</label>" +
+            "<button id='edit'>Editer</button>" +
+            "<button class='delete' id='delete'>Supprimer</button>";
+        appointmentList.appendChild(li);
+      }
+    }
   }
 
 
