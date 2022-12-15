@@ -88,7 +88,12 @@ export class GroupsPage implements OnInit {
             // currentdiv.appendChild(newdiv);
           } else if(isVisitorWidget[i].isVisitorWidget == true){
             const newdiv = document.createElement("div")
-            newdiv.innerHTML = "<p>"+beginningTask[i].beginningTask+"</p>" + "<p>"+content[i].content+"</p>";
+            newdiv.style.display = "flex";
+            newdiv.style.flexDirection = "row";
+            newdiv.style.marginLeft = "25%";
+            newdiv.style.marginTop = "2%";
+            newdiv.style.fontSize = "20px";
+            newdiv.innerHTML = "<p>"+'Date : '+beginningTask[i].beginningTask+"</p>" + "<p style='margin-left:10%'>"+'Nom du visiteur : '+content[i].content+"</p>";
             const currentdiv = document.getElementById("loader1");
             newdiv.className = "new"
             currentdiv.appendChild(newdiv);

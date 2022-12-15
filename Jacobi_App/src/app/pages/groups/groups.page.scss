@@ -19,6 +19,8 @@ ion-slides {
 .carrousel_pos{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 #time{
     width: 30%;
@@ -36,7 +38,15 @@ h1{
     font-size: 50px;
     color: orangered;
 }
-.carrousel_pos{
-    width: 100%;
-    height: 100%;
+#date{
+    width: 30%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Kanit;
+    color: white;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    margin-left: 30%;
 }
