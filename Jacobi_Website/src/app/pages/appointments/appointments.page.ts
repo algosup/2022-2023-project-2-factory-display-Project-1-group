@@ -16,7 +16,9 @@ export class AppointmentsPage implements OnInit {
   constructor(
     private authService: AuthService,
     private router: Router
-  ) { }
+  ) {
+    
+   }
 
   ngOnInit() {
     this.getDatabase()
@@ -41,7 +43,7 @@ export class AppointmentsPage implements OnInit {
         "<label id='dateapp'>" + "Date : "+ date + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+"</label>" +
         "<label id='timeapp'>" + "Heure : "+ time + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+"</label>" +
         "<label id='nameapp'>" +"Nom du rendez-vous : "+ text + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+"</label>" +
-        "<button class='delete' id='delete'>Supprimer</button>";
+        "<button class='delete' id='delete' >Supprimer</button>";
     appointmentList.appendChild(li);
     (<HTMLInputElement>appointmentDate).value = '';
     (<HTMLInputElement>appointmentTime).value = '';
@@ -84,18 +86,18 @@ export class AppointmentsPage implements OnInit {
         var text = (await supabase.from('data').select("content")).data[i]
         var li = document.createElement('li');
         li.innerHTML =
-            "<label id='dateapp'>" + date +"  "+ "</label>" +
-            "<label id='timeapp'>" + time +"  "+ "</label>" +
-            "<label id='nameapp'>" + text.content + "</label>" +
-            "<button id='edit'>Editer</button>" +
-            '<ion-button color="medium" id="delete'+i+'" (click)="deleteRow('+i+')">Supprimer</ion-button>'
-            // "<button class='delete' id='delete'+"+i.toString()+">Supprimer</button>";
+            "<label id='dateapp'>" + date + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ "</label>" +
+            "<label id='timeapp'>" + time + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ "</label>" +
+            "<label id='nameapp'>" + text.content + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ "</label>" +
+            // '<ion-button color="medium" id="delete'+i+'" (click)="deleteRow('+i+')">Supprimer</ion-button>'
+            "<button class='delete' id='delete+"+i.toString()+"' onClick='deleteRow("+i.toString()+")' style='margin-left:20px'>Supprimer</button>";
+        // btn.onclick() = this.deleteRow(i)
+
         appointmentList.appendChild(li);
       }
     }
   }
-  async deleteRow(i: any){
-    const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
+  deleteRow(i: any){
         var btn = document.getElementById("delete"+i);
         btn.parentElement.remove()
         console.log(btn);

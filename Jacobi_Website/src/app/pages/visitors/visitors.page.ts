@@ -37,8 +37,7 @@ export class VisitorsPage implements OnInit {
     li.innerHTML =
         "<label id='dateVisitor'>" +"Date : "+ date +  '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+"</label>" +
         "<label id='nameVisitor'>" +"Nom du visiteur : " + text + "</label>" +
-        "<button id='edit'>Editer</button>" +
-        "<button class='delete' id='delete'>Supprimer</button>";
+        "<button class='delete' id='delete' style='margin-left:20px'>Supprimer</button>";
     visitorList.appendChild(li);
     (<HTMLInputElement>visitorDate).value    = '';
     (<HTMLInputElement>newVisitor).value = '';
@@ -74,8 +73,8 @@ export class VisitorsPage implements OnInit {
         var li = document.createElement('li');
         li.innerHTML =
         "<label id='dateVisitor'>" +"Date : "+ date.beginningTask +  '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+"</label>" +
-        "<label id='nameVisitor'>" + text.content + "</label>" +
-        "<button class='delete' id='delete'>Supprimer</button>";
+        "<label id='nameVisitor'>" +"Nom du visiteur : " + text.content + "</label>" +
+        "<button class='delete' id='delete' style='margin-left:20px'>Supprimer</button>";
         visitorList.appendChild(li);
       }
     }

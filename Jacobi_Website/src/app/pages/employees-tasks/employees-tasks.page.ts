@@ -81,7 +81,6 @@ export class EmployeesTasksPage implements OnInit {
         "<label id='nametask' >" + 'Nom de la tâche : ' + text.content +'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ "</label>" +
         "<label id='timestart' >" + 'Début : ' + date.beginningTask + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ "</label>" +
         "<label id='timeend' >" + 'Fin : ' + date2.endingTask + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ "</label>" +
-        "<button id='edit' >Editer</button>" +
         "<button id='delete' >Supprimer</button>";
         appointmentList.appendChild(li);
       }
