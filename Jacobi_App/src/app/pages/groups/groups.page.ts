@@ -88,7 +88,7 @@ export class GroupsPage implements OnInit {
             currentdiv.appendChild(newdiv);
           } else if(isVisitorWidget[i].isVisitorWidget == true){
             const newdiv = document.createElement("div")
-            newdiv.innerHTML = "<p>"+created_at[i].created_at+"</p>" + "<p>"+content[i].content+"</p>";
+            newdiv.innerHTML = "<p>"+beginningTask[i].beginningTask+"</p>" + "<p>"+content[i].content+"</p>";
             const currentdiv = document.getElementById("loader1");
             currentdiv.appendChild(newdiv);
           } else if(isTaskEmployee[i].isTaskEmployee == true){

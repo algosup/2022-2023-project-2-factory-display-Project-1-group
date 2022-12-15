@@ -70,8 +70,10 @@ export class VisitorsPage implements OnInit {
     for (let i = 0; i < id.length; i++) {        
       if(isVisitorWidget[i].isVisitorWidget == true) {
         var text = (await supabase.from('data').select("content")).data[i]
+        var date = (await supabase.from('data').select("beginningTask")).data[i]
         var li = document.createElement('li');
         li.innerHTML =
+        "<label id='dateVisitor'>" +"Date : "+ date +  '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+"</label>" +
         "<label id='nameVisitor'>" + text.content + "</label>" +
         "<button class='delete' id='delete'>Supprimer</button>";
         visitorList.appendChild(li);
