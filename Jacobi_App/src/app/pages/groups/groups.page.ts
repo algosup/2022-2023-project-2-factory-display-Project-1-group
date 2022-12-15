@@ -25,7 +25,7 @@ export class GroupsPage implements OnInit {
     }   
   };
   @ViewChild("Slides") slides: IonSlides;
-
+  now: string;
 
   constructor(
     private alertController: AlertController,
@@ -33,7 +33,12 @@ export class GroupsPage implements OnInit {
     private navContoller: NavController,
     private router: Router,
     private http: HttpClient,
-  ) {}
+    
+  ) {
+    setInterval(() => {
+      this.now = new Date().toString().split(' ')[4];
+    }, 1);
+  }
   
 
   

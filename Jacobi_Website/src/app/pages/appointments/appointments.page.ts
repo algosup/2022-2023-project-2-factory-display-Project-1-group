@@ -89,15 +89,15 @@ export class AppointmentsPage implements OnInit {
             "<label id='timeapp'>" + time + "</label>" +
             "<label id='nameapp'>" + text.content + "</label>" +
             "<button id='edit'>Editer</button>" +
-            "<ion-button color='medium' id='delete"+i.toString()+"' (click)='deleteRow("+i+")'>Supprimer</ion-button>"
+            '<ion-button color="medium" id="delete'+i+'" (click)="deleteRow()">Supprimer</ion-button>'
             // "<button class='delete' id='delete'+"+i.toString()+">Supprimer</button>";
         appointmentList.appendChild(li);
       }
     }
   }
-  async deleteRow(id: any){
+  async deleteRow(){
     const supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
-        var btn = document.getElementById("delete"+id.toString());
+        var btn = document.getElementById("delete");
         btn.parentElement.remove()
         console.log(btn);
         console.log(btn.parentElement);
