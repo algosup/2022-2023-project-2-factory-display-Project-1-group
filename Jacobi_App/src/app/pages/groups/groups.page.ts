@@ -4,7 +4,6 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { createClient, SupabaseClient, User } from "@supabase/supabase-js";
 import { HttpClient } from '@angular/common/http';
-import OpenWeatherMap from 'openweathermap-ts';
 import { ViewChild } from '@angular/core';
 import { IonicSlides } from '@ionic/angular';
 import { Console } from 'console';
