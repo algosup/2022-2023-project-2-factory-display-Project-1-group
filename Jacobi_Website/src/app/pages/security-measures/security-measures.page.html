@@ -1,0 +1,33 @@
+<ion-content>
+    <div id="navbar">
+        <img src="../assets/images/Jacobi-group.png" alt="Jacobi Logo">
+        <hr>
+        <ion-button class="btn" (click)="switchPage('/employees-tasks')">Tâches des employés</ion-button>
+        <ion-button class="btn" (click)="switchPage('/security-measures')">Mesures de sécurité</ion-button>
+        <ion-button class="btn" (click)="switchPage('/appointments')">Rendez-vous</ion-button>
+        <ion-button class="btn" (click)="switchPage('/visitors')">Visiteurs</ion-button>
+        <ion-button class="btn" (click)="switchPage('/custom-ressource')">Custom-ressource</ion-button>
+        <!-- <a class="btn" href="../templates/employees_tasks.html">Tâches des employés</a>
+    <a class="btn" id="pageload" href="../templates/security_measures.html">Mesures de sécurité</a>
+    <a class="btn" href="../templates/appointments.html">Rendez-vous</a>
+    <a class="btn" href="../templates/visitors.html">Visiteurs</a>
+    <a class="btn" href="../templates/historic.html">Historique</a> -->
+        <ion-button (click)="signOut()" *ngIf="user | async"> <ion-icon name="log-out-outline"
+                slot="icon-only"></ion-icon> </ion-button>
+        <!-- <button id="decobtn">Déconnexion</button> -->
+    </div>
+    <div id="main">
+        <div class="container">
+            <h3 id="title">Ajouter une mesure de sécurité</h3>
+            <div id="inputSecurityMesure">
+                <input id="newSecurityMesure" type="text" placeholder="Entrez une mesure de sécurité...">
+                    <ion-button color="medium" id="addSecurityMesureButton"
+                        (click)="sendDatabase();addVisitor()">Ajouter</ion-button>
+                    <!-- <button id="addVisitorButton" type="button">Ajouter</button> -->
+                </div>
+                <ul id="securityMesureList">
+                </ul>
+            
+        </div>
+    </div>
+</ion-content>

@@ -1,0 +1,49 @@
+<div style="height: 100px;background-color: black; display: flex;flex-direction: row;">
+  <img id="jacobi" src="../assets/images/Jacobi-group.png" style="height:80px;padding-left: 50px;">
+  <input id="time" type="text" value={{now}}/>
+    
+</div>
+  <div class="contentmanager" id="contentmanager">
+    <div id="size_height" [hidden]="true">0</div>
+    <div id="size_width" [hidden]="true">0</div>
+    <a class="weatherwidget-io" href="https://forecast7.com/fr/47d222d07/vierzon/" data-label_1="VIERZON" data-label_2="WEATHER" data-theme="original" >VIERZON WEATHER</a>
+    <ion-label id="loader" hidden></ion-label>
+    <ion-content style="border: 15px solid grey;">
+      <ion-slides pager="true" [options]="slideOpts" id="ionic_slide" autoplay="10" loop="true" speed="100" #Slides>
+        <ion-slide>
+          <div class="carrousel_pos" id="loader0">
+            <img src="../assets/images/plan_d_intervention_0.png" alt="">
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="carrousel_pos" id="loader1">
+            <h1>Visiteurs</h1>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="carrousel_pos" id="loader2">
+            <h1>Tâches</h1>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="carrousel_pos" id="loader3">
+            <h1>Mesures de sécurité</h1>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="carrousel_pos" id="loader4">
+            <h1>Rendez-Vous</h1>
+          </div>
+        </ion-slide>
+      </ion-slides>
+    </ion-content>
+    <!-- <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button (click)="createContent()">
+        <ion-icon name="getContent"></ion-icon>create
+      </ion-fab-button>
+      <ion-fab-button (click)="loadMultipleContent()">
+        <ion-icon name="getContent"></ion-icon>load
+      </ion-fab-button>
+    </ion-fab> -->
+  </div>
+

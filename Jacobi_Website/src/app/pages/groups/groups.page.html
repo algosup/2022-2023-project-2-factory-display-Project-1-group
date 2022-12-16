@@ -1,0 +1,19 @@
+<ion-content>
+  <ion-list>
+    <ion-buttons slot="end" >
+      <ion-button (click)="signOut()" *ngIf="user | async"> <ion-icon name="log-out-outline" slot="icon-only"></ion-icon> </ion-button>
+
+      <ion-button (click)="openLogin()" *ngIf="(user | async) === false"> Connexion </ion-button>
+    </ion-buttons>
+  </ion-list>
+  <div id="navbar">
+    <img src="../images/Jacobi-group.png" alt="Jacobi Logo">
+    <hr>
+    <a class="btn" href="../templates/employees_tasks.html">Modifier</a>
+    <a class="btn" href="../templates/historic.html">Historique</a>
+    <button id="decobtn">Déconnexion</button>
+</div>
+<div id="main">
+</div>
+
+</ion-content>

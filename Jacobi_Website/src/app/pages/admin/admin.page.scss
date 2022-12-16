@@ -1,0 +1,49 @@
+body {
+    background-color: #ccc;
+}
+#navbtn{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    margin-top: 30%;
+    height: 60px;
+    margin-bottom: 25%;
+}
+
+.btn:hover{
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+#decobtn{
+    height: 6%;
+    margin-top: 30%;
+    background-color: #555;
+    color: white;
+    border-radius: 2px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    border: none;
+}
+
+#decobtn:hover {
+    background-color: #666;
+}
+
+#navbar {
+    width: 20%;
+    height: 100%;
+    background-color: #000000;
+    position: fixed;
+}
+#navbar img {
+    width: 100%;
+    height: 20%;
+}
+
+#navbar hr {
+    border: 1px solid #fff;
+}

@@ -1,0 +1,66 @@
+body {
+    background-color: #888;
+}
+
+.btn {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 9%;
+    margin-bottom: 9%;
+    background-color: #666;
+}
+
+.btn:hover {
+    background-color: #777;
+    border-radius: 10px;
+}
+
+#decobtn{
+    height: 6%;
+    margin-top: 30%;
+    background-color: #555;
+    color: white;
+    border-radius: 2px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    border: none;
+}
+
+#decobtn:hover {
+    background-color: #666;
+}
+
+#pageload {
+    background-color: #ff6a00;
+}
+
+#pageload:hover {
+    background-color: #ff7a00;
+}
+
+#navbar {
+    width: 20%;
+    height: 100%;
+    background-color: #000000;
+    position: fixed;
+}
+#navbar img {
+    width: 100%;
+    height: 20%;
+}
+
+#navbar hr {
+    border: 1px solid #fff;
+}
+
+#main {
+    width: 76%;
+    height: 93%;
+    background-color: #fff;
+    margin-left: 22%;
+    display: flex;
+    position: absolute;
+    margin-top: 2%;
+    border-radius: 20px;
+}
